@@ -3,6 +3,7 @@ import AdvPreview from '../components/AdvPreview';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
 import NewsPreview from '../components/NewsPreview';
+import NewsMini from '../components/NewsMini';
 
 
 export default function Home() {
@@ -19,10 +20,8 @@ export default function Home() {
                     <div className="container white">
                         <div className="row">
                             <div className="col-md-9 col-lg-7">
-                                <h2>
-                                    Быстрый сервис поиска и подбора инвестиций
-                                </h2>
-                                <p className="pt f_12">Мы собрали у себя лучшие предложения на рынке бизнеса, чтобы вы могли сравнить предложения и выбрать то, что действительно вам подходит</p>
+                                <h2>Быстрый сервис поиска и подбора инвестиций</h2>
+                                <h5>Мы собрали у себя лучшие предложения на рынке бизнеса, чтобы вы могли сравнить предложения и выбрать то, что действительно вам подходит</h5>
                             </div>
                         </div>
                     </div>
@@ -32,10 +31,8 @@ export default function Home() {
                     <div className="container white">
                         <div className="row">
                             <div className="col-md-9 col-lg-7">
-                                <h2>
-                                    Быстрый сервис поиска и подбора инвестиций
-                                </h2>
-                                <p className="pt f_12">Мы собрали у себя лучшие предложения на рынке бизнеса, чтобы вы могли сравнить предложения и выбрать то, что действительно вам подходит</p>
+                                <h2>Быстрый сервис поиска и подбора инвестиций</h2>
+                                <h5>Мы собрали у себя лучшие предложения на рынке бизнеса, чтобы вы могли сравнить предложения и выбрать то, что действительно вам подходит</h5>
                             </div>
                         </div>
                     </div>
@@ -89,10 +86,10 @@ export default function Home() {
                     <div class="row align-items-center">
                         <div class="col-12 col-md-4 mb-4 mb-md-0">
                             <video controls>
-                            <source src="video/video.mp4" type="video/mp4" />
+                                <source src="video/video.mp4" type="video/mp4" />
                             </video>
                         </div>
-                        <div class="col-12 col-md-8">
+                        <div class="col-12 col-md-8 col-xl-7 col-xxl-6">
                             <p class="f_12 pt">Посмотрите видео о работе портала: для инвесторов и партнеров, с помощью которого, не отрываясь от бизнес процессов, можно рассматривать перспективные проекты и узнавать о трендах рынка</p>
                         </div>
                     </div>
@@ -257,54 +254,47 @@ export default function Home() {
             <section class="container" id="block_4">
                 <h2>Новости и статьи</h2>
                 <div class="row">
-                    <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
-                        <div class="row">
-                            <div class="col-sm-6 col-md-12">
-                                <article class="news_preview_mini mb-4">
-                                    <time class="fw_7 mb-1">28.09.2020</time>
-                                    <a href="news-page.html" class="d-block title pt">Как малому бизнесу выживать в условиях коронавируса</a>
-                                </article>
-                            </div>
-                            <div class="col-sm-6 col-md-12">
-                                <article class="news_preview_mini mb-4">
-                                    <time class="fw_7 mb-1">28.09.2020</time>
-                                    <a href="news-page.html" class="d-block title pt">Как малому бизнесу выживать в условиях коронавируса</a>
-                                </article>
-                            </div>
-                            <div class="d-none d-md-block col-sm-6 col-md-12">
-                                <article class="news_preview_mini mb-4">
-                                    <time class="fw_7 mb-1">28.09.2020</time>
-                                    <a href="news-page.html" class="d-block title pt">Как малому бизнесу выживать в условиях коронавируса</a>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="color-1"><a href="news.html" class="bb_1 fw_5">Все новости</a></div>
+                    <div class="col-md-4 col-lg-3 mb-sm-3 mb-md-0">
+                        <NewsMini className={'mb-3 mb-md-4'} url={'news-page.html'} date={'28.09.2020'} title={'Как малому бизнесу выживать в условиях коронавируса'}/>
+                        <NewsMini className={'mb-3 mb-md-4'} url={'news-page.html'} date={'28.09.2020'} title={'Как малому бизнесу выживать в условиях коронавируса'}/>
+                        <NewsMini className={'mb-3 mb-md-4'} url={'news-page.html'} date={'28.09.2020'} title={'Как малому бизнесу выживать в условиях коронавируса'}/>
+                        <div class="color-1"><a href="news.html" class="bb_1 fw_5 link">Все новости</a></div>
                     </div>
                     <div class="col-md-8 col-lg-9">
                         <Swiper
                             className="pt-4 pb-5"
                             modules={[Pagination]}
-                            slidesPerView={3}
+                            slidesPerView={1}
                             spaceBetween={16}
                             pagination={{ clickable: true }}
+                            breakpoints={{
+                                576: {
+                                  slidesPerView: 2,
+                                  spaceBetween: 16,
+                                },
+                                992: {
+                                  slidesPerView: 3,
+                                  spaceBetween: 16,
+                                },
+                            }}
                         >
                             <SwiperSlide>
-                                <NewsPreview url={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview url={'news-page.html'} imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NewsPreview url={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NewsPreview url={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NewsPreview url={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NewsPreview url={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NewsPreview url={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                         </Swiper>
                     </div>
@@ -317,9 +307,27 @@ export default function Home() {
                     <Swiper
                         className="pt-4 pb-5"
                         modules={[Pagination]}
-                        slidesPerView={6}
-                        spaceBetween={30}
+                        slidesPerView={2}
+                        spaceBetween={6}
                         pagination={{ clickable: true }}
+                        breakpoints={{
+                            576: {
+                              slidesPerView: 3,
+                              spaceBetween: 15,
+                            },
+                            768: {
+                              slidesPerView: 5,
+                              spaceBetween: 10,
+                            },
+                            992: {
+                              slidesPerView: 6,
+                              spaceBetween: 15,
+                            },
+                            1200: {
+                              slidesPerView: 6,
+                              spaceBetween: 30,
+                            },
+                        }}
                     >
                         <SwiperSlide>
                             <img src="images/partners/image 10.jpg" alt="partners" />

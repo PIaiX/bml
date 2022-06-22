@@ -12,14 +12,22 @@ body {
     font-size: 16px;
     font-weight: 400;
     position: relative;
-    padding: 0px;
+    padding: 130px 0 0;
     margin: 0px;
 }
 @media (max-width: 1199px) {
     body {font-size: 15px;}
 }
 @media (max-width: 991px) {
-    body {font-size: 14px;}
+    body {
+        font-size: 14px;
+        padding: 115px 0 0;
+    }
+}
+@media (max-width: 991px) {
+    body {
+        padding: 90px 0 40px;
+    }
 }
 
 * {
@@ -73,22 +81,10 @@ section {
 
 
 /* FORMS CUSTOMIZATION */
-input,
-input:hover,
-input:focus,
-input:active,
-button,
-button:hover,
-button:focus,
-button:active,
-textarea,
-textarea:hover,
-textarea:focus,
-textarea:active,
-select,
-select:hover,
-select:focus,
-select:active {
+input, input:hover, input:focus,input:active,
+button, button:hover, button:focus, button:active,
+textarea, textarea:hover, textarea:focus, textarea:active,
+select, select:hover, select:focus, select:active {
     outline: none;
 }
 
@@ -162,6 +158,12 @@ select::after {
 }
 select:hover {cursor: pointer;}
 
+/* checkboxes & radiobuttons customization */
+label {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
 label input+span {flex: 1;}
 input[type="checkbox"] {
     appearance: none;
@@ -171,7 +173,7 @@ input[type="checkbox"] {
     width: 1.1em;
     height: 1.1em;
     padding: 0px;
-    border: none;
+    border: 1px solid rgb(var(--color-1));
     border-radius: 3px;
     background-color: #fff;
 }
@@ -181,107 +183,29 @@ input[type="checkbox"]:checked {
     background-repeat: no-repeat;
     background-size: contain;
 }
-
-/* checkbox customization
-.checkbox {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.checkbox input[type="checkbox"] {
+input[type="radio"] {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
-    box-shadow: none;
-    border: 1px solid rgb(var(--color-1));
-    border-radius: 2px;
-    background-color: #fff;
-    height: 1em;
-    min-height: unset;
-    width: 1em;
-    position: relative;
-    box-sizing: content-box;
-    margin-right: .25em;
-    font-size: 1.1em;
+    width: 1.1em;
+    height: 1.1em;
     padding: 0px;
-}
-.checkbox input[type="checkbox"]:checked::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: .4em;
-    height: .9em;
-    border: 0 solid rgb(var(--color-2));
-    border-width: 0 2px 2px 0;
-    transform: rotateZ(45deg);
-    -webkit-transform: rotateZ(45deg);
-    margin: .15em .3em;
-}
-.checkbox label {
-    flex: 1;
-    line-height: .9em;
-}
-input[type="checkbox"]+span,
-input[type="radio"]+span {
-    -webkit-appearance: none;
-    width: 14px;
-    height: 14px;
-    border: 1px solid rgba(0, 0, 0, .3);
-    outline: none;
-    margin: 5px;
-    box-sizing: border-box;
-    display: inline-block;
-}
-input[type="checkbox"]:checked+span:before {
-    content: "";
-    display: block;
-    width: 9px;
-    height: 14px;
-    border: 0 solid rgb(58, 153, 45);
-    border-width: 0 2px 2px 0;
-    transform: rotateZ(45deg);
-    -webkit-transform: rotateZ(45deg);
-    margin: -6px 3px;
-    pointer-events: none;
-} */
-
-
-/* radiobutton customization */
-.radio {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.radio input[type="radio"] {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    box-shadow: none;
-    border: 2px solid var(--gray);
+    border: 1px solid rgb(var(--color-1));
     border-radius: 50%;
-    height: 1em;
-    width: 1em;
+    background-color: #fff;
     position: relative;
-    box-sizing: content-box;
-    margin-right: .25em;
 }
-.radio input[type="radio"]:checked::after {
-    content: "";
+input[type="radio"]:checked::after {
+    content: '';
     position: absolute;
-    top: 25%;
-    left: 25%;
-    width: 50%;
-    height: 50%;
-    background-color: #d9501a;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: 55%;
     border-radius: 50%;
-}
-.radio label {
-    flex: 1;
-    line-height: .9em;
+    background-color: rgb(var(--color-2));
 }
 
 
@@ -293,7 +217,6 @@ button {
     display: block;
     font-size: inherit;
 }
-
 button:hover,
 button:focus,
 button:active {
@@ -311,7 +234,7 @@ button:active {
     padding: .75em 1.25em;
     text-align: center;
     font-weight: 500;
-    transition: .5s;
+    transition: var(--transition);
 }
 .btn_main:hover,
 .btn_main:focus,
@@ -436,6 +359,11 @@ h4 {
     font-weight: 500;
     margin-bottom: 1em;
 }
+h5 {
+    font-family: var(--pt);
+    font-size: 1.2em;
+    font-weight: 400;
+}
 h6 {
     text-align: left;
     font-size: 1em;
@@ -493,6 +421,13 @@ h6 {
     display: block;
     max-width: 100%;
 }
+
+
+.link {transition: var(--transition)}
+.link:hover, link:focus {
+    color: rgb(var(--color-2));
+}
+
 
 /* кнопка вверх */
 #scroll_top {
@@ -576,20 +511,6 @@ ol.breadcrumb {
 
 
 /********** sliders ************/
-.swiper_1 {
-    position: relative;
-    overflow: hidden;
-}
-.swiper_3 {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 4em;
-}
-.swiper_6 {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 4em;
-}
 .swiper_8 {
     overflow: hidden;
     height: 600px;

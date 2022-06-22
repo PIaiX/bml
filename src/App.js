@@ -8,13 +8,11 @@ import 'swiper/css/pagination';
 import './styles/common.css';
 import './styles/style.css';
 
-
 import AppRouter from './components/AppRouter';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
-  
   return (
     <HashRouter>
       <Header />
