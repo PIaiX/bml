@@ -1,10 +1,11 @@
 import React from 'react';
-import { MdStarOutline, MdOutlineShoppingCart, MdLogin, MdSearch, MdMenu } from "react-icons/md";
+import { MdStarOutline, MdOutlineShoppingCart, MdLogin, MdSearch, MdMenu, MdClose } from "react-icons/md";
 import { IconContext } from "react-icons";
 
 export default function Header() {
 
     return (
+        <>
         <header>
             <section className="top">
                 <div className="container h-100 d-flex justify-content-between align-items-center">
@@ -59,7 +60,7 @@ export default function Header() {
                             </li>
                         </ul>
                     </nav>
-                    <button className="d-lg-none" type="button">
+                    <button className="d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
                         <IconContext.Provider value={{className: "f_20 color-2" }}>
                             <MdMenu />
                         </IconContext.Provider>
@@ -73,5 +74,39 @@ export default function Header() {
                 </div>
             </section>
         </header>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="menu">
+            <div class="offcanvas-body p-5">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+                    <MdClose />
+                </button>
+                <nav>
+                    <ul className='list-unstyled'>
+                        <li>
+                            <a href="">Поиск инвестора</a>
+                        </li>
+                        <li>
+                            <a href="">Предложения инвесторов</a>
+                        </li>
+                        <li>
+                            <a href="">Поиск бизнес парнёров</a>
+                        </li>
+                        <li>
+                            <a href="">Продажа бизнеса</a>
+                        </li>
+                        <li>
+                            <a href="">Франшизы</a>
+                        </li>
+                        <li>
+                            <a href="">Новости</a>
+                        </li>
+                        <li>
+                            <a href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </>
     );
 }

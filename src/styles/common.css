@@ -24,7 +24,7 @@ body {
         padding: 115px 0 0;
     }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     body {
         padding: 90px 0 40px;
     }
@@ -659,4 +659,30 @@ ol.breadcrumb {
     .header_sticky a.logo {
         right: 145px;
     }
+}
+
+
+
+/* OFFCANVAS */
+.btn-close {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    background: unset;
+    display: flex;
+    padding: 0px;
+    opacity: 1;
+    font-size: 2em;
+    color: rgb(var(--color-1));
+    transition: var(--transition);
+}
+.btn-close:hover, .btn-close:focus, .btn-close:active {
+    color: rgb(var(--color-2));
+}
+
+.offcanvas nav li {margin-bottom: 1em;}
+.offcanvas nav a {
+    font-size: 1.5em;
+    font-family: var(--pt);
+    color: rgb(var(--color-1));
 }
