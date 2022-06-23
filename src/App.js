@@ -6,7 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './styles/common.css';
 import './styles/style.css';
 
-import AppRouter from './components/AppRouter';
+import AppRouter from './nav/AppRouter';
 import Header from './components/Header';
 import Footer from './components/Footer';
 

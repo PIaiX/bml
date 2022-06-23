@@ -686,3 +686,31 @@ ol.breadcrumb {
     font-family: var(--pt);
     color: rgb(var(--color-1));
 }
+
+
+.breadcrumbs ul {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+.breadcrumbs ul li {position: relative;}
+.breadcrumbs ul li:not(:first-child){padding-left: 1.5em;}
+.breadcrumbs ul li:not(:first-child)::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1.5em;
+    height: 100%;
+    background: url(bg-imgs/next.svg) no-repeat center 60%;
+    background-size: .3em .6em;
+}
+.breadcrumbs a {
+    font-family: var(--pt);
+    color: #252525;
+}
+.breadcrumbs a.active {
+    color: rgb(var(--color-1));
+}

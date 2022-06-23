@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink, Link } from 'react-router-dom';
 import { MdStarOutline, MdOutlineShoppingCart, MdLogin, MdSearch, MdMenu, MdClose } from "react-icons/md";
 import { IconContext } from "react-icons";
 
@@ -9,9 +10,9 @@ export default function Header() {
         <header>
             <section className="top">
                 <div className="container h-100 d-flex justify-content-between align-items-center">
-                    <a href="index.html" className="logo">
+                    <Link to="/" className="logo">
                         <img src="images/logo.svg" alt="Бизнес My Life" />
-                    </a>
+                    </Link>
                     <form action="" className="header_search d-none d-lg-flex">
                         <input type="search" placeholder="Поиск по сайту" />
                         <button type="submit" className="btn_main">
@@ -38,7 +39,7 @@ export default function Header() {
                     <nav id="main-menu" className="d-none d-lg-block">
                         <ul className="mt-3 mt-md-0 ml-auto mr-auto">
                             <li className="nav-item">
-                                <a className="nav-link" href="">Поиск инвестора</a>
+                                <NavLink className="nav-link" to="">Поиск инвестора</NavLink>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="">Предложения инвесторов</a>
@@ -56,7 +57,7 @@ export default function Header() {
                                 <a className="nav-link" href="">Новости</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="">Контакты</a>
+                                <NavLink className="nav-link" to="/contacts">Контакты</NavLink>
                             </li>
                         </ul>
                     </nav>
@@ -75,9 +76,9 @@ export default function Header() {
             </section>
         </header>
 
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="menu">
-            <div class="offcanvas-body p-5">
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+        <div className="offcanvas offcanvas-start" tabIndex="-1" id="menu">
+            <div className="offcanvas-body p-5">
+                <button type="button" className="btn-close" data-bs-dismiss="offcanvas">
                     <MdClose />
                 </button>
                 <nav>
@@ -101,7 +102,7 @@ export default function Header() {
                             <a href="">Новости</a>
                         </li>
                         <li>
-                            <a href="">Контакты</a>
+                            <NavLink to="contacts">Контакты</NavLink>
                         </li>
                     </ul>
                 </nav>
