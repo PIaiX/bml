@@ -540,8 +540,9 @@ ol.breadcrumb {
     height: .6em;
     border-radius: 50%;
 }
-.swiper-pagination-bullet-active {
-    background-color: rgb(var(--color-1));
+.swiper-pagination-bullet-active,
+.swiper-pagination-bullet-active-main {
+    background-color: rgb(var(--color-1)) !important;
     opacity: 1;
 }
 

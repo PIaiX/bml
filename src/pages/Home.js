@@ -5,6 +5,8 @@ import { Pagination } from 'swiper';
 import NewsPreview from '../components/NewsPreview';
 import NewsMini from '../components/NewsMini';
 
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 export default function Home() {
     return (
@@ -266,7 +268,10 @@ export default function Home() {
                             modules={[Pagination]}
                             slidesPerView={1}
                             spaceBetween={16}
-                            pagination={{ clickable: true }}
+                            pagination={{ 
+                                clickable: true,
+                                dynamicBullets: true,
+                            }}
                             breakpoints={{
                                 576: {
                                   slidesPerView: 2,
@@ -309,7 +314,10 @@ export default function Home() {
                         modules={[Pagination]}
                         slidesPerView={2}
                         spaceBetween={6}
-                        pagination={{ clickable: true }}
+                        pagination={{ 
+                            clickable: true,
+                            dynamicBullets: true,
+                        }}
                         breakpoints={{
                             576: {
                               slidesPerView: 3,

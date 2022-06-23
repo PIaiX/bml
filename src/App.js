@@ -3,8 +3,6 @@ import { HashRouter } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import 'swiper/css';
-import 'swiper/css/pagination';
 import './styles/common.css';
 import './styles/style.css';
 

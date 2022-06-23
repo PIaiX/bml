@@ -196,7 +196,7 @@ block 1
     bottom: 1em !important;
 }
 .swiper-1 .swiper-pagination-bullet-active {
-    background-color: #fff;
+    background-color: #fff !important;
 }
 @media (max-width: 991px) {
     .swiper-1 .swiper-slide {height: 380px;}
