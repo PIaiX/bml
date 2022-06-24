@@ -39,7 +39,7 @@ export default function Header() {
                     <nav id="main-menu" className="d-none d-lg-block">
                         <ul className="mt-3 mt-md-0 ml-auto mr-auto">
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="">Поиск инвестора</NavLink>
+                                <NavLink className="nav-link" to="/service">Поиск инвестора</NavLink>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="">Предложения инвесторов</a>
@@ -84,7 +84,7 @@ export default function Header() {
                 <nav>
                     <ul className='list-unstyled'>
                         <li>
-                            <a href="">Поиск инвестора</a>
+                            <NavLink to="/service">Поиск инвестора</NavLink>
                         </li>
                         <li>
                             <a href="">Предложения инвесторов</a>
@@ -102,7 +102,7 @@ export default function Header() {
                             <a href="">Новости</a>
                         </li>
                         <li>
-                            <NavLink to="contacts">Контакты</NavLink>
+                            <NavLink to="/contacts">Контакты</NavLink>
                         </li>
                     </ul>
                 </nav>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { MdOutlineMode } from "react-icons/md";
+import { Link } from 'react-router-dom';
+import { MdOutlineMode, MdDoubleArrow } from "react-icons/md";
 import BtnFav from './utils/BtnFav';
 
 export default function AdvPreview(props) {
@@ -8,7 +9,7 @@ export default function AdvPreview(props) {
             <img src={props.imgURL} alt={props.title}/>
             <div className='text'>
                 <div class="layer1">
-                    <h6><a href={props.url}>{props.title}</a></h6>
+                    <h6><Link to='/adv-page'>{props.title}</Link></h6>
                 </div>
                 <div class="layer2">
                     <div class="white d-flex align-items-center d-lg-block">
@@ -17,9 +18,9 @@ export default function AdvPreview(props) {
                     </div>
                     <div className='d-flex align-items-center'>
                         <BtnFav check={props.fav}/>
-                        <button class="d-none d-lg-block btn_main btn_2 p-0 ms-2">
-                            <MdOutlineMode />
-                        </button>
+                        <Link to='/adv-page' class="d-none d-lg-block btn_main btn_2 p-0 ms-2">
+                            <MdDoubleArrow className='d-flex'/>
+                        </Link>
                     </div>
                 </div>
             </div>

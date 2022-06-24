@@ -4,11 +4,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
 import NewsPreview from '../components/NewsPreview';
 import NewsMini from '../components/NewsMini';
+import { MdCached } from "react-icons/md";
+
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-export default function Home() {
+export default function Service() {
     return (
         <main>
             <Swiper
@@ -82,175 +84,175 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="bg_l_blue">
-                <div className="container" id="block_3">
-                    <h1>Главный заголовок</h1>
-                    <div className="row align-items-center">
-                        <div className="col-12 col-md-4 mb-4 mb-md-0">
-                            <video controls>
-                                <source src="video/video.mp4" type="video/mp4" />
-                            </video>
+            <section className="block_3 container">
+                <h1 className="inner mt-4">Поиск инвесторов</h1>
+                <div className="filter mb-4">
+                    <div className="filter_line_1">
+                        <button className="order-2 order-sm-1" type="button" data-toggle="collapse" data-target="#collapseFilter" aria-expanded="true" id="btn-collapseFilter"></button>
+                        <div className="order-1 order-sm-2 text-uppercase">Поиск по параметрам</div>
+                        <div className="order-3">(Найдено: 515)</div>
+                    </div>
+                    <div className="collapse show" id="collapseFilter">
+                        <div className="row">
+                            <div className="col-sm-6 col-md-4 mb-3 mb-lg-4">
+                                <select name="" id="">
+                                    <option selected disabled>Сфера бизнеса</option>
+                                    <option value="Сфера 1">Сфера 1</option>
+                                    <option value="Сфера 2">Сфера 2</option>
+                                </select>
+                            </div>
+                            <div className="col-sm-6 col-md-4 mb-3 mb-lg-4">
+                                <select name="" id="">
+                                    <option selected disabled>Категория</option>
+                                    <option value="Категория 1">Категория 1</option>
+                                    <option value="Категория 2">Категория 2</option>
+                                </select>
+                            </div>
+                            <div className="col-sm-6 col-md-4 mb-3 mb-lg-4">
+                                <select name="" id="">
+                                    <option selected disabled>Город</option>
+                                    <option value="Город 1">Город 1</option>
+                                    <option value="Город 2">Город 2</option>
+                                </select>
+                            </div>
+                            <div className="col-sm-6 mb-3 mb-lg-4">
+                                <select name="" id="">
+                                    <option selected disabled>Стадия реализации проекта</option>
+                                    <option value="Стадия 1">Стадия 1</option>
+                                    <option value="Стадия 2">Стадия 2</option>
+                                </select>
+                            </div>
+                            <div className="col-sm-6 mb-3 mb-lg-4">
+                                <select name="" id="">
+                                    <option selected disabled>Срок окупаемости, мес.</option>
+                                    <option value="Срок 1">Срок 1</option>
+                                    <option value="Срок 2">Срок 2</option>
+                                </select>
+                            </div>
+                            <div className="col-sm-6 col-md-4 col-lg-6 mb-3 mb-lg-4">
+                                <div className="d-none d-md-block mb-1">Содержит слова:</div>
+                                <input type="text" placeholder="Введите поисковую фразу" />
+                            </div>
+                            <div className="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-4">
+                                <div className="mb-1">Объем инвестиций, руб.:</div>
+                                <div className="d-flex align-items-center">
+                                    <span className="me-2">от</span>
+                                    <input type="number" placeholder="100" />
+                                    <span className="mx-2">до</span>
+                                    <input type="number" placeholder="100000" />
+                                </div>
+                            </div>
+                            <div className="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-4">
+                                <div className="mb-1">Оборот в месяц, руб.:</div>
+                                <div className="d-flex align-items-center">
+                                    <span className="me-2">от</span>
+                                    <input type="number" placeholder="100"/>
+                                    <span className="mx-2">до</span>
+                                    <input type="number" placeholder="100000"/>
+                                </div>
+                            </div>
                         </div>
-                        <div className="col-12 col-md-8 col-xl-7 col-xxl-6">
-                            <p className="f_12 pt">Посмотрите видео о работе портала: для инвесторов и партнеров, с помощью которого, не отрываясь от бизнес процессов, можно рассматривать перспективные проекты и узнавать о трендах рынка</p>
+                        <div className="d-flex justify-content-end">
+                            <button className="d-flex align-items-center">
+                                <MdCached className='f_15' />
+                                <span className="f_09 ms-2">Очистить фильтр</span>
+                            </button>
+                            <button className="btn_main btn_2 ms-3 ms-sm-4">Показать</button>
                         </div>
                     </div>
                 </div>
-            </section>
+                <div className="sort mb-4">
+                    <nav aria-label="page-pagination">
+                        <ul className="pagination">
+                            <li className="page-item"><a className="page-link" href="#">❮</a></li>
+                            <li className="page-item"><a className="page-link" href="#">1</a></li>
+                            <li className="page-item"><a className="page-link" href="#">2</a></li>
+                            <li className="page-item"><a className="page-link" href="#">3</a></li>
+                            <li className="page-item"><a className="page-link" href="#">...</a></li>
+                            <li className="page-item"><a className="page-link" href="#">46</a></li>
+                            <li className="page-item"><a className="page-link" href="#">❯</a></li>
+                        </ul>
+                    </nav>
+                    <div className="mr-2 mr-sm-0">Показано 24 <span className="d-none d-lg-inline">предложения из</span><span className="d-inline d-lg-none">/</span> 146</div>
+                    <div className="d-flex align-items-center">
+                        <span className="f_09 d-none d-lg-block">Сортировать:</span>
+                        <select className="f_08 ms-2 pe-4">
+                            <option selected disabled>по дате публикации</option>
+                            <option value="сначала новые">сначала новые</option>
+                            <option value="сначала старые">сначала старые</option>
+                        </select>
+                        <select className="f_08 ms-2 pe-4">
+                            <option selected value="по убыванию">по убыванию</option>
+                            <option value="по возрастанию">по возрастанию</option>
+                        </select>
+                    </div>
+                </div>
 
-            <section className="block_3 container">
-                <h2 className="mt-4">Поиск инвесторов</h2>
-                <div className="row g-2 g-sm-3 g-xl-4">
-                    <div className="col-6 col-md-4 col-lg-3">
+                <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2 g-sm-3 g-xl-4">
+                    <div className="col">
                         <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'} fav={true}/>
                     </div>
-                    <div className="col-6 col-md-4 col-lg-3">
+                    <div className="col">
                         <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
-                    <div className="col-6 col-md-4 col-lg-3">
+                    <div className="col">
                         <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
-                    <div className="col-6 col-md-4 col-lg-3">
+                    <div className="col">
                         <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
-                    <div className="col-6 col-md-4 col-lg-3">
+                    <div className="col">
                         <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
-                    <div className="col-6 col-md-4 col-lg-3">
+                    <div className="col">
                         <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
-                    <div className="col-6 col-md-4 col-lg-3">
+                    <div className="col">
                         <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
-                    <div className="col-6 col-md-4 col-lg-3">
+                    <div className="col">
                         <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
-                </div>
-                <button className="btn_main btn_1 mx-auto mt-4">Показать еще</button>
-            </section>
-
-            <section className="block_3 container">
-                <h2>предложения инвесторов</h2>
-                <div className="row g-2 g-sm-3 g-xl-4">
-                    <div className="col-6 col-md-4 col-lg-3">
+                    <div className="col-12 w-100">
+                        <Swiper
+                            className="preview-slider"
+                            modules={[Pagination]}
+                            slidesPerView={1}
+                            pagination={{ clickable: true }}
+                        >
+                            <SwiperSlide>
+                                <img src="images/slider_offers/slide1.jpg" alt="" className="img-fluid" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src="images/slider_offers/slide2.jpg" alt="" className="img-fluid" />
+                            </SwiperSlide>
+                        </Swiper>
+                    </div>
+                    <div className="col">
+                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'} fav={true}/>
+                    </div>
+                    <div className="col">
                         <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
-                    <div className="col-6 col-md-4 col-lg-3">
+                    <div className="col">
                         <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
-                    <div className="col-6 col-md-4 col-lg-3">
+                    <div className="col">
                         <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
-                    <div className="col-6 col-md-4 col-lg-3">
+                    <div className="col">
                         <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
-                    <div className="col-6 col-md-4 col-lg-3">
+                    <div className="col">
                         <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
-                    <div className="col-6 col-md-4 col-lg-3">
+                    <div className="col">
                         <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                </div>
-                <button className="btn_main btn_1 mx-auto mt-4">Показать еще</button>
-            </section>
-
-            <section className="block_3 container">
-                <h2>Поиск бизнес партнёров</h2>
-                <div className="row g-2 g-sm-3 g-xl-4">
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
+                    <div className="col">
                         <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                 </div>
-                <button className="btn_main btn_1 mx-auto mt-4">Показать еще</button>
-            </section>
-
-            <section className="block_3 container">
-                <h2>Продажа бизнеса</h2>
-                <div className="row g-2 g-sm-3 g-xl-4">
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                </div>
-                <button className="btn_main btn_1 mx-auto mt-4">Показать еще</button>
-            </section>
-
-            <section className="block_3 container">
-                <h2>Франшизы</h2>
-                <div className="row g-2 g-sm-3 g-xl-4">
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
-                    </div>
-                </div>
-                <button className="btn_main btn_1 mx-auto mt-4">Показать еще</button>
             </section>
 
             <section className="container" id="block_4">
@@ -310,7 +312,7 @@ export default function Home() {
                 <div id="block_5" className="container">
                     <h2 className="mt-2">Наши партнёры</h2>
                     <Swiper
-                        className="pt-4 pb-5"
+                        className="pt-3 pb-5"
                         modules={[Pagination]}
                         slidesPerView={2}
                         spaceBetween={6}

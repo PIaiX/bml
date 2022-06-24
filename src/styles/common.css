@@ -138,7 +138,7 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
-    /* background-image: url(../images/icons/down.png); */
+    background-image: url(bg-imgs/down.svg);
     background-repeat: no-repeat;
     background-position: 95% 50%;
     background-size: auto 7px;
@@ -288,6 +288,14 @@ button:active {
 
 .btn_collapse::before {content: "Загрузить ещё";}
 .btn_collapse[aria-expanded="true"]::before {content: "Скрыть";}
+
+.btn-fav {
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* Текстовые стили */
@@ -533,6 +541,7 @@ ol.breadcrumb {
     .swiper_8 {height: calc(95px + 60vw);}
 }
 .swiper-pagination {bottom: 0px !important;}
+.preview-slider .swiper-pagination {bottom: 10px !important;}
 .swiper-pagination-bullet {
     background-color: #C4C4C4;
     opacity: 1;
@@ -546,11 +555,7 @@ ol.breadcrumb {
     opacity: 1;
 }
 
-@media (max-width: 1199px) {
-    .swiper-pagination {
-        bottom: 10px !important;
-    }
-}
+
 .swiper-button-prev,
 .swiper-button-next {
     font-size: 2em;
