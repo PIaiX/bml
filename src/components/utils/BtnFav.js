@@ -5,7 +5,7 @@ export default function BtnFav(props) {
     const [checked, setChecked] = useState(props.check);
 
     return (
-        <button onClick={()=>setChecked((checked)?false:true)} class="btn-fav mr-2 ms-2">
+        <button onClick={()=>setChecked((checked)?false:true)} className={"btn-fav "+props.className}>
             {
                 (checked === true)?
                 <MdStar />

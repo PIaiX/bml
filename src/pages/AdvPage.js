@@ -1,5 +1,19 @@
 import React from 'react';
 import Breadcrumbs from '../nav/Breadcrumbs';
+import AdvPreview from '../components/AdvPreview';
+import { Link } from "react-scroll";
+import { MdOutlineShoppingCart, MdInfoOutline, MdOutlinePlace } from "react-icons/md";
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+import { MdDateRange, MdOutlineVisibility } from "react-icons/md";
+import BtnFav from '../components/utils/BtnFav';
+
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
 
 export default function AdvPage() {
     return (
@@ -8,147 +22,115 @@ export default function AdvPage() {
                 <Breadcrumbs />
             </div>
 
-            <section id="offer_page" className="container">
-                <div className="row mb-4 mb-md-0" id="offer_page_header">
-                    <div className="col-md-8">
-                        <h1>English 1st - франшиза школы иностранных языков</h1>
-                    </div>
-                    <div className="col-md-4">
-                        <div className="d-flex align-items-center justify-content-md-end">
-                            <button className="add_to_fav">
-                                <svg className="color-1" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M14.7613 3.27059L18.1666 10.3344L18.3965 10.8114L18.9202 10.8893L26.5824 12.0291L21.0223 17.5776L20.6572 17.9419L20.7424 18.4506L22.0499 26.255L15.2352 22.5872L14.7613 22.3321L14.2874 22.5872L7.47265 26.255L8.78014 18.4506L8.86537 17.9419L8.50026 17.5776L2.9402 12.0291L10.6023 10.8893L11.1261 10.8114L11.356 10.3344L14.7613 3.27059Z"></path>
-                                </svg>
-                            </button>
-                            <div className="color-1 f_15 fw_9 ms-4">1 000 000 Р</div>
-                        </div>
-                    </div>
-                </div>
-                <div className="d-flex flex-column flex-sm-row">
-                    <span>ID: 55113344</span>
-                    <time className="d-flex align-items-center ms-0 ms-sm-4">
-                        <img src="images/icons/icon5.png" alt="дата" className="me-1" />
-                        <span>12.10.2020</span>
-                    </time>
-                    <div className="d-flex align-items-center ms-0 ms-sm-4">
-                        <img src="images/icons/icon6.png" alt="просмотры" className="me-1" />
-                        <span>120 просмотров</span>
-                    </div>
-                </div>
-                <hr />
-                {/* 
-                <div className="row justify-content-center text-md-center">
-                    <div className="col-sm-6 col-lg-4 col-xl-3">
-                        <span className="pt f_11">Прибыль в месяц:</span> <span className="f_13 color-1 fw_5 ms-2">100 000 Р</span>
-                    </div>
-                    <div className="col-sm-6 col-lg-4 col-xl-3 mt-3 mt-sm-0">
-                        <span className="pt f_11">Инвестиции:</span> <span className="f_13 color-1 fw_5 ms-2">1 000 000 Р</span>
-                    </div>
-                    <div className="col-sm-6 col-lg-4 col-xl-3 mt-3 mt-lg-0">
-                        <span className="pt f_11">Оборот в месяц:</span> <span className="f_13 color-1 fw_5 ms-2">50 000 Р</span>
-                    </div>
-                    <div className="col-sm-6 col-lg-4 col-xl-3 mt-3 mt-xl-0">
-                        <span className="pt f_11">Окупаемость:</span> <span className="f_13 color-1 fw_5 ms-2">12 мес.</span>
-                    </div>
-                </div>
-                <div className="position-relative my-5">
-                    <div className="swiper_1">
-                        <div className="swiper-wrapper">
-                            <div className="swiper-slide">
-                                <img src="images/offer_page.jpg" className="offer_page_img"/>
-                            </div>
-                            <div className="swiper-slide">
-                                <img src="images/offer_page.jpg" className="offer_page_img"/>
-                            </div>
-                            <div className="swiper-slide">
-                                <img src="images/offer_page.jpg" className="offer_page_img"/>
-                            </div>
-                        </div>
-                        <div className="swiper-pagination"></div>
-                    </div>
-                    <div className="connection">
-                        <div className="d-flex align-items-center mb-3">
-                            <img src="images/photo.png" alt="Александр Васильев"/>
-                            <div className="ms-2">
-                                <p className="f_12 fw_5 mb-1">Александр Васильев</p>
-                                <p className="pt f_09">Представитель франшизы</p>
-                            </div>
-                        </div>
-                        <div className="mb-3">
-                            <span>Телефон:</span>
-                            <span className="color-1 td_und f_11">Показать телефон</span>
-                        </div>
-                        <button className="btn_main btn_4 w-100 mb-2">Заказать звонок</button>
-                        <button className="btn_main btn_2 w-100">Получить бизнес - план</button>
-                    </div>
-                </div>
-
-                <div className="row justify-content-center my-5">
-                    <div className="col-sm-6 col-md-4 col-lg-3">
-                        <div className="white_box box_shad h-100 d-flex align-items-center">
-                            <span className="f_12 fw_5 color-1">2015</span>
-                            <span className="pt f_09 lh_1 ms-2">Год основания бизнеса</span>
-                        </div>
-                    </div>
-                    <div className="col-sm-6 col-md-4 col-lg-3 mt-3 mt-sm-0">
-                        <div className="white_box box_shad h-100 d-flex align-items-center">
-                            <span className="f_12 fw_5 color-1">14</span>
-                            <span className="pt f_09 lh_1 ms-2">Количество собственных точек</span>
-                        </div>
-                    </div>
-                    <div className="col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
-                        <div className="white_box box_shad h-100 d-flex align-items-center">
-                            <span className="f_12 fw_5 color-1">2018</span>
-                            <span className="pt f_09 lh_1 ms-2">Год запуска франшизы</span>
-                        </div>
-                    </div>
-                    <div className="col-sm-6 col-md-4 col-lg-3 mt-3 mt-lg-0">
-                        <div className="white_box box_shad h-100 d-flex align-items-center">
-                            <span className="f_12 fw_5 color-1">20</span>
-                            <span className="pt f_09 lh_1 ms-2">Количество проданных франшиз</span>
+            <section id="offer-page" className="container">
+                <h1>English 1st</h1>
+                <div className='d-lg-flex justify-content-between align-items-center mb-4'>
+                    <h2 className='mb-0'>франшиза школы иностранных языков</h2>
+                    <div className="gray d-flex align-items-center justify-content-end ms-auto mt-4 mt-lg-0">
+                        <span>ID: 55113344</span>
+                        <time className="d-flex align-items-center ms-0 ms-sm-4">
+                            <MdDateRange />
+                            <span>12.10.2020</span>
+                        </time>
+                        <div className="d-flex align-items-center ms-0 ms-sm-4">
+                            <MdOutlineVisibility />
+                            <span>120 просмотров</span>
                         </div>
                     </div>
                 </div>
 
-                <div className="row mb-4 mb-md-5">
+                <div className='row mb-5'>
+                    <div className='col-lg-7 col-xl-8 mb-4 mb-lg-0'>
+                        <img src='images/offers/3.jpg' alt='offers' className='main-img'/>
+                    </div>
+                    <div className='col-lg-5 col-xl-4'>
+                        <div className='blue-box h-100 d-flex flex-column justify-content-between'>
+                            <div>
+                                <div className='d-flex justify-content-between align-items-center mb-4'>
+                                    <div className='user d-flex align-items-center'>
+                                        <img src='images/photo.png' alt='Александр Васильев' />
+                                        <div className='ms-2'>
+                                            <div className='f_11'>Александр Васильев</div>
+                                            <div className='f_09'>Представитель франшизы</div>
+                                        </div>
+                                    </div>
+                                    <div className='d-flex align-items-center'>
+                                        <BtnFav check={false} className={'color-2 f_20'} />
+                                        <button type='button' className='color-1 f_20 ms-4 ms-lg-2 ms-xxl-3'><MdOutlineShoppingCart /></button>
+                                    </div>
+                                </div>
+
+                                <div className='d-flex align-items-center mb-3'>
+                                    <span className='pt fw_7 gray f_11 me-4'>Инвестиции:</span>
+                                    <span className='f_20 fw_5'>1 000 000 Р</span>
+                                </div>
+                                <div className='d-flex align-items-center mb-3'>
+                                    <span className='pt fw_7 gray f_11 me-4'>Прибыль в месяц:</span>
+                                    <span className='f_20 fw_5'>100 000 Р</span>
+                                </div>
+                                <div className='d-flex align-items-center mb-3'>
+                                    <span className='pt fw_7 gray f_11 me-4'>Окупаемость:</span>
+                                    <span className='f_20 fw_5'>1 000 000 Р</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button type='button' className='btn_main btn-5 f_11 w-100'>ПОЛУЧИТЬ БИЗНЕС-ПЛАН</button>
+                                <button type='button' className='btn_main btn-6 f_11 w-100 mt-3'>НАПИСАТЬ СООБЩЕНИЕ</button>
+                            </div>
+
+                            <button type='button' className='d-flex align-items-center ms-auto me-0 mt-4 mt-lg-0'>
+                                <MdInfoOutline className='f_11 gray' />
+                                <span className='ms-2 fw_7 f_09'>Пожаловаться</span>
+                            </button>                            
+                        </div>
+                    </div>
+                </div>
+
+                <div className="row">
                     <div className="col-md-4 col-lg-3 position-relative">
                         <div className="left_menu">
-                            <nav className="anchor_menu d-none d-md-block">
+                            <nav className="anchor-menu d-none d-md-block">
                                 <ul>
-                                    <li className="active"><a href="#anchor_1" className="scrollto">Описание компании</a></li>
-                                    <li><a href="#anchor_2" className="scrollto">Описание франшизы</a></li>
-                                    <li><a href="#anchor_3" className="scrollto">Преимущества франшизы</a></li>
-                                    <li><a href="#anchor_4" className="scrollto">Этапы сотрудничества</a></li>
-                                    <li><a href="#anchor_5" className="scrollto">Условия сотрудничества</a></li>
-                                    <li><a href="#anchor_6" className="scrollto">Покупка франшизы</a></li>
-                                    <li><a href="#anchor_7" className="scrollto">Фотогалерея</a></li>
-                                    <li><a href="#anchor_8" className="scrollto">Похожие франшизы</a></li>
+                                    <li><Link activeClass="active" to="anchor_1" spy={true} smooth={true} hashSpy={true} offset={-130} duration={300} isDynamic={true}>Описание компании</Link></li>
+                                    <li><Link activeClass="active" to="anchor_2" spy={true} smooth={true} hashSpy={true} offset={-130} duration={300} isDynamic={true}>Описание франшизы</Link></li>
+                                    <li><Link activeClass="active" to="anchor_3" spy={true} smooth={true} hashSpy={true} offset={-130} duration={300} isDynamic={true}>Преимущества франшизы</Link></li>
+                                    <li><Link activeClass="active" to="anchor_4" spy={true} smooth={true} hashSpy={true} offset={-130} duration={300} isDynamic={true}>Этапы сотрудничества</Link></li>
+                                    <li><Link activeClass="active" to="anchor_5" spy={true} smooth={true} hashSpy={true} offset={-130} duration={300} isDynamic={true}>Покупка франшизы</Link></li>
+                                    <li><Link activeClass="active" to="anchor_6" spy={true} smooth={true} hashSpy={true} offset={-130} duration={300} isDynamic={true}>Фотогалерея</Link></li>
+                                    <li><Link activeClass="active" to="anchor_7" spy={true} smooth={true} hashSpy={true} offset={0} duration={300} isDynamic={true}>Похожие франшизы</Link></li>
                                 </ul>
                             </nav>
-                            <img src="images/Group227.jpg" alt="" className="img-fluid mt-4"/>
-                            <img src="images/Group227.jpg" alt="" className="img-fluid mt-4"/>
+
+                            <div className='mt-4'>
+                                <img src="images/img-0.jpg" alt="img" className='img-fluid mb-2'/>
+                                <h4 className='fw_7 mb-2'>Акции от застройщиков</h4>
+                                <h5 className='mb-0'>ТекстТекстТекст ТекстТекстТекст ТекстТекстТекстТекст Текст\Текст ТекстТекстТекстТекстТекст</h5>
+                            </div>
+
+                            <div className='mt-4'>
+                                <img src="images/img-0.jpg" alt="img" className='img-fluid mb-2'/>
+                                <h4 className='fw_7 mb-2'>Акции от застройщиков</h4>
+                                <h5 className='mb-0'>ТекстТекстТекст ТекстТекстТекст ТекстТекстТекстТекст Текст\Текст ТекстТекстТекстТекстТекст</h5>
+                            </div>
                         </div>
                     </div>
                     <div className="col-md-8 col-lg-9">
-                        <div className="offer_page_main">
+                        <div className="offer-page-main">
                             <hr className="mt-md-0"/>
-                            <div className="d-flex align-items-baseline mb-5">
-                                <img src="images/icons/pin.svg" alt="" style="width:1em;"/>
+                            <div className="d-flex align-items-center f_09 mb-4 mb-lg-5">
+                                <MdOutlinePlace className='color-1'/>
                                 <span className="gray ms-2">Регионы продаж:</span>
                                 <span className="ms-3">Казань</span>
                             </div>
                             <section className="anchor_block" id="anchor_1">
                                 <h4 className="fw_7">Описание компании</h4>
-                                <p>Школа английского языка предлагает курсы для детей и взрослых. Наши современные методики обучения и специально разработанные программы по обучению иностранным языкам помогают эффективно и в короткие сроки достичь отличных результатов.
-                                    Мы предлагаем занятия для детей от 5 лет, а гибкий график занятий Вы сможете настроить индивидуально для вашего ребенка. В нашей школе дети могут изучать языки в течение всего учебного года, а также во время отдыха в нашем
-                                    летнем языковом лагере.</p>
+                                <p>Школа английского языка предлагает курсы для детей и взрослых. Наши современные методики обучения и специально разработанные программы по обучению иностранным языкам помогают эффективно и в короткие сроки достичь отличных результатов. Мы предлагаем занятия для детей от 5 лет, а гибкий график занятий Вы сможете настроить индивидуально для вашего ребенка. В нашей школе дети могут изучать языки в течение всего учебного года, а также во время отдыха в нашем летнем языковом лагере.</p>
                             </section>
 
                             <section className="anchor_block" id="anchor_2">
                                 <h4 className="fw_7">Описание франшизы</h4>
-                                <p>Франшиза «English 1st» включает не только формат офлайн-обучения детей, но и онлайн. В пакет франшизы входят: онлайн-игры, мобильное приложение, онлайн-тесты для детей. С 2020 года франчайзер запустил новые образовательные
-                                    онлайн-продукты. Они позволяют детям учиться по видеоурокам в записи или онлайн-урокам с педагогами в прямом эфире, не выходя из дома. Продукты включены в пакет франшизы детского языкового центра English 1st. Также набор
-                                    программ дополнен новыми авторскими курсами по скорочтению и каллиграфии.</p>
+                                <p>Франшиза «English 1st» включает не только формат офлайн-обучения детей, но и онлайн. В пакет франшизы входят: онлайн-игры, мобильное приложение, онлайн-тесты для детей. С 2020 года франчайзер запустил новые образовательные онлайн-продукты. Они позволяют детям учиться по видеоурокам в записи или онлайн-урокам с педагогами в прямом эфире, не выходя из дома. Продукты включены в пакет франшизы детского языкового центра English 1st. Также набор программ дополнен новыми авторскими курсами по скорочтению и каллиграфии.</p>
                             </section>
 
                             <section className="anchor_block" id="anchor_3">
@@ -159,7 +141,7 @@ export default function AdvPage() {
                                     <li>Поддержка на всех этапах открытия и работы Центра;</li>
                                     <li>Более 130 успешно работающих филиалов по всему миру.</li>
                                 </ul>
-                                <h4 className="fw_7">Во франчайзинговый пакет входит:</h4>
+                                <h5 className="fw_7 mb-4">Во франчайзинговый пакет входит:</h5>
                                 <ul>
                                     <li>Бизнес-план</li>
                                     <li>Маркетинговый план</li>
@@ -197,23 +179,11 @@ export default function AdvPage() {
                                     <li>Наш партнер получает все шаблоны и программу для получения лицензии на образовательную деятельность.</li>
                                     <li>Франчайзер помогает с поиском и подбором персонала, проводит собеседование, тестирование и обязательное обучение педагогов центра (в любом количестве).</li>
                                     <li>Узнаваемый бренд, неповторимый стиль зафиксированы в бренд-буке.</li>
-                                    <li>Франчайзер проводит регулярные встречи партнеров: ежеквартальные бизнес-завтраки и ежегодные слеты. Ежедневное общение партнеров сети происходит в онлайн-чате. "Полиглотики" разработали популярную игру для изучения новых
-                                        слов – ее можно скачать бесплатно через сайт или Google Play.</li>
+                                    <li>Франчайзер проводит регулярные встречи партнеров: ежеквартальные бизнес-завтраки и ежегодные слеты. Ежедневное общение партнеров сети происходит в онлайн-чате. "Полиглотики" разработали популярную игру для изучения новых слов – ее можно скачать бесплатно через сайт или Google Play.</li>
                                 </ol>
                             </section>
 
                             <section className="anchor_block" id="anchor_5">
-                                <h4 className="fw_7">Условия сотрудничества</h4>
-                                <ul>
-                                    <li>Первоначальный взнос: 350 000 ₽</li>
-                                    <li>Инвестиции от: 1 600 000 ₽</li>
-                                    <li>Инвестиции до: 1 900 000 ₽</li>
-                                    <li>Срок окупаемости: 4-8 месяцев</li>
-                                    <li>Регион продажи: Россия, Казахстан, Белоруссия, Другие страны</li>
-                                </ul>
-                            </section>
-
-                            <section className="anchor_block" id="anchor_6">
                                 <h4 className="fw_7">Покупка франшизы</h4>
                                 <ul>
                                     <li>Оставьте заявку на сайте или позвоните представителю франшизы сами</li>
@@ -225,64 +195,60 @@ export default function AdvPage() {
                                 </ul>
                             </section>
 
-                            <section className="anchor_block" id="anchor_7">
+                            <section className="anchor_block mb-4" id="anchor_6">
                                 <h4 className="fw_7">Фотогалерея</h4>
-                                <div className="row mb-5">
-                                    <div className="col-6 col-sm-4 col-lg-3 mb-4">
-                                        <a href="images/photogallery/1.jpg" data-fancybox="photogallery"><img src="images/photogallery/1.jpg" className="photogallery"/></a>
+                                <PhotoProvider maskOpacity={'.75'}>
+                                    <div className="row row-cols-2 row-cols-sm-3 row-cols-lg-4 g-3 g-xl-4">
+                                        <div>
+                                            <PhotoView src="images/photogallery/1.jpg">
+                                                <img src="images/photogallery/1.jpg" alt='photogallery' className="photogallery"/>
+                                            </PhotoView>
+                                        </div>
+                                        <div>
+                                            <PhotoView src="images/photogallery/2.jpg">
+                                                <img src="images/photogallery/2.jpg" alt='photogallery' className="photogallery"/>
+                                            </PhotoView>
+                                        </div>
+                                        <div>
+                                            <PhotoView src="images/photogallery/3.jpg">
+                                                <img src="images/photogallery/3.jpg" alt='photogallery' className="photogallery"/>
+                                            </PhotoView>
+                                        </div>
+                                        <div>
+                                            <PhotoView src="images/photogallery/4.jpg">
+                                                <img src="images/photogallery/4.jpg" alt='photogallery' className="photogallery"/>
+                                            </PhotoView>
+                                        </div>
+                                        <div>
+                                            <PhotoView src="images/photogallery/5.jpg">
+                                                <img src="images/photogallery/5.jpg" alt='photogallery' className="photogallery"/>
+                                            </PhotoView>
+                                        </div>
+                                        <div>
+                                            <PhotoView src="images/photogallery/6.jpg">
+                                                <img src="images/photogallery/6.jpg" alt='photogallery' className="photogallery"/>
+                                            </PhotoView>
+                                        </div>
                                     </div>
-                                    <div className="col-6 col-sm-4 col-lg-3 mb-4">
-                                        <a href="images/photogallery/2.jpg" data-fancybox="photogallery"><img src="images/photogallery/2.jpg" className="photogallery"/></a>
-                                    </div>
-                                    <div className="col-6 col-sm-4 col-lg-3 mb-4">
-                                        <a href="images/photogallery/3.jpg" data-fancybox="photogallery"><img src="images/photogallery/3.jpg" className="photogallery"/></a>
-                                    </div>
-                                    <div className="col-6 col-sm-4 col-lg-3 mb-4">
-                                        <a href="images/photogallery/4.jpg" data-fancybox="photogallery"><img src="images/photogallery/4.jpg" className="photogallery"/></a>
-                                    </div>
-                                    <div className="col-6 col-sm-4 col-lg-3 mb-4">
-                                        <a href="images/photogallery/5.jpg" data-fancybox="photogallery"><img src="images/photogallery/5.jpg" className="photogallery"/></a>
-                                    </div>
-                                    <div className="col-6 col-sm-4 col-lg-3 mb-4">
-                                        <a href="images/photogallery/6.jpg" data-fancybox="photogallery"><img src="images/photogallery/6.jpg" className="photogallery"/></a>
-                                    </div>
-                                </div>
+                                </PhotoProvider>
                             </section>
 
-                            <h4 className="fw_7">Видео о франшизе</h4>
-                            <video controls className="w-100 mb-5">
-                                <source src="video/video.mp4" type="video/mp4" />
-                            </video>
+                            <section className="anchor_block" id="anchor_7">
+                                <h4 className="fw_7">Краткая информация</h4>
+                                <ul>
+                                    <li>Инвестиции: 1 000 000 ₽</li>
+                                    <li>Прибыль в месяц: 100 000 ₽</li>
+                                    <li>Окупаемость: 1 000 000 ₽</li> 
+                                </ul>
 
-                            <hr />
+                                <button type='button' className='d-flex align-items-center mb-2'>
+                                    <MdInfoOutline className='f_11 gray' />
+                                    <span className='ms-2 fw_7 f_09'>Пожаловаться</span>
+                                </button>
+                                <div className='f_08'>Вы пожаловались</div>
+                            </section>
 
-                            <div className="d-flex align-items-center mb-4">
-                                <h4 className="fw_7 mb-0">Связаться с представителем</h4>
-                                <button className="btn_main btn_4 f_09 ms-4">Начать чат</button>
-                            </div>
-
-                            <form action="">
-                                <div className="row">
-                                    <div className="col-md-6">
-                                        <input type="text" className="mb-4" placeholder="Ваше имя"/>
-                                        <input type="text" className="mb-4" placeholder="Ваш номер телефона"/>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <input type="text" className="mb-4" placeholder="Город, в котором хотите открыть франшизу"/>
-                                        <input type="text" className="mb-4" placeholder="Электронная почта"/>
-                                    </div>
-                                    <div className="col-12">
-                                        <textarea rows="3" placeholder="Комментарий" className="mb-4"></textarea>
-                                        <div className="checkbox mb-4">
-                                            <input type="checkbox"/>
-                                            <label for="">Согласен на обработку персональнх данных</label>
-                                        </div>
-                                        <button className="btn_main btn_2">Отправить</button>
-                                    </div>
-                                </div>
-                            </form>
-
-                            <div className="tags mt-5">
+                            <div className="tags mt-4">
                                 <span>Франшизы</span>
                                 <span>Франшизы в сфере образования</span>
                                 <span>Франшизы</span>
@@ -294,265 +260,120 @@ export default function AdvPage() {
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <section className="anchor_block" id="anchor_8">
+            <section className="anchor_block mb-5" id="anchor_7">
+                <div className='container'>
                     <h2 className="mt-4">Похожие франшизы</h2>
-                    <div className="position-relative">
-                        <div className="swiper_8">
-                            <div className="swiper-wrapper">
-                                <div className="swiper-slide">
-                                    <div className="preview_small">
-                                        <img src="images/offers/3.jpg"/>
-                                        <div>
-                                            <div className="layer_1">
-                                                <p className="white">English 1st - франшиза школы иностранных языков</p>
-                                            </div>
-                                            <div className="layer_2">
-                                                <div className="white">
-                                                    <div className="f_08">Инвестиции от</div>
-                                                    <div>400 000 руб</div>
-                                                </div>
-                                                <button className="add_to_fav me-2">
-                                                    <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.7613 3.27059L18.1666 10.3344L18.3965 10.8114L18.9202 10.8893L26.5824 12.0291L21.0223 17.5776L20.6572 17.9419L20.7424 18.4506L22.0499 26.255L15.2352 22.5872L14.7613 22.3321L14.2874 22.5872L7.47265 26.255L8.78014 18.4506L8.86537 17.9419L8.50026 17.5776L2.9402 12.0291L10.6023 10.8893L11.1261 10.8114L11.356 10.3344L14.7613 3.27059Z"/>
-                                                    </svg>
-                                                </button>
-                                                <button className="btn_main btn_2 btn_img"><img src="images/icons/write.png" alt="" /></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="preview_small">
-                                        <img src="images/offers/3.jpg"/>
-                                        <div>
-                                            <div className="layer_1">
-                                                <p className="white">English 1st - франшиза школы иностранных языков</p>
-                                            </div>
-                                            <div className="layer_2">
-                                                <div className="white">
-                                                    <div className="f_08">Инвестиции от</div>
-                                                    <div>400 000 руб</div>
-                                                </div>
-                                                <button className="add_to_fav me-2">
-                                                    <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.7613 3.27059L18.1666 10.3344L18.3965 10.8114L18.9202 10.8893L26.5824 12.0291L21.0223 17.5776L20.6572 17.9419L20.7424 18.4506L22.0499 26.255L15.2352 22.5872L14.7613 22.3321L14.2874 22.5872L7.47265 26.255L8.78014 18.4506L8.86537 17.9419L8.50026 17.5776L2.9402 12.0291L10.6023 10.8893L11.1261 10.8114L11.356 10.3344L14.7613 3.27059Z"/>
-                                                    </svg>
-                                                </button>
-                                                <button className="btn_main btn_2 btn_img"><img src="images/icons/write.png" alt=""/></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="preview_small">
-                                        <img src="images/offers/3.jpg"/>
-                                        <div>
-                                            <div className="layer_1">
-                                                <p className="white">English 1st - франшиза школы иностранных языков</p>
-                                            </div>
-                                            <div className="layer_2">
-                                                <div className="white">
-                                                    <div className="f_08">Инвестиции от</div>
-                                                    <div>400 000 руб</div>
-                                                </div>
-                                                <button className="add_to_fav me-2">
-                                                    <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.7613 3.27059L18.1666 10.3344L18.3965 10.8114L18.9202 10.8893L26.5824 12.0291L21.0223 17.5776L20.6572 17.9419L20.7424 18.4506L22.0499 26.255L15.2352 22.5872L14.7613 22.3321L14.2874 22.5872L7.47265 26.255L8.78014 18.4506L8.86537 17.9419L8.50026 17.5776L2.9402 12.0291L10.6023 10.8893L11.1261 10.8114L11.356 10.3344L14.7613 3.27059Z"/>
-                                                    </svg>
-                                                </button>
-                                                <button className="btn_main btn_2 btn_img"><img src="images/icons/write.png" alt="" /></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="preview_small">
-                                        <img src="images/offers/3.jpg"/>
-                                        <div>
-                                            <div className="layer_1">
-                                                <p className="white">English 1st - франшиза школы иностранных языков</p>
-                                            </div>
-                                            <div className="layer_2">
-                                                <div className="white">
-                                                    <div className="f_08">Инвестиции от</div>
-                                                    <div>400 000 руб</div>
-                                                </div>
-                                                <button className="add_to_fav me-2">
-                                                    <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.7613 3.27059L18.1666 10.3344L18.3965 10.8114L18.9202 10.8893L26.5824 12.0291L21.0223 17.5776L20.6572 17.9419L20.7424 18.4506L22.0499 26.255L15.2352 22.5872L14.7613 22.3321L14.2874 22.5872L7.47265 26.255L8.78014 18.4506L8.86537 17.9419L8.50026 17.5776L2.9402 12.0291L10.6023 10.8893L11.1261 10.8114L11.356 10.3344L14.7613 3.27059Z"/>
-                                                    </svg>
-                                                </button>
-                                                <button className="btn_main btn_2 btn_img"><img src="images/icons/write.png" alt="" /></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="preview_small">
-                                        <img src="images/offers/3.jpg"/>
-                                        <div>
-                                            <div className="layer_1">
-                                                <p className="white">English 1st - франшиза школы иностранных языков</p>
-                                            </div>
-                                            <div className="layer_2">
-                                                <div className="white">
-                                                    <div className="f_08">Инвестиции от</div>
-                                                    <div>400 000 руб</div>
-                                                </div>
-                                                <button className="add_to_fav me-2">
-                                                    <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.7613 3.27059L18.1666 10.3344L18.3965 10.8114L18.9202 10.8893L26.5824 12.0291L21.0223 17.5776L20.6572 17.9419L20.7424 18.4506L22.0499 26.255L15.2352 22.5872L14.7613 22.3321L14.2874 22.5872L7.47265 26.255L8.78014 18.4506L8.86537 17.9419L8.50026 17.5776L2.9402 12.0291L10.6023 10.8893L11.1261 10.8114L11.356 10.3344L14.7613 3.27059Z"/>
-                                                    </svg>
-                                                </button>
-                                                <button className="btn_main btn_2 btn_img"><img src="images/icons/write.png" alt=""/></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="preview_small">
-                                        <img src="images/offers/3.jpg"/>
-                                        <div>
-                                            <div className="layer_1">
-                                                <p className="white">English 1st - франшиза школы иностранных языков</p>
-                                            </div>
-                                            <div className="layer_2">
-                                                <div className="white">
-                                                    <div className="f_08">Инвестиции от</div>
-                                                    <div>400 000 руб</div>
-                                                </div>
-                                                <button className="add_to_fav me-2">
-                                                    <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.7613 3.27059L18.1666 10.3344L18.3965 10.8114L18.9202 10.8893L26.5824 12.0291L21.0223 17.5776L20.6572 17.9419L20.7424 18.4506L22.0499 26.255L15.2352 22.5872L14.7613 22.3321L14.2874 22.5872L7.47265 26.255L8.78014 18.4506L8.86537 17.9419L8.50026 17.5776L2.9402 12.0291L10.6023 10.8893L11.1261 10.8114L11.356 10.3344L14.7613 3.27059Z"/>
-                                                    </svg>
-                                                </button>
-                                                <button className="btn_main btn_2 btn_img"><img src="images/icons/write.png" alt=""/></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="preview_small">
-                                        <img src="images/offers/3.jpg"/>
-                                        <div>
-                                            <div className="layer_1">
-                                                <p className="white">English 1st - франшиза школы иностранных языков</p>
-                                            </div>
-                                            <div className="layer_2">
-                                                <div className="white">
-                                                    <div className="f_08">Инвестиции от</div>
-                                                    <div>400 000 руб</div>
-                                                </div>
-                                                <button className="add_to_fav me-2">
-                                                    <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.7613 3.27059L18.1666 10.3344L18.3965 10.8114L18.9202 10.8893L26.5824 12.0291L21.0223 17.5776L20.6572 17.9419L20.7424 18.4506L22.0499 26.255L15.2352 22.5872L14.7613 22.3321L14.2874 22.5872L7.47265 26.255L8.78014 18.4506L8.86537 17.9419L8.50026 17.5776L2.9402 12.0291L10.6023 10.8893L11.1261 10.8114L11.356 10.3344L14.7613 3.27059Z"/>
-                                                    </svg>
-                                                </button>
-                                                <button className="btn_main btn_2 btn_img"><img src="images/icons/write.png" alt=""/></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="preview_small">
-                                        <img src="images/offers/3.jpg"/>
-                                        <div>
-                                            <div className="layer_1">
-                                                <p className="white">English 1st - франшиза школы иностранных языков</p>
-                                            </div>
-                                            <div className="layer_2">
-                                                <div className="white">
-                                                    <div className="f_08">Инвестиции от</div>
-                                                    <div>400 000 руб</div>
-                                                </div>
-                                                <button className="add_to_fav me-2">
-                                                    <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.7613 3.27059L18.1666 10.3344L18.3965 10.8114L18.9202 10.8893L26.5824 12.0291L21.0223 17.5776L20.6572 17.9419L20.7424 18.4506L22.0499 26.255L15.2352 22.5872L14.7613 22.3321L14.2874 22.5872L7.47265 26.255L8.78014 18.4506L8.86537 17.9419L8.50026 17.5776L2.9402 12.0291L10.6023 10.8893L11.1261 10.8114L11.356 10.3344L14.7613 3.27059Z"/>
-                                                    </svg>
-                                                </button>
-                                                <button className="btn_main btn_2 btn_img"><img src="images/icons/write.png" alt=""/></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="preview_small">
-                                        <img src="images/offers/3.jpg"/>
-                                        <div>
-                                            <div className="layer_1">
-                                                <p className="white">English 1st - франшиза школы иностранных языков</p>
-                                            </div>
-                                            <div className="layer_2">
-                                                <div className="white">
-                                                    <div className="f_08">Инвестиции от</div>
-                                                    <div>400 000 руб</div>
-                                                </div>
-                                                <button className="add_to_fav me-2">
-                                                    <svg viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.7613 3.27059L18.1666 10.3344L18.3965 10.8114L18.9202 10.8893L26.5824 12.0291L21.0223 17.5776L20.6572 17.9419L20.7424 18.4506L22.0499 26.255L15.2352 22.5872L14.7613 22.3321L14.2874 22.5872L7.47265 26.255L8.78014 18.4506L8.86537 17.9419L8.50026 17.5776L2.9402 12.0291L10.6023 10.8893L11.1261 10.8114L11.356 10.3344L14.7613 3.27059Z"/>
-                                                    </svg>
-                                                </button>
-                                                <button className="btn_main btn_2 btn_img"><img src="images/icons/write.png" alt=""/></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="swiper-button-prev">❮</div>
-                            <div className="swiper-button-next">❯</div>
-                        </div>
-                    </div>
-                </section>
+                    <Swiper
+                        className="pt-4 pb-5"
+                        modules={[Pagination]}
+                        slidesPerView={2}
+                        spaceBetween={6}
+                        pagination={{ 
+                            clickable: true,
+                            dynamicBullets: true,
+                        }}
+                        breakpoints={{
+                            576: {
+                            slidesPerView: 2,
+                            spaceBetween: 15,
+                            },
+                            768: {
+                            slidesPerView: 3,
+                            spaceBetween: 10,
+                            },
+                            992: {
+                            slidesPerView: 4,
+                            spaceBetween: 15,
+                            },
+                            1200: {
+                            slidesPerView: 4,
+                            spaceBetween: 30,
+                            },
+                        }}
+                    >
+                        <SwiperSlide>
+                            <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+            </section>
 
-                <div className="op_header_sticky d-none">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-4 col-lg-3">
-                                <p className="text-center text-md-left fw_7 lh_15 mb-1 mb-md-0">English 1st - франшиза школы иностранных языков</p>
-                            </div>
-                            <div className="col-md-8 col-lg-9 d-flex justify-content-around flex-wrap">
-                                <div className="f_09">
-                                    <div className="mb-md-2">
-                                        <span className="gray pt">Прибыль:</span>
-                                        <span className="fw_5">100 000 Р/месяц</span>
-                                    </div>
-                                    <div>
-                                        <span className="gray pt">Инвестиции:</span>
-                                        <span className="fw_5">1 000 000 Р</span>
-                                    </div>
-                                </div>
-                                <div className="d-none d-sm-block pt f_09">
-                                    <div className="mb-md-2">Представитель франшизы</div>
-                                    <div className="color-1 td_und">Показать телефон</div>
-                                </div>
-                                <button className="add_to_fav">
-                                    <svg className="color-1" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.7613 3.27059L18.1666 10.3344L18.3965 10.8114L18.9202 10.8893L26.5824 12.0291L21.0223 17.5776L20.6572 17.9419L20.7424 18.4506L22.0499 26.255L15.2352 22.5872L14.7613 22.3321L14.2874 22.5872L7.47265 26.255L8.78014 18.4506L8.86537 17.9419L8.50026 17.5776L2.9402 12.0291L10.6023 10.8893L11.1261 10.8114L11.356 10.3344L14.7613 3.27059Z"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="nav_anchors">
-                        <div className="container position-relative">
-                            <div className="swiper_menu">
-                                <div className="swiper-wrapper">
-                                    <div className="swiper-slide">
-                                        <a href="#anchor_1" className="scrollto">Описание компании</a>
-                                    </div>
-                                    <div className="swiper-slide"><a href="#anchor_2" className="scrollto">Описание франшизы</a></div>
-                                    <div className="swiper-slide"><a href="#anchor_3" className="scrollto">Преимущества франшизы</a></div>
-                                    <div className="swiper-slide"><a href="#anchor_4" className="scrollto">Этапы сотрудничества</a></div>
-                                    <div className="swiper-slide"><a href="#anchor_5" className="scrollto">Условия сотрудничества</a></div>
-                                    <div className="swiper-slide"><a href="#anchor_6" className="scrollto">Покупка франшизы</a></div>
-                                    <div className="swiper-slide"><a href="#anchor_7" className="scrollto">Фотогалерея</a></div>
-                                    <div className="swiper-slide"><a href="#anchor_8" className="scrollto">Похожие франшизы</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
+            <section className="bg_l_blue">
+                <div id="block_5" className="container">
+                    <h2 className="mt-2">Наши партнёры</h2>
+                    <Swiper
+                        className="pt-4 pb-5"
+                        modules={[Pagination]}
+                        slidesPerView={2}
+                        spaceBetween={6}
+                        pagination={{ 
+                            clickable: true,
+                            dynamicBullets: true,
+                        }}
+                        breakpoints={{
+                            576: {
+                            slidesPerView: 3,
+                            spaceBetween: 15,
+                            },
+                            768: {
+                            slidesPerView: 5,
+                            spaceBetween: 10,
+                            },
+                            992: {
+                            slidesPerView: 6,
+                            spaceBetween: 15,
+                            },
+                            1200: {
+                            slidesPerView: 6,
+                            spaceBetween: 30,
+                            },
+                        }}
+                    >
+                        <SwiperSlide>
+                            <img src="images/partners/image 10.jpg" alt="partners" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="images/partners/image 11.jpg" alt="partners" />
+                        </SwiperSlide>
+                        <SwiperSlide><img src="images/partners/image 12.jpg" alt="partners" /></SwiperSlide>
+                        <SwiperSlide><img src="images/partners/image 13.jpg" alt="partners" /></SwiperSlide>
+                        <SwiperSlide><img src="images/partners/image 14.jpg" alt="partners" /></SwiperSlide>
+                        <SwiperSlide><img src="images/partners/image 15.jpg" alt="partners" /></SwiperSlide>
+                        <SwiperSlide>
+                            <img src="images/partners/image 10.jpg" alt="partners" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="images/partners/image 11.jpg" alt="partners" />
+                        </SwiperSlide>
+                        <SwiperSlide><img src="images/partners/image 12.jpg" alt="partners" /></SwiperSlide>
+                        <SwiperSlide><img src="images/partners/image 13.jpg" alt="partners" /></SwiperSlide>
+                        <SwiperSlide><img src="images/partners/image 14.jpg" alt="partners" /></SwiperSlide>
+                        <SwiperSlide><img src="images/partners/image 15.jpg" alt="partners" /></SwiperSlide>
+                    </Swiper>
+                </div>
             </section>
         </main>
     );

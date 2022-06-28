@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
 :root {
     --color-1: 46 81 147;
     --color-2: 255 110 0;
     --pt: "PT Sans";
     --roboto: "Roboto";
     --transition: .25s ease-in;
+    --color-3: #FF8E37;
 }
-
 body {
     font-family: var(--roboto);
     font-size: 16px;
@@ -51,6 +51,7 @@ hr {
     border: none;
     margin: 2em 0;
     width: 100%;
+    opacity: 1;
 }
 
 /* BLOCKS AND SECTIONS */
@@ -290,13 +291,28 @@ button:active {
 .btn_collapse[aria-expanded="true"]::before {content: "Скрыть";}
 
 .btn-fav {
-    font-size: 2em;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.btn-5 {
+    background-color: var(--color-3);
+    border: 3px solid var(--color-3);
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+.btn-6 {
+    background-color: #fff;
+    border: 3px solid var(--color-3);
+    color: var(--color-3);
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
 
 /* Текстовые стили */
 h1 {

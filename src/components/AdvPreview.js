@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MdOutlineMode, MdDoubleArrow } from "react-icons/md";
+import { MdDoubleArrow } from "react-icons/md";
 import BtnFav from './utils/BtnFav';
 
 export default function AdvPreview(props) {
@@ -17,7 +17,7 @@ export default function AdvPreview(props) {
                         <div>{props.summ} руб</div>
                     </div>
                     <div className='d-flex align-items-center'>
-                        <BtnFav check={props.fav}/>
+                        <BtnFav check={props.fav} className={'f_20 mr-2 ms-2'}/>
                         <Link to='/adv-page' class="d-none d-lg-block btn_main btn_2 p-0 ms-2">
                             <MdDoubleArrow className='d-flex'/>
                         </Link>
