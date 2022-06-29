@@ -313,6 +313,17 @@ button:active {
     text-transform: uppercase;
     border-radius: 20px;
 }
+@media (max-width: 991px) {
+    .btn-5, .btn-6 {
+        border: 2px solid var(--color-3);
+    }
+}
+@media (max-width: 575px) {
+    .btn-5, .btn-6 {
+        border: 1px solid var(--color-3);
+        padding: 1em 1.25em;
+    }
+}
 
 /* Текстовые стили */
 h1 {
