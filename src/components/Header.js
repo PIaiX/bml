@@ -54,7 +54,7 @@ export default function Header() {
                                 <a className="nav-link" href="">Франшизы</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="">Новости</a>
+                                <NavLink className="nav-link" to="/news">Новости</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/contacts">Контакты</NavLink>
@@ -99,7 +99,7 @@ export default function Header() {
                             <a href="">Франшизы</a>
                         </li>
                         <li>
-                            <a href="">Новости</a>
+                            <NavLink to="/news">Новости</NavLink>
                         </li>
                         <li>
                             <NavLink to="/contacts">Контакты</NavLink>

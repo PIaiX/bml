@@ -6,6 +6,7 @@ import Contacts from '../pages/Contacts';
 import Service from "../pages/Service";
 import {RoutesList} from './RoutesList';
 import AdvPage from '../pages/AdvPage';
+import AllNews from '../pages/AllNews';
 
 console.log('RoutesList^ '+RoutesList);
 
@@ -25,6 +26,7 @@ export default function AppRouter() {
                 <Route exact path="/contacts" element={<Contacts />} />
                 <Route exact path="/service" element={<Service />} />
                 <Route exact path="/adv-page" element={<AdvPage />} />
+                <Route exact path="/news" element={<AllNews />} />
             </Routes>
         </Wrapper>
     )
