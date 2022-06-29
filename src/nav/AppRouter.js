@@ -4,12 +4,9 @@ import { useLayoutEffect } from 'react';
 import Home from '../pages/Home';
 import Contacts from '../pages/Contacts';
 import Service from "../pages/Service";
-import {RoutesList} from './RoutesList';
 import AdvPage from '../pages/AdvPage';
 import AllNews from '../pages/AllNews';
 import News from '../pages/News';
-
-console.log('RoutesList^ '+RoutesList);
 
 export default function AppRouter() {
     const Wrapper = ({children}) => {
@@ -27,8 +24,8 @@ export default function AppRouter() {
                 <Route exact path="/contacts" element={<Contacts />} />
                 <Route exact path="/service" element={<Service />} />
                 <Route exact path="/adv-page" element={<AdvPage />} />
-                <Route exact path="/news" element={<AllNews />} />
-                <Route exact path="/news-0" element={<News />} />
+                <Route path="news" element={<AllNews />} />
+                <Route path="news/news-0" element={<News />} />
             </Routes>
         </Wrapper>
     )

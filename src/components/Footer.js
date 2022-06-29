@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
@@ -7,24 +8,24 @@ export default function Footer() {
             <div className="container d-none d-md-block">
                 <div className="row">
                     <div className="col-sm-6 col-md-4 col-lg-3 mb-4 mb-sm-0 ">
-                        <img src="images/logo.svg" alt="Бизнес My Life" className="f-logo mb-3" />
+                        <img src="/images/logo.svg" alt="Бизнес My Life" className="f-logo mb-3" />
                         <div className="text-uppercase">Мы в социальных сетях</div>
                         <div className="footer-social">
-                            <a href="#" className="soc-icon"><img src="images/icons/facebook.svg" alt="Facebook" /></a>
-                            <a href="#" className="soc-icon"><img src="images/icons/vk.svg" alt="vk" /></a>
-                            <a href="#" className="soc-icon"><img src="images/icons/instagram.svg" alt="instagram" /></a>
+                            <a href="/" className="soc-icon"><img src="/images/icons/facebook.svg" alt="Facebook" /></a>
+                            <a href="/" className="soc-icon"><img src="/images/icons/vk.svg" alt="vk" /></a>
+                            <a href="/" className="soc-icon"><img src="/images/icons/instagram.svg" alt="instagram" /></a>
                         </div>
                         <div className='d-md-none'>КАРТА САЙТА</div>
                         <nav className="footer-nav d-md-none">
                             <ul>
-                                <li><a href="category.html">Поиск инвесторов</a></li>
-                                <li><a href="#category.html">предложения инвесторов</a></li>
-                                <li><a href="category.html">поиск бизнес партнёров</a></li>
-                                <li><a href="category.html">продажа бизнеса</a></li>
-                                <li><a href="category.html">франшиза</a></li>
-                                <li><a href="contacts.html">Контакты</a></li>
-                                <li><a href="news.html">Новости</a></li>
-                                <li><a href="#">Политика конфиденциальности</a></li>
+                                <li><a href="/">Поиск инвесторов</a></li>
+                                <li><a href="/">предложения инвесторов</a></li>
+                                <li><a href="/">поиск бизнес партнёров</a></li>
+                                <li><a href="/">продажа бизнеса</a></li>
+                                <li><a href="/">франшиза</a></li>
+                                <li><a href="/">Контакты</a></li>
+                                <li><a href="/">Новости</a></li>
+                                <li><a href="/">Политика конфиденциальности</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -33,14 +34,14 @@ export default function Footer() {
                             <div className="col-md-6 d-none d-md-block">
                                 <nav className="footer-nav">
                                     <ul>
-                                        <li><a href="category.html">Поиск инвесторов</a></li>
-                                        <li><a href="#category.html">предложения инвесторов</a></li>
-                                        <li><a href="category.html">поиск бизнес партнёров</a></li>
-                                        <li><a href="category.html">продажа бизнеса</a></li>
-                                        <li><a href="category.html">франшиза</a></li>
-                                        <li><a href="contacts.html">Контакты</a></li>
-                                        <li><a href="news.html">Новости</a></li>
-                                        <li><a href="#">Политика конфиденциальности</a></li>
+                                        <li><a href="/">Поиск инвесторов</a></li>
+                                        <li><a href="/">предложения инвесторов</a></li>
+                                        <li><a href="/">поиск бизнес партнёров</a></li>
+                                        <li><a href="/">продажа бизнеса</a></li>
+                                        <li><a href="/">франшиза</a></li>
+                                        <li><a href="/">Контакты</a></li>
+                                        <li><a href="/">Новости</a></li>
+                                        <li><a href="/">Политика конфиденциальности</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -65,36 +66,36 @@ export default function Footer() {
                 <nav className='h-100'>
                     <ul className='h-100 list-unstyled d-flex justify-content-between align-items-center'>
                         <li>
-                            <a>
-                                <img src="images/icons/home.png" alt="Главная" />
+                            <Link to='/'>
+                                <img src="/images/icons/home.png" alt="Главная" />
                                 <div>Главная</div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a>
-                                <img src="images/icons/favorites.png" alt="Избранное" />
+                            <Link to='/'>
+                                <img src="/images/icons/favorites.png" alt="Избранное" />
                                 <div>Избранное</div>
                                 <div className='count'>3</div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a>
-                                <img src="images/icons/ads.png" alt="Объявления" />
+                            <Link to='/'>
+                                <img src="/images/icons/ads.png" alt="Объявления" />
                                 <div>Объявления</div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a>
-                                <img src="images/icons/messages.png" alt="Сообщения" />
+                            <Link to='/'>
+                                <img src="/images/icons/messages.png" alt="Сообщения" />
                                 <div>Сообщения</div>
                                 <div className='count'>3</div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a>
-                                <img src="images/icons/profile.png" alt="Профиль" />
+                            <Link to='/'>
+                                <img src="/images/icons/profile.png" alt="Профиль" />
                                 <div>Профиль</div>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>

@@ -102,12 +102,12 @@ export default function AdvPage() {
 
                             <div className='row justify-content-center g-4'>
                                 <div className='col-8 col-sm-6 col-md-12 promo'>
-                                    <img src="images/img-0.jpg" alt="img" className='img-fluid mb-2'/>
+                                    <img src="/images/img-0.jpg" alt="img" className='img-fluid mb-2'/>
                                     <h4 className='fw_7 mb-2'>Акции от застройщиков</h4>
                                     <h5 className='mb-0'>ТекстТекстТекст ТекстТекстТекст ТекстТекстТекстТекст Текст\Текст ТекстТекстТекстТекстТекст</h5>
                                 </div>
                                 <div className='col-8 col-sm-6 col-md-12 promo'>
-                                    <img src="images/img-0.jpg" alt="img" className='img-fluid mb-2'/>
+                                    <img src="/images/img-0.jpg" alt="img" className='img-fluid mb-2'/>
                                     <h4 className='fw_7 mb-2'>Акции от застройщиков</h4>
                                     <h5 className='mb-0'>ТекстТекстТекст ТекстТекстТекст ТекстТекстТекстТекст Текст\Текст ТекстТекстТекстТекстТекст</h5>
                                 </div>
@@ -199,33 +199,33 @@ export default function AdvPage() {
                                 <PhotoProvider maskOpacity={'.75'}>
                                     <div className="row row-cols-2 row-cols-sm-3 row-cols-lg-4 g-2 g-sm-3 g-xl-4">
                                         <div>
-                                            <PhotoView src="images/photogallery/1.jpg">
-                                                <img src="images/photogallery/1.jpg" alt='photogallery' className="photogallery"/>
+                                            <PhotoView src="/images/photogallery/1.jpg">
+                                                <img src="/images/photogallery/1.jpg" alt='photogallery' className="photogallery"/>
                                             </PhotoView>
                                         </div>
                                         <div>
-                                            <PhotoView src="images/photogallery/2.jpg">
-                                                <img src="images/photogallery/2.jpg" alt='photogallery' className="photogallery"/>
+                                            <PhotoView src="/images/photogallery/2.jpg">
+                                                <img src="/images/photogallery/2.jpg" alt='photogallery' className="photogallery"/>
                                             </PhotoView>
                                         </div>
                                         <div>
-                                            <PhotoView src="images/photogallery/3.jpg">
-                                                <img src="images/photogallery/3.jpg" alt='photogallery' className="photogallery"/>
+                                            <PhotoView src="/images/photogallery/3.jpg">
+                                                <img src="/images/photogallery/3.jpg" alt='photogallery' className="photogallery"/>
                                             </PhotoView>
                                         </div>
                                         <div>
-                                            <PhotoView src="images/photogallery/4.jpg">
-                                                <img src="images/photogallery/4.jpg" alt='photogallery' className="photogallery"/>
+                                            <PhotoView src="/images/photogallery/4.jpg">
+                                                <img src="/images/photogallery/4.jpg" alt='photogallery' className="photogallery"/>
                                             </PhotoView>
                                         </div>
                                         <div>
-                                            <PhotoView src="images/photogallery/5.jpg">
-                                                <img src="images/photogallery/5.jpg" alt='photogallery' className="photogallery"/>
+                                            <PhotoView src="/images/photogallery/5.jpg">
+                                                <img src="/images/photogallery/5.jpg" alt='photogallery' className="photogallery"/>
                                             </PhotoView>
                                         </div>
                                         <div>
-                                            <PhotoView src="images/photogallery/6.jpg">
-                                                <img src="images/photogallery/6.jpg" alt='photogallery' className="photogallery"/>
+                                            <PhotoView src="/images/photogallery/6.jpg">
+                                                <img src="/images/photogallery/6.jpg" alt='photogallery' className="photogallery"/>
                                             </PhotoView>
                                         </div>
                                     </div>
@@ -293,28 +293,28 @@ export default function AdvPage() {
                         }}
                     >
                         <SwiperSlide>
-                            <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                            <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                            <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                            <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                            <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                            <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                            <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                            <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <AdvPreview url={"page.html"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                            <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                         </SwiperSlide>
                     </Swiper>
                 </div>

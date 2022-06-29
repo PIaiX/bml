@@ -11,7 +11,7 @@ export default function Header() {
             <section className="top">
                 <div className="container h-100 d-flex justify-content-between align-items-center">
                     <Link to="/" className="logo">
-                        <img src="images/logo.svg" alt="Бизнес My Life" />
+                        <img src="/images/logo.svg" alt="Бизнес My Life" />
                     </Link>
                     <form action="" className="header_search d-none d-lg-flex">
                         <input type="search" placeholder="Поиск по сайту" />
@@ -20,15 +20,15 @@ export default function Header() {
                         </button>
                     </form>
                     <button type="button" className="d-none d-md-block color-2 bb_1 lh_1">Обратная связь</button>
-                    <a href="" className="btn-icon">
+                    <a href="/" className="btn-icon">
                         <MdStarOutline />
                         <span className='count'>3</span>
                     </a>
-                    <a href="" className="btn-icon">
+                    <a href="/" className="btn-icon">
                         <MdOutlineShoppingCart />
                         <span className='count'>3</span>
                     </a>
-                    <a href="" className="link d-flex align-items-center">
+                    <a href="/" className="link d-flex align-items-center">
                         <span className='d-none d-sm-inline f_12 me-2'>Войти</span>
                         <MdLogin className='f_15'/>
                     </a>
@@ -39,25 +39,25 @@ export default function Header() {
                     <nav id="main-menu" className="d-none d-lg-block">
                         <ul className="mt-3 mt-md-0 ml-auto mr-auto">
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/service">Поиск инвестора</NavLink>
+                                <NavLink to="service" className="nav-link">Поиск инвестора</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="">Предложения инвесторов</a>
+                                <a className="nav-link" href="/">Предложения инвесторов</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="">Поиск бизнес парнёров</a>
+                                <a className="nav-link" href="/">Поиск бизнес парнёров</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="">Продажа бизнеса</a>
+                                <a className="nav-link" href="/">Продажа бизнеса</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="">Франшизы</a>
+                                <a className="nav-link" href="/">Франшизы</a>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/news">Новости</NavLink>
+                                <NavLink to="news" className="nav-link">Новости</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/contacts">Контакты</NavLink>
+                                <NavLink to="contacts" className="nav-link">Контакты</NavLink>
                             </li>
                         </ul>
                     </nav>
@@ -84,25 +84,25 @@ export default function Header() {
                 <nav>
                     <ul className='list-unstyled'>
                         <li>
-                            <NavLink to="/service">Поиск инвестора</NavLink>
+                            <NavLink to="service">Поиск инвестора</NavLink>
                         </li>
                         <li>
-                            <a href="">Предложения инвесторов</a>
+                            <a href="/">Предложения инвесторов</a>
                         </li>
                         <li>
-                            <a href="">Поиск бизнес парнёров</a>
+                            <a href="/">Поиск бизнес парнёров</a>
                         </li>
                         <li>
-                            <a href="">Продажа бизнеса</a>
+                            <a href="/">Продажа бизнеса</a>
                         </li>
                         <li>
-                            <a href="">Франшизы</a>
+                            <a href="/">Франшизы</a>
                         </li>
                         <li>
-                            <NavLink to="/news">Новости</NavLink>
+                            <NavLink to="news">Новости</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contacts">Контакты</NavLink>
+                            <NavLink to="contacts">Контакты</NavLink>
                         </li>
                     </ul>
                 </nav>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -12,11 +12,11 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Header />
       <AppRouter />
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
