@@ -387,6 +387,7 @@ h3, .h3 {
     font-weight: 600;
     line-height: 1em;
     margin-bottom: .6em;
+    text-transform: unset;
 }
 h4 {
     text-align: left;

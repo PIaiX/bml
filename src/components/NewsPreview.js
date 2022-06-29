@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function NewsPreview(props) {
     return (
@@ -11,7 +12,7 @@ export default function NewsPreview(props) {
             <div class="px-2 py-3">
                 <p class="title">{props.title}</p>
                 <p class="text">{props.text}</p>
-                <a href={props.url} class="more">Подробнее</a>
+                <Link to={props.url} class="more">Подробнее</Link>
             </div>
         </article>
     );

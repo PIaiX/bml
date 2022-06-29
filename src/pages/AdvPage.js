@@ -2,19 +2,16 @@ import React from 'react';
 import Breadcrumbs from '../nav/Breadcrumbs';
 import AdvPreview from '../components/AdvPreview';
 import { Link } from "react-scroll";
-import { MdOutlineShoppingCart, MdInfoOutline, MdOutlinePlace } from "react-icons/md";
-
+import { MdOutlineShoppingCart, MdInfoOutline, MdOutlinePlace, MdDateRange, MdOutlineVisibility } from "react-icons/md";
+import BtnFav from '../components/utils/BtnFav';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
+import Partners from '../components/Partners';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import { MdDateRange, MdOutlineVisibility } from "react-icons/md";
-import BtnFav from '../components/utils/BtnFav';
-
-import { PhotoProvider, PhotoView } from 'react-photo-view';
-import 'react-photo-view/dist/react-photo-view.css';
-import Partners from '../components/Partners';
 
 export default function AdvPage() {
     return (
@@ -31,11 +28,11 @@ export default function AdvPage() {
                         <span>ID: 55113344</span>
                         <time className="d-flex align-items-center ms-3 ms-sm-4">
                             <MdDateRange />
-                            <span>12.10.2020</span>
+                            <span className='ms-1 ms-sm-2'>12.10.2020</span>
                         </time>
                         <div className="d-flex align-items-center ms-3 ms-sm-4">
                             <MdOutlineVisibility />
-                            <span>120 просмотров</span>
+                            <span className='ms-1 ms-sm-2'>120 просмотров</span>
                         </div>
                     </div>
                 </div>
