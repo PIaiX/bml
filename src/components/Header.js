@@ -28,10 +28,10 @@ export default function Header() {
                         <MdOutlineShoppingCart />
                         <span className='count'>3</span>
                     </a>
-                    <a href="/" className="link d-flex align-items-center">
+                    <Link to="/enter" className="link d-flex align-items-center">
                         <span className='d-none d-sm-inline f_12 me-2'>Войти</span>
                         <MdLogin className='f_15'/>
-                    </a>
+                    </Link>
                 </div>
             </section>
             <section className="bottom">

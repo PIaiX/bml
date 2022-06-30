@@ -7,6 +7,10 @@ import Service from "../pages/Service";
 import AdvPage from '../pages/AdvPage';
 import AllNews from '../pages/AllNews';
 import News from '../pages/News';
+import Entrance from '../pages/profile/Entrance';
+import Registration from '../pages/profile/Registration';
+import ResetPassword from '../pages/profile/ResetPassword';
+import PersonalAccount from '../pages/profile/PersonalAccount';
 
 export default function AppRouter() {
     const Wrapper = ({children}) => {
@@ -26,6 +30,10 @@ export default function AppRouter() {
                 <Route exact path="/adv-page" element={<AdvPage />} />
                 <Route path="news" element={<AllNews />} />
                 <Route path="news/news-0" element={<News />} />
+                <Route exact path="/enter" element={<Entrance />} />
+                <Route exact path="/registration" element={<Registration />} />
+                <Route exact path="/password-reset" element={<ResetPassword />} />
+                <Route exact path="/account/*" element={<PersonalAccount />} />
             </Routes>
         </Wrapper>
     )

@@ -259,9 +259,9 @@ export default function Home() {
                 <h2>Новости и статьи</h2>
                 <div className="row">
                     <div className="col-md-4 col-lg-3 mb-sm-3 mb-md-0 pt-3">
-                        <NewsMini className={'mb-3 mb-md-4'} url={'news-0'} date={'28.09.2020'} title={'Как малому бизнесу выживать в условиях коронавируса'}/>
-                        <NewsMini className={'mb-3 mb-md-4'} url={'news-0'} date={'28.09.2020'} title={'Как малому бизнесу выживать в условиях коронавируса'}/>
-                        <NewsMini className={'mb-3 mb-md-4'} url={'news-0'} date={'28.09.2020'} title={'Как малому бизнесу выживать в условиях коронавируса'}/>
+                        <NewsMini className={'mb-3 mb-md-4'} url={'news/news-0'} date={'28.09.2020'} title={'Как малому бизнесу выживать в условиях коронавируса'}/>
+                        <NewsMini className={'mb-3 mb-md-4'} url={'news/news-0'} date={'28.09.2020'} title={'Как малому бизнесу выживать в условиях коронавируса'}/>
+                        <NewsMini className={'mb-3 mb-md-4'} url={'news/news-0'} date={'28.09.2020'} title={'Как малому бизнесу выживать в условиях коронавируса'}/>
                         <div className="color-1"><Link to="/news" className="bb_1 fw_5 link">Все новости</Link></div>
                     </div>
                     <div className="col-md-8 col-lg-9">
@@ -286,22 +286,22 @@ export default function Home() {
                             }}
                         >
                             <SwiperSlide>
-                                <NewsPreview url={'news-0'} imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview url={'news/news-0'} imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NewsPreview url={'news-0'} imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview url={'news/news-0'} imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NewsPreview url={'news-0'} imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview url={'news/news-0'} imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NewsPreview url={'news-0'} imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview url={'news/news-0'} imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NewsPreview url={'news-0'} imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview url={'news/news-0'} imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NewsPreview url={'news-0'} imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview url={'news/news-0'} imgUrl={"images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                         </Swiper>
                     </div>

@@ -53,7 +53,7 @@ export default function Footer() {
                                         <button type="submit" className="btn_main btn_2">OK</button>
                                     </div>
                                     <label>
-                                        <input type="checkbox" required={true}/>
+                                        <input type="checkbox" className='type-2' required={true}/>
                                         <span className='ms-2'>Согласен на обработку персональных данных</span>
                                     </label>
                                 </form>

@@ -10,5 +10,5 @@ export const RoutesList = [
     { path: '/category', сomponent: Service, breadcrumb: 'Услуга' },
     { path: '/adv-page', сomponent: AdvPage, breadcrumb: 'Объявление' },
     { path: '/news', сomponent: AllNews, breadcrumb: 'Новости и статьи' },
-    { path: '/news-0', сomponent: AllNews, breadcrumb: 'Новость' },
+    { path: '/news/news-0', сomponent: AllNews, breadcrumb: 'Новость' },
 ];

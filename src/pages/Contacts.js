@@ -20,26 +20,21 @@ export default function Contacts() {
                 <div className="mb-2">ОГРНИП 313502929500012</div>
                 <div className="mb-4 mb-sm-5">ИНН 890604287041</div>
                 <div className="mb-4 mb-sm-5">Если у вас остались вопросы, напишите нам на <span className='blue'><a href="mailto:biznessmylife@mail.ru">biznessmylife@mail.ru</a></span></div>
-                <h2>ФОРМА ОБРАТНОЙ СВЯЗИ</h2>
-
-                <form>
-                    <label htmlFor="client-name" className="mb-1">Ваше имя</label>
-                    <input type="text" id="client-name" placeholder="имя" className="mb-3"/>
-                    <label htmlFor="email" className="mb-1">Ваша почта</label>
-                    <input type="email" id="email" placeholder="почта" className="mb-3"/>
-                    <label htmlFor="question" className="mb-1">Ваш вопрос</label>
-                    <textarea id="question" rows="3" placeholder="Ваш вопрос" className="mb-3"></textarea>
-                    <label className="mt-2 mb-2">
-                        <input type="checkbox" id="yes-register" required={true}/>
-                        <span className='f_08 ms-2'>Я соглашаюсь с правилами сайта и даю согласие на <a href="/politic.php" target="_blank" className="bb_1">обработку персональных данных</a>.</span>
-                    </label>
-                    {/* <div className="checkbox mt-2 mb-2">
-                        <input type="checkbox" id="yes-register" checked required/>
-                        <label className="ml-1 color-1 f_09" htmlFor="yes-register"></label>
-                    </div> */}
-                    <button type="submit" className="btn_main btn_1 mt-3">Отправить</button>
-                </form>
             </div>
+            <h2>ФОРМА ОБРАТНОЙ СВЯЗИ</h2>
+            <form>
+                <label htmlFor="client-name" className="mb-1">Ваше имя</label>
+                <input type="text" id="client-name" placeholder="имя" className="mb-3"/>
+                <label htmlFor="email" className="mb-1">Ваша почта</label>
+                <input type="email" id="email" placeholder="почта" className="mb-3"/>
+                <label htmlFor="question" className="mb-1">Ваш вопрос</label>
+                <textarea id="question" rows="3" placeholder="Ваш вопрос" className="mb-3"></textarea>
+                <label className="mt-2 mb-2">
+                    <input type="checkbox" id="yes-register" required={true}/>
+                    <span className='f_08 ms-2'>Я соглашаюсь с правилами сайта и даю согласие на <a href="/politic.php" target="_blank" className="bb_1">обработку персональных данных</a>.</span>
+                </label>
+                <button type="submit" className="btn_main btn_1 mt-3">Отправить</button>
+            </form>
         </section>
 
         <Partners />
