@@ -1,26 +1,50 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import AccountMenu from './AccountMenu';
+import Instructions from './Instructions';
+import ProfileSettings from './ProfileSettings';
 import UserProfile from './UserProfile';
 
 export default function PersonalAccount() {
+    const [mob, setMob] = useState(false);
+    useEffect(() => {
+        function updateView() {
+            if(window.matchMedia("(max-width: 991px)").matches){
+                setMob(true);
+            } else {
+                setMob(false);
+            }
+        }
+        window.addEventListener('resize', updateView);
+        updateView();
+        return () => window.removeEventListener('resize', updateView);
+    }, []);
+
     return (
         <main>
-            <div class="container py-5">
+            <div class="container py-4 py-sm-5">
+            {
+                (mob === false) ?
                 <div class="row">
                     <div class="col-md-4 col-lg-3">
-                        {/* <button class="f_12 fw_7 mb-3 d-flex align-items-center d-md-none" onclick="$(this).next('nav').toggle();">							
-                            <span class="ml-2">Меню</span>
-                        </button> */}
                         <AccountMenu />
                     </div>
                     <div class="col-md-8 col-lg-9">
                         <Routes>
                             <Route path="/" element={<UserProfile />} />
                             <Route path="profile" element={<UserProfile />} />
+                            <Route path="instructions" element={<Instructions />} />
+                            <Route path="settings" element={<ProfileSettings />} />
                         </Routes>
                     </div>
                 </div>
+                : <Routes>
+                    <Route path="/" element={<AccountMenu />} />
+                    <Route path="profile" element={<UserProfile />} />
+                    <Route path="instructions" element={<Instructions />} />
+                    <Route path="settings" element={<ProfileSettings />} />
+                </Routes>
+            }
             </div>
         </main>
     );

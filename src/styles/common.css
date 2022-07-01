@@ -473,6 +473,7 @@ h6 {
 .white {color: #fff;}
 .black {color: #000;}
 .gray {color: #686868;}
+.l-gray {color: #939393;}
 .blue {color: #3F8AE0;}
 .red {color: #FF3347;}
 .color-1 {color: rgb(var(--color-1));}
@@ -660,4 +661,21 @@ ul.simple_list>li::before {
 }
 .breadcrumbs a.active {
     color: rgb(var(--color-1));
+}
+
+
+
+.file-upload {position: relative;}
+.file-upload button {
+    position: relative;
+    z-index: 1;
+}
+.file-upload input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
 }
