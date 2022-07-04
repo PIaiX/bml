@@ -12,7 +12,7 @@ export default function Contacts() {
         <section className="container">
             <h1 className="inner">Контакты</h1>
             <div className="pt f_11">
-                <img src="bml/images/logo-black.svg" alt="Бизнес My Life" className='mb-4'/>
+                <img src="/bml/images/logo-black.svg" alt="Бизнес My Life" className='mb-4'/>
                 <div className="fw_7 mb-2 mb-sm-3">Прием звонков:</div>
                 <div className="mb-4 mb-sm-5">Пн.-Пт.: 9:00 - 19:00 (по Москве)</div>
                 <div className="fw_7 mb-2 mb-sm-3">Реквизиты:</div>

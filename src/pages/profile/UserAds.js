@@ -34,7 +34,7 @@ export default function UserAds() {
                     <div className="ad-preview my-4">
                         <div className="d-flex flex-column flex-sm-row align-items-stretch flex-1">
                             <div className="img acc-box">
-                                <img src="bml/images/photo-replacer.jpg" alt=""/>
+                                <img src="/bml/images/photo-replacer.jpg" alt=""/>
                             </div>
                             <div className="text">
                                 <div>
@@ -53,7 +53,7 @@ export default function UserAds() {
                     <div className="ad-preview my-4">
                         <div className="d-flex flex-column flex-sm-row align-items-stretch flex-1">
                             <div className="img acc-box">
-                                <img src="bml/images/photo-replacer.jpg" alt=""/>
+                                <img src="/bml/images/photo-replacer.jpg" alt=""/>
                             </div>
                             <div className="text">
                                 <div>
@@ -72,7 +72,7 @@ export default function UserAds() {
                     <div className="ad-preview my-4">
                         <div className="d-flex flex-column flex-sm-row align-items-stretch flex-1">
                             <div className="img acc-box">
-                                <img src="bml/images/photo-replacer.jpg" alt=""/>
+                                <img src="/bml/images/photo-replacer.jpg" alt=""/>
                             </div>
                             <div className="text">
                                 <div>
@@ -91,7 +91,7 @@ export default function UserAds() {
                     <div className="ad-preview my-4">
                         <div className="d-flex flex-column flex-sm-row align-items-stretch flex-1">
                             <div className="img acc-box">
-                                <img src="bml/images/photo-replacer.jpg" alt=""/>
+                                <img src="/bml/images/photo-replacer.jpg" alt=""/>
                             </div>
                             <div className="text">
                                 <div>
@@ -110,7 +110,7 @@ export default function UserAds() {
                     <div className="ad-preview my-4">
                         <div className="d-flex flex-column flex-sm-row align-items-stretch flex-1">
                             <div className="img acc-box">
-                                <img src="bml/images/photo-replacer.jpg" alt=""/>
+                                <img src="/bml/images/photo-replacer.jpg" alt=""/>
                             </div>
                             <div className="text">
                                 <div>
@@ -129,7 +129,7 @@ export default function UserAds() {
                     <div className="ad-preview my-4">
                         <div className="d-flex flex-column flex-sm-row align-items-stretch flex-1">
                             <div className="img acc-box">
-                                <img src="bml/images/photo-replacer.jpg" alt=""/>
+                                <img src="/bml/images/photo-replacer.jpg" alt=""/>
                             </div>
                             <div className="text">
                                 <div>

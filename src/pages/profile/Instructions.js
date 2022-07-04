@@ -12,7 +12,7 @@ export default function Instructions() {
                 <div>
                     <div className='acc-video'>
                         <video controls>
-                            <source src="bml/video/video.mp4" type="video/mp4" />
+                            <source src="/bml/video/video.mp4" type="video/mp4" />
                         </video>
                     </div>
                     <div className='mt-2'>Название видео</div>
@@ -26,7 +26,7 @@ export default function Instructions() {
                 <div>
                     <div className='acc-video'>
                         <video controls>
-                            <source src="bml/video/video.mp4" type="video/mp4" />
+                            <source src="/bml/video/video.mp4" type="video/mp4" />
                         </video>
                     </div>
                     <div className='mt-2'>Название видео</div>
@@ -44,7 +44,7 @@ export default function Instructions() {
                 <div>
                     <div className='acc-video'>
                         <video controls>
-                            <source src="bml/video/video.mp4" type="video/mp4" />
+                            <source src="/bml/video/video.mp4" type="video/mp4" />
                         </video>
                     </div>
                     <div className='mt-2'>Название видео</div>
@@ -52,7 +52,7 @@ export default function Instructions() {
                 <div>
                     <div className='acc-video'>
                         <video controls>
-                            <source src="bml/video/video.mp4" type="video/mp4" />
+                            <source src="/bml/video/video.mp4" type="video/mp4" />
                         </video>
                     </div>
                     <div className='mt-2'>Название видео</div>
@@ -60,7 +60,7 @@ export default function Instructions() {
                 <div>
                     <div className='acc-video'>
                         <video controls>
-                            <source src="bml/video/video.mp4" type="video/mp4" />
+                            <source src="/bml/video/video.mp4" type="video/mp4" />
                         </video>
                     </div>
                     <div className='mt-2'>Название видео</div>
@@ -68,7 +68,7 @@ export default function Instructions() {
                 <div>
                     <div className='acc-video'>
                         <video controls>
-                            <source src="bml/video/video.mp4" type="video/mp4" />
+                            <source src="/bml/video/video.mp4" type="video/mp4" />
                         </video>
                     </div>
                     <div className='mt-2'>Название видео</div>
@@ -76,7 +76,7 @@ export default function Instructions() {
                 <div>
                     <div className='acc-video'>
                         <video controls>
-                            <source src="bml/video/video.mp4" type="video/mp4" />
+                            <source src="/bml/video/video.mp4" type="video/mp4" />
                         </video>
                     </div>
                     <div className='mt-2'>Название видео</div>

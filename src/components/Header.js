@@ -11,7 +11,7 @@ export default function Header() {
             <section className="top">
                 <div className="container h-100 d-flex justify-content-between align-items-center">
                     <Link to="/" className="logo">
-                        <img src="bml/images/logo.svg" alt="Бизнес My Life" />
+                        <img src="/bml/images/logo.svg" alt="Бизнес My Life" />
                     </Link>
                     <form action="" className="header_search d-none d-lg-flex">
                         <input type="search" placeholder="Поиск по сайту" />
