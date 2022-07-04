@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@400;500;600;700;900&display=swap');
 :root {
     --color-1: 46 81 147;
     --color-2: 255 110 0;
@@ -133,7 +133,7 @@ input.simple, textarea.simple {
     padding: .5em 1em;
 }
 input.input-price {
-    /* background: url(../images/icons/rouble.svg) no-repeat; */
+    background: url(bg-imgs/rouble.svg) no-repeat;
     background-size: auto;
     background-position: calc(100% - .75em) 50%;
 } 
@@ -312,15 +312,26 @@ button:active {
 }
 .btn_4 {
     color: #fff;
-    background-color: #fff;
-    background-image: linear-gradient(to bottom, #74A3FF, #2E5193);
+    background: #5181B8;
 }
 .btn_4:hover,
 .btn_4:focus,
 .btn_4:active {
     color: #fff;
-    background-image: linear-gradient(to bottom, #2E5193, #74A3FF);
+    background: #22A2FF;
 }
+.btn_5 {
+    color: #fff;
+    background: #22A2FF;
+    border: 1px solid #2E5193;
+}
+.btn_5:hover,
+.btn_5:focus,
+.btn_5:active {
+    color: #fff;
+    background: #5181B8;
+}
+
 .btn_img {padding: .5em;}
 .btn_img img {width: 1.5em;}
 
@@ -449,6 +460,7 @@ h6 {
 
 .f_08 {font-size: .8em;}
 .f_09 {font-size: .9em;}
+.f_10 {font-size: 1em;}
 .f_11 {font-size: 1.1em;}
 .f_12 {font-size: 1.2em;}
 .f_13 {font-size: 1.3em;}
@@ -475,6 +487,7 @@ h6 {
 .gray {color: #686868;}
 .l-gray {color: #939393;}
 .blue {color: #3F8AE0;}
+.sky {color: #22A2FF;}
 .red {color: #FF3347;}
 .color-1 {color: rgb(var(--color-1));}
 .color-2 {color: rgb(var(--color-2));}
@@ -665,7 +678,11 @@ ul.simple_list>li::before {
 
 
 
-.file-upload {position: relative;}
+.file-upload {
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+}
 .file-upload button {
     position: relative;
     z-index: 1;

@@ -2,7 +2,9 @@ import React, {useState, useEffect} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import AccountMenu from './AccountMenu';
 import Instructions from './Instructions';
+import NewAd from './NewAd';
 import ProfileSettings from './ProfileSettings';
+import UserAds from './UserAds';
 import UserProfile from './UserProfile';
 
 export default function PersonalAccount() {
@@ -35,6 +37,8 @@ export default function PersonalAccount() {
                             <Route path="profile" element={<UserProfile />} />
                             <Route path="instructions" element={<Instructions />} />
                             <Route path="settings" element={<ProfileSettings />} />
+                            <Route path="my-ads" element={<UserAds />} />
+                            <Route path="my-ads/new-ad" element={<NewAd />} />
                         </Routes>
                     </div>
                 </div>
@@ -43,6 +47,8 @@ export default function PersonalAccount() {
                     <Route path="profile" element={<UserProfile />} />
                     <Route path="instructions" element={<Instructions />} />
                     <Route path="settings" element={<ProfileSettings />} />
+                    <Route path="my-ads" element={<UserAds />} />
+                    <Route path="my-ads/new-ad" element={<NewAd />} />
                 </Routes>
             }
             </div>

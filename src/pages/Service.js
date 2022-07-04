@@ -251,6 +251,33 @@ export default function Service() {
                         <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                 </div>
+
+                <div className="sort mb-4">
+                    <nav aria-label="page-pagination">
+                        <ul className="pagination">
+                            <li className="page-item"><a className="page-link" href="/">❮</a></li>
+                            <li className="page-item"><a className="page-link" href="/">1</a></li>
+                            <li className="page-item"><a className="page-link" href="/">2</a></li>
+                            <li className="page-item"><a className="page-link" href="/">3</a></li>
+                            <li className="page-item"><a className="page-link" href="/">...</a></li>
+                            <li className="page-item"><a className="page-link" href="/">46</a></li>
+                            <li className="page-item"><a className="page-link" href="/">❯</a></li>
+                        </ul>
+                    </nav>
+                    <div className="mr-2 mr-sm-0">Показано 24 <span className="d-none d-lg-inline">предложения из</span><span className="d-inline d-lg-none">/</span> 146</div>
+                    <div className="d-flex align-items-center">
+                        <span className="f_09 d-none d-lg-block">Сортировать:</span>
+                        <select defaultValue={0} className="f_08 ms-2 pe-4">
+                            <option value={0} disabled>по дате публикации</option>
+                            <option value={1}>сначала новые</option>
+                            <option value={2}>сначала старые</option>
+                        </select>
+                        <select defaultValue={0} className="f_08 ms-2 pe-4">
+                            <option value={0}>по убыванию</option>
+                            <option value={1}>по возрастанию</option>
+                        </select>
+                    </div>
+                </div>
             </section>
 
             <section className="container" id="block_4">
