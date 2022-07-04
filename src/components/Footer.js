@@ -8,12 +8,12 @@ export default function Footer() {
             <div className="container d-none d-md-block">
                 <div className="row">
                     <div className="col-sm-6 col-md-4 col-lg-3 mb-4 mb-sm-0 ">
-                        <img src="/images/logo.svg" alt="Бизнес My Life" className="f-logo mb-3" />
+                        <img src="bml/images/logo.svg" alt="Бизнес My Life" className="f-logo mb-3" />
                         <div className="text-uppercase">Мы в социальных сетях</div>
                         <div className="footer-social">
-                            <a href="/" className="soc-icon"><img src="/images/icons/facebook.svg" alt="Facebook" /></a>
-                            <a href="/" className="soc-icon"><img src="/images/icons/vk.svg" alt="vk" /></a>
-                            <a href="/" className="soc-icon"><img src="/images/icons/instagram.svg" alt="instagram" /></a>
+                            <a href="/" className="soc-icon"><img src="bml/images/icons/facebook.svg" alt="Facebook" /></a>
+                            <a href="/" className="soc-icon"><img src="bml/images/icons/vk.svg" alt="vk" /></a>
+                            <a href="/" className="soc-icon"><img src="bml/images/icons/instagram.svg" alt="instagram" /></a>
                         </div>
                         <div className='d-md-none'>КАРТА САЙТА</div>
                         <nav className="footer-nav d-md-none">
@@ -67,33 +67,33 @@ export default function Footer() {
                     <ul className='h-100 list-unstyled d-flex justify-content-between align-items-center'>
                         <li>
                             <Link to='/'>
-                                <img src="/images/icons/home.png" alt="Главная" />
+                                <img src="bml/images/icons/home.png" alt="Главная" />
                                 <div>Главная</div>
                             </Link>
                         </li>
                         <li>
                             <Link to='/'>
-                                <img src="/images/icons/favorites.png" alt="Избранное" />
+                                <img src="bml/images/icons/favorites.png" alt="Избранное" />
                                 <div>Избранное</div>
                                 <div className='count'>3</div>
                             </Link>
                         </li>
                         <li>
                             <Link to='/'>
-                                <img src="/images/icons/ads.png" alt="Объявления" />
+                                <img src="bml/images/icons/ads.png" alt="Объявления" />
                                 <div>Объявления</div>
                             </Link>
                         </li>
                         <li>
                             <Link to='/'>
-                                <img src="/images/icons/messages.png" alt="Сообщения" />
+                                <img src="bml/images/icons/messages.png" alt="Сообщения" />
                                 <div>Сообщения</div>
                                 <div className='count'>3</div>
                             </Link>
                         </li>
                         <li>
                             <Link to='/'>
-                                <img src="/images/icons/profile.png" alt="Профиль" />
+                                <img src="bml/images/icons/profile.png" alt="Профиль" />
                                 <div>Профиль</div>
                             </Link>
                         </li>

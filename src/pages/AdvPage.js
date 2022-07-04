@@ -39,14 +39,14 @@ export default function AdvPage() {
 
                 <div className='row mb-3 mb-sm-4 mb-md-5'>
                     <div className='col-lg-7 col-xl-8 mb-4 mb-lg-0'>
-                        <img src='images/offers/3.jpg' alt='offers' className='main-img'/>
+                        <img src='bml/images/offers/3.jpg' alt='offers' className='main-img'/>
                     </div>
                     <div className='col-lg-5 col-xl-4'>
                         <div className='blue-box h-100 d-flex flex-column justify-content-between'>
                             <div>
                                 <div className='d-flex justify-content-between align-items-center mb-2 mb-sm-4'>
                                     <div className='user d-flex align-items-center'>
-                                        <img src='images/photo.png' alt='Александр Васильев' />
+                                        <img src='bml/images/photo.png' alt='Александр Васильев' />
                                         <div className='ms-2'>
                                             <div className='f_11'>Александр Васильев</div>
                                             <div className='f_09'>Представитель франшизы</div>
@@ -102,12 +102,12 @@ export default function AdvPage() {
 
                             <div className='row justify-content-center g-4'>
                                 <div className='col-8 col-sm-6 col-md-12 promo'>
-                                    <img src="/images/img-0.jpg" alt="img" className='img-fluid mb-2'/>
+                                    <img src="bml/images/img-0.jpg" alt="img" className='img-fluid mb-2'/>
                                     <h4 className='fw_7 mb-2'>Акции от застройщиков</h4>
                                     <h5 className='mb-0'>ТекстТекстТекст ТекстТекстТекст ТекстТекстТекстТекст Текст\Текст ТекстТекстТекстТекстТекст</h5>
                                 </div>
                                 <div className='col-8 col-sm-6 col-md-12 promo'>
-                                    <img src="/images/img-0.jpg" alt="img" className='img-fluid mb-2'/>
+                                    <img src="bml/images/img-0.jpg" alt="img" className='img-fluid mb-2'/>
                                     <h4 className='fw_7 mb-2'>Акции от застройщиков</h4>
                                     <h5 className='mb-0'>ТекстТекстТекст ТекстТекстТекст ТекстТекстТекстТекст Текст\Текст ТекстТекстТекстТекстТекст</h5>
                                 </div>
@@ -293,28 +293,28 @@ export default function AdvPage() {
                         }}
                     >
                         <SwiperSlide>
-                            <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                            <AdvPreview url={"adv-page"} imgURL={"bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                            <AdvPreview url={"adv-page"} imgURL={"bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                            <AdvPreview url={"adv-page"} imgURL={"bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                            <AdvPreview url={"adv-page"} imgURL={"bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                            <AdvPreview url={"adv-page"} imgURL={"bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                            <AdvPreview url={"adv-page"} imgURL={"bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                            <AdvPreview url={"adv-page"} imgURL={"bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <AdvPreview url={"adv-page"} imgURL={"images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                            <AdvPreview url={"adv-page"} imgURL={"bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                         </SwiperSlide>
                     </Swiper>
                 </div>
