@@ -8,7 +8,7 @@ export default function AccountMenu() {
                 <li><NavLink to="profile">Профиль</NavLink></li>
                 <li><NavLink to="instructions">Как загрузить объявление</NavLink></li>
                 <li><NavLink to="my-ads">Мои объявления</NavLink></li>
-                <li><NavLink to="/">Онлайн чат</NavLink></li>
+                <li><NavLink to="chat">Онлайн чат</NavLink></li>
                 <li><NavLink to="favorites">Избранные объявления</NavLink></li>
                 <li><NavLink to="/">Мой кошелек</NavLink></li>
                 <li><NavLink to="/">Мои покупки</NavLink></li>

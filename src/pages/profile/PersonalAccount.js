@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import AccountMenu from './AccountMenu';
+import Chat from './Chat';
+import ChatWindow from './ChatWindow';
 import Favorites from './Favorites';
 import Instructions from './Instructions';
 import NewAd from './NewAd';
@@ -41,6 +43,8 @@ export default function PersonalAccount() {
                             <Route path="my-ads" element={<UserAds />} />
                             <Route path="my-ads/new-ad" element={<NewAd />} />
                             <Route path="favorites" element={<Favorites />} />
+                            <Route path="chat" element={<Chat />} />
+                            <Route path="chat/window" element={<ChatWindow />} />
                         </Routes>
                     </div>
                 </div>
@@ -52,6 +56,8 @@ export default function PersonalAccount() {
                     <Route path="my-ads" element={<UserAds />} />
                     <Route path="my-ads/new-ad" element={<NewAd />} />
                     <Route path="favorites" element={<Favorites />} />
+                    <Route path="chat" element={<Chat />} />
+                    <Route path="chat/window" element={<ChatWindow />} />
                 </Routes>
             }
             </div>
