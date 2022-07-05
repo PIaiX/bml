@@ -125,6 +125,7 @@ input, textarea, select {
     line-height: normal;
     box-shadow: unset;
     box-sizing: border-box;
+    display: block;
 }
 input[type="number"] {padding: .7em 0 .7em .5em;}
 input.simple, textarea.simple {
@@ -472,6 +473,7 @@ h6 {
 .f_19 {font-size: 1.9em;}
 .f_20 {font-size: 2em;}
 .f_50 {font-size: 5em;}
+
 @media (max-width: 991px) {
     .f_50 {font-size: 3em;}
 }
@@ -480,6 +482,7 @@ h6 {
 }
 @media (max-width: 575px) {
     .f_50 {font-size: 1.6em;}
+    .f_xs_08 {font-size: .8em;}
 }
 
 .white {color: #fff;}

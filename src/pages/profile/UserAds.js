@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { MdOutlineArrowBack } from "react-icons/md";
+import AdCard from './AdCard';
 
 export default function UserAds() {
     const [section, setSection] = useState('0');
@@ -10,8 +11,8 @@ export default function UserAds() {
         <>
             <Link to="/account" className='color-1 f_11 fw_5 d-flex align-items-center d-lg-none mb-3 mb-sm-4'><MdOutlineArrowBack /> <span className='ms-2'>Назад</span></Link>
             <div className="acc-box">
-                <div className="d-flex flex-column-reverse flex-lg-row justify-content-between align-items-center mb-4">
-                    <div className='d-flex align-items-center f_11'>
+                <div className="d-flex flex-column-reverse flex-sm-row justify-content-between align-items-center mb-3 mb-md-4">
+                    <div className='d-flex align-items-center f_11 mt-3 mt-sm-0'>
                         <button type='button' className={(section === '0') ? '' : 'l-gray'} onClick={() => setSection('0')}>
                             <span>Объявления</span>
                             <span className="l-gray ms-2">5</span>
@@ -31,120 +32,11 @@ export default function UserAds() {
                     <button type='button' className={(tab === '4') ? 'active' : ''} onClick={() => setTab('4')}>Франшизы</button>
                 </div>
                 <div className='acc-box'>
-                    <div className="ad-preview my-4">
-                        <div className="d-flex flex-column flex-sm-row align-items-stretch flex-1">
-                            <div className="img acc-box">
-                                <img src="/bml/images/photo-replacer.jpg" alt=""/>
-                            </div>
-                            <div className="text">
-                                <div>
-                                    <div className="blue">Название объявления</div>
-                                    <div className="l-gray f_08 mt-2">Образование</div>
-                                </div>
-                                <div className="fw_5 f_09 mt-2">20 000 ₽</div>
-                                <div className="mt-2">Осталось: <span className="color-1 fw_5">30 дней - до 29 февраля</span></div>
-                            </div>
-                        </div>
-                        <div className="f_08 d-flex align-items-center mt-2 mt-lg-0">
-                            <button className="btn_main btn_4">Редактировать</button>
-                            <button className="btn_main btn_3 ms-3">Снять с публикации</button>
-                        </div>
-                    </div>
-                    <div className="ad-preview my-4">
-                        <div className="d-flex flex-column flex-sm-row align-items-stretch flex-1">
-                            <div className="img acc-box">
-                                <img src="/bml/images/photo-replacer.jpg" alt=""/>
-                            </div>
-                            <div className="text">
-                                <div>
-                                    <div className="blue">Название объявления</div>
-                                    <div className="l-gray f_08 mt-2">Образование</div>
-                                </div>
-                                <div className="fw_5 f_09 mt-2">20 000 ₽</div>
-                                <div className="mt-2">Осталось: <span className="color-1 fw_5">30 дней - до 29 февраля</span></div>
-                            </div>
-                        </div>
-                        <div className="f_08 d-flex align-items-center mt-2 mt-lg-0">
-                            <button className="btn_main btn_4">Редактировать</button>
-                            <button className="btn_main btn_3 ms-3">Снять с публикации</button>
-                        </div>
-                    </div>
-                    <div className="ad-preview my-4">
-                        <div className="d-flex flex-column flex-sm-row align-items-stretch flex-1">
-                            <div className="img acc-box">
-                                <img src="/bml/images/photo-replacer.jpg" alt=""/>
-                            </div>
-                            <div className="text">
-                                <div>
-                                    <div className="blue">Название объявления</div>
-                                    <div className="l-gray f_08 mt-2">Образование</div>
-                                </div>
-                                <div className="fw_5 f_09 mt-2">20 000 ₽</div>
-                                <div className="mt-2">Осталось: <span className="color-1 fw_5">30 дней - до 29 февраля</span></div>
-                            </div>
-                        </div>
-                        <div className="f_08 d-flex align-items-center mt-2 mt-lg-0">
-                            <button className="btn_main btn_4">Редактировать</button>
-                            <button className="btn_main btn_3 ms-3">Снять с публикации</button>
-                        </div>
-                    </div>
-                    <div className="ad-preview my-4">
-                        <div className="d-flex flex-column flex-sm-row align-items-stretch flex-1">
-                            <div className="img acc-box">
-                                <img src="/bml/images/photo-replacer.jpg" alt=""/>
-                            </div>
-                            <div className="text">
-                                <div>
-                                    <div className="blue">Название объявления</div>
-                                    <div className="l-gray f_08 mt-2">Образование</div>
-                                </div>
-                                <div className="fw_5 f_09 mt-2">20 000 ₽</div>
-                                <div className="mt-2">Осталось: <span className="color-1 fw_5">30 дней - до 29 февраля</span></div>
-                            </div>
-                        </div>
-                        <div className="f_08 d-flex align-items-center mt-2 mt-lg-0">
-                            <button className="btn_main btn_4">Редактировать</button>
-                            <button className="btn_main btn_3 ms-3">Снять с публикации</button>
-                        </div>
-                    </div>
-                    <div className="ad-preview my-4">
-                        <div className="d-flex flex-column flex-sm-row align-items-stretch flex-1">
-                            <div className="img acc-box">
-                                <img src="/bml/images/photo-replacer.jpg" alt=""/>
-                            </div>
-                            <div className="text">
-                                <div>
-                                    <div className="blue">Название объявления</div>
-                                    <div className="l-gray f_08 mt-2">Образование</div>
-                                </div>
-                                <div className="fw_5 f_09 mt-2">20 000 ₽</div>
-                                <div className="mt-2">Осталось: <span className="color-1 fw_5">30 дней - до 29 февраля</span></div>
-                            </div>
-                        </div>
-                        <div className="f_08 d-flex align-items-center mt-2 mt-lg-0">
-                            <button className="btn_main btn_4">Редактировать</button>
-                            <button className="btn_main btn_3 ms-3">Снять с публикации</button>
-                        </div>
-                    </div>
-                    <div className="ad-preview my-4">
-                        <div className="d-flex flex-column flex-sm-row align-items-stretch flex-1">
-                            <div className="img acc-box">
-                                <img src="/bml/images/photo-replacer.jpg" alt=""/>
-                            </div>
-                            <div className="text">
-                                <div>
-                                    <div className="blue">Название объявления</div>
-                                    <div className="l-gray f_08 mt-2">Образование</div>
-                                </div>
-                                <div className="fw_5 f_09 mt-2">20 000 ₽</div>
-                                <div className="mt-2">Осталось: <span className="color-1 fw_5">30 дней - до 29 февраля</span></div>
-                            </div>
-                        </div>
-                        <div className="f_08 d-flex align-items-center mt-2 mt-lg-0">
-                            <button className="btn_main btn_4">Редактировать</button>
-                            <button className="btn_main btn_3 ms-3">Снять с публикации</button>
-                        </div>
-                    </div>
+                    <AdCard type={tab} section={section} imgURL={"/bml/images/photo-replacer.jpg"} title={'Название объявления'} scope={'Образование'} investments={'20000'} validity={'29.08.22'}/>
+                    <AdCard type={tab} section={section} imgURL={"/bml/images/photo-replacer.jpg"} title={'Название объявления'} scope={'Образование'} investments={'20000'} validity={'29.08.22'}/>
+                    <AdCard type={tab} section={section} imgURL={"/bml/images/photo-replacer.jpg"} title={'Название объявления'} scope={'Образование'} investments={'20000'} validity={'29.08.22'}/>
+                    <AdCard type={tab} section={section} imgURL={"/bml/images/photo-replacer.jpg"} title={'Название объявления'} scope={'Образование'} investments={'20000'} validity={'29.08.22'}/>
+                    <AdCard type={tab} section={section} imgURL={"/bml/images/photo-replacer.jpg"} title={'Название объявления'} scope={'Образование'} investments={'20000'} validity={'29.08.22'}/>
                 </div>
                 <div className='acc-box p-0 mt-3'>
                     <nav aria-label="page-pagination" className='w-100'>

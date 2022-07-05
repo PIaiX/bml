@@ -39,7 +39,7 @@ export default function Header() {
                     <nav id="main-menu" className="d-none d-lg-block">
                         <ul className="mt-3 mt-md-0 ml-auto mr-auto">
                             <li className="nav-item">
-                                <NavLink to="service" className="nav-link">Поиск инвестора</NavLink>
+                                <NavLink to="category" className="nav-link">Поиск инвестора</NavLink>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/">Предложения инвесторов</a>

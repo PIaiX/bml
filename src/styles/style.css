@@ -1109,6 +1109,16 @@ how to upload
     border: none;
     background-color: #E7E8EC;
 }
+@media (max-width: 575px){
+    .acc-box ul.pagination .page-item {
+        margin-right: 0;
+    }
+    .acc-box ul.pagination .page-link {
+        width: 2.5em;
+        height: 2.5em;
+        font-size: .9em;
+    }
+}
 
 /* tabs */
 .tab-btns {
@@ -1130,13 +1140,24 @@ how to upload
     background: #fff;
     border-bottom: 1px solid transparent;
 }
-
+@media (max-width: 1399px){
+    .tab-btns button {font-size: .8em;}
+}
+@media (max-width: 1199px){
+    .tab-btns button {font-size: .75em;}
+}
+@media (max-width: 767px){
+    .tab-btns {flex-wrap: wrap;}
+    .tab-btns button{font-size: .8em;}
+    .tab-btns button:not(:first-child) {margin-left: 0px;}
+}
 
 .ad-preview {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.ad-preview:not(:first-child){margin-top: 2em;}
 .ad-preview .text {
     flex: 1;
     display: flex;
@@ -1159,10 +1180,27 @@ how to upload
     height: 100%;
     object-fit: cover;
 }
-@media (max-width: 991px){
+.ad-preview .btns {
+    width: 330px;
+    font-size: .8em;
+}
+@media (max-width: 1199px){
+    .ad-preview .img {
+        width: 100px;
+        height: 70px;
+        margin-right: 0.5em;
+    }
+    .ad-preview .btns {
+        width: 265px;
+        font-size: .75em;
+    }
+}
+@media (max-width: 767px){
     .ad-preview {
         flex-direction: column;
+        align-items: flex-start;
     }
+    .ad-preview .btns {width: 100%;}
 }
 @media (max-width: 575px){
     .ad-preview>div, .ad-preview div.flex-1 {width:100%;}
