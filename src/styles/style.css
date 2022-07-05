@@ -1241,8 +1241,17 @@ how to upload
 }
 .friend-row-text {flex: 1;}
 @media (max-width: 576px){
-    .friend-row {display: block;}
+    .friend-row {font-size: .9em;}
 }
+@media (max-width: 576px){
+    .friend-row {font-size: .8em;}
+    .friend-row img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+form.promo {max-width: 200px;}
 
 .photogallery {
     display: grid;

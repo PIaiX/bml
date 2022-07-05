@@ -42,16 +42,16 @@ export default function Header() {
                                 <NavLink to="category" className="nav-link">Поиск инвестора</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Предложения инвесторов</a>
+                                <NavLink to="category" className="nav-link">Предложения инвесторов</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Поиск бизнес парнёров</a>
+                                <NavLink to="category" className="nav-link">Поиск бизнес парнёров</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Продажа бизнеса</a>
+                                <NavLink to="category" className="nav-link">Продажа бизнеса</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Франшизы</a>
+                                <NavLink to="category" className="nav-link">Франшизы</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink to="news" className="nav-link">Новости</NavLink>
@@ -87,16 +87,16 @@ export default function Header() {
                             <NavLink to="service">Поиск инвестора</NavLink>
                         </li>
                         <li>
-                            <a href="/">Предложения инвесторов</a>
+                            <NavLink to="category">Предложения инвесторов</NavLink>
                         </li>
                         <li>
-                            <a href="/">Поиск бизнес парнёров</a>
+                            <NavLink to="category">Поиск бизнес парнёров</NavLink>
                         </li>
                         <li>
-                            <a href="/">Продажа бизнеса</a>
+                            <NavLink to="category">Продажа бизнеса</NavLink>
                         </li>
                         <li>
-                            <a href="/">Франшизы</a>
+                            <NavLink to="category">Франшизы</NavLink>
                         </li>
                         <li>
                             <NavLink to="news">Новости</NavLink>

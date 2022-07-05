@@ -13,10 +13,10 @@ export default function UserProfile() {
                         <img src="/bml/images/photo-replacer.jpg" alt="Анна Петрова" class="user-photo"/>
                         <div class="acc-box acc-friends mt-3 mt-xl-4">
                             <div className='d-flex d-md-block d-xl-flex align-items-center justify-content-between'>
-                                <div>
+                                <Link to="partners">
                                     <span>Бизнес-партнёры</span> 
                                     <span class="l-gray ms-2">0</span>
-                                </div>
+                                </Link>
                                 <button type='button' className='blue mx-md-auto mx-xl-0 mt-md-2 mt-xl-0'>
                                     <MdAddCircle className='f_12'/>
                                     <span className='ms-1'>Добавить</span>

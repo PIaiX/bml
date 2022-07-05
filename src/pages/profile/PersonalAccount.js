@@ -5,7 +5,9 @@ import Chat from './Chat';
 import ChatWindow from './ChatWindow';
 import Favorites from './Favorites';
 import Instructions from './Instructions';
+import MyWallet from './MyWallet';
 import NewAd from './NewAd';
+import Partners from './Partners';
 import ProfileSettings from './ProfileSettings';
 import UserAds from './UserAds';
 import UserProfile from './UserProfile';
@@ -38,6 +40,7 @@ export default function PersonalAccount() {
                         <Routes>
                             <Route path="/" element={<UserProfile />} />
                             <Route path="profile" element={<UserProfile />} />
+                            <Route path="profile/partners" element={<Partners />} />
                             <Route path="instructions" element={<Instructions />} />
                             <Route path="settings" element={<ProfileSettings />} />
                             <Route path="my-ads" element={<UserAds />} />
@@ -45,12 +48,14 @@ export default function PersonalAccount() {
                             <Route path="favorites" element={<Favorites />} />
                             <Route path="chat" element={<Chat />} />
                             <Route path="chat/window" element={<ChatWindow />} />
+                            <Route path="wallet" element={<MyWallet />} />
                         </Routes>
                     </div>
                 </div>
                 : <Routes>
                     <Route path="/" element={<AccountMenu />} />
                     <Route path="profile" element={<UserProfile />} />
+                    <Route path="profile/partners" element={<Partners />} />
                     <Route path="instructions" element={<Instructions />} />
                     <Route path="settings" element={<ProfileSettings />} />
                     <Route path="my-ads" element={<UserAds />} />
@@ -58,6 +63,7 @@ export default function PersonalAccount() {
                     <Route path="favorites" element={<Favorites />} />
                     <Route path="chat" element={<Chat />} />
                     <Route path="chat/window" element={<ChatWindow />} />
+                    <Route path="wallet" element={<MyWallet />} />
                 </Routes>
             }
             </div>
