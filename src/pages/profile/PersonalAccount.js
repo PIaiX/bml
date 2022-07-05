@@ -9,6 +9,7 @@ import MyWallet from './MyWallet';
 import NewAd from './NewAd';
 import Partners from './Partners';
 import ProfileSettings from './ProfileSettings';
+import ShoppingCart from './ShoppingCart';
 import UserAds from './UserAds';
 import UserProfile from './UserProfile';
 
@@ -49,6 +50,7 @@ export default function PersonalAccount() {
                             <Route path="chat" element={<Chat />} />
                             <Route path="chat/window" element={<ChatWindow />} />
                             <Route path="wallet" element={<MyWallet />} />
+                            <Route path="cart" element={<ShoppingCart />} />
                         </Routes>
                     </div>
                 </div>
@@ -64,6 +66,7 @@ export default function PersonalAccount() {
                     <Route path="chat" element={<Chat />} />
                     <Route path="chat/window" element={<ChatWindow />} />
                     <Route path="wallet" element={<MyWallet />} />
+                    <Route path="cart" element={<ShoppingCart />} />
                 </Routes>
             }
             </div>
