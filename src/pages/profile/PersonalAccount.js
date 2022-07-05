@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import AccountMenu from './AccountMenu';
+import Favorites from './Favorites';
 import Instructions from './Instructions';
 import NewAd from './NewAd';
 import ProfileSettings from './ProfileSettings';
@@ -39,6 +40,7 @@ export default function PersonalAccount() {
                             <Route path="settings" element={<ProfileSettings />} />
                             <Route path="my-ads" element={<UserAds />} />
                             <Route path="my-ads/new-ad" element={<NewAd />} />
+                            <Route path="favorites" element={<Favorites />} />
                         </Routes>
                     </div>
                 </div>
@@ -49,6 +51,7 @@ export default function PersonalAccount() {
                     <Route path="settings" element={<ProfileSettings />} />
                     <Route path="my-ads" element={<UserAds />} />
                     <Route path="my-ads/new-ad" element={<NewAd />} />
+                    <Route path="favorites" element={<Favorites />} />
                 </Routes>
             }
             </div>
