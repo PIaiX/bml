@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import { MdOutlineArrowBack, MdOutlinePersonAdd } from "react-icons/md";
-import { IoPersonAddOutline } from "react-icons/io5";
+import { MdOutlineArrowBack } from "react-icons/md";
 import PartnerCard from './PartnerCard';
 import { BsPersonPlus } from "react-icons/bs";
 

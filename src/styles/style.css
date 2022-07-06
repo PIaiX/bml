@@ -1214,6 +1214,69 @@ how to upload
     }
 }
 
+.ad-price {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.ad-price img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.ad-price .text {
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    bottom: -70px;
+    width: 100%;
+    height: 140px;
+    background-color: #777777;
+    color: #fff;
+    padding: .5em;
+    transition: var(--transition);
+}
+.ad-price .text:hover {
+    bottom: 0px;
+}
+.ad-price .blocked {
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 2em;
+}
+.ad-price.picked {
+    outline: 2px solid rgb(var(--color-1));
+}
+.ad-price.picked .text {
+    background-color: rgb(var(--color-1));
+}
+@media (max-width: 1399px){
+    .ad-price img {height: 250px;}
+}
+@media (max-width: 1199px){
+    .ad-price img {height: 220px;}
+}
+@media (max-width: 575px){
+    .ad-price {font-size: .7em;}
+    .ad-price img {height: 42vw;}
+    .ad-price .text {
+        bottom: 0px;
+        height: fit-content;
+    }
+}
 
 .requests-count {
     background-color: #FF3347;
@@ -1225,6 +1288,7 @@ how to upload
     line-height: 1.2em;
     text-align: center;
     border-radius: 50%;
+    cursor: none;
 }
 
 .friend-row {

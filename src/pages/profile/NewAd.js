@@ -346,7 +346,7 @@ export default function NewAd() {
                                 </div>
                             </div>
                             <div className='col-12 col-md-4 mt-2 mt-sm-3 mt-md-0'>
-                                <button type='button' className='btn_main btn_5 f_13 w-100 h-100'>Premium-размещение</button>
+                                <Link to='/account/my-ads/premium' className='btn_main btn_5 f_13 w-100 h-100'>Premium-размещение</Link>
                             </div>
                         </div>
                     </fieldset>
