@@ -901,7 +901,7 @@ personal account
 .acc-menu ul li button:hover, .acc-menu ul li button:focus {
     color: rgb(var(--color-2));
 }
-.acc-menu ul li a.active {
+.acc-menu ul li a.active, .acc-menu ul li button.active {
     color: rgb(var(--color-1));
     border-left: 7px solid rgb(var(--color-1));
 }

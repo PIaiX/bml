@@ -17,17 +17,17 @@ export default function ChatWindow(props) {
                         <MdPhoneAndroid />									
                     </div>
                 </div>
-                <div class="user">
+                <Link to="/account/profile/view" class="user">
                     <img src="/bml/images/photo.png" alt="Данил Сокуров"/>
-                </div>
+                </Link>
             </div>
             <div class="middle p-2 p-sm-4">
                 <div class="text-center l-gray my-4">15 марта</div>
                 <div class="message">
                     <div class="d-flex align-items-center mb-1 mb-sm-3">
-                        <div class="user">
+                        <Link to="/account/profile/view" class="user">
                             <img src="/bml/images/photo.png" alt="Данил Сокуров"/>
-                        </div>
+                        </Link>
                         <span class="f_09 l-gray ms-3">16:00</span>
                     </div>
                     <div>
@@ -36,9 +36,9 @@ export default function ChatWindow(props) {
                 </div>
                 <div class="message">
                     <div class="d-flex align-items-center mb-1 mb-sm-3">
-                        <div class="user">
+                        <Link to="/account/profile/view" class="user">
                             <img src="/bml/images/photo.png" alt="Данил Сокуров"/>
-                        </div>
+                        </Link>
                         <span class="f_09 l-gray ms-3">16:00</span>
                     </div>
                     <div>
@@ -70,9 +70,9 @@ export default function ChatWindow(props) {
                 </div>
                 <div class="message">
                     <div class="d-flex align-items-center mb-1 mb-sm-3">
-                        <div class="user">
+                        <Link to="/account/profile/view" class="user">
                             <img src="/bml/images/photo.png" alt="Данил Сокуров"/>
-                        </div>
+                        </Link>
                         <span class="f_09 l-gray ms-3">16:00</span>
                     </div>
                     <div>
@@ -94,9 +94,9 @@ export default function ChatWindow(props) {
                 </div>
                 <div class="message">
                     <div class="d-flex align-items-center mb-1 mb-sm-3">
-                        <div class="user">
+                        <Link to="/account/profile/view" class="user">
                             <img src="/bml/images/photo.png" alt="Данил Сокуров"/>
-                        </div>
+                        </Link>
                         <span class="f_09 l-gray ms-3">16:00</span>
                     </div>
                     <div>

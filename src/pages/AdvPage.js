@@ -1,6 +1,7 @@
 import React from 'react';
 import Breadcrumbs from '../nav/Breadcrumbs';
 import AdvPreview from '../components/AdvPreview';
+import { NavLink } from 'react-router-dom';
 import { Link } from "react-scroll";
 import { MdOutlineShoppingCart, MdInfoOutline, MdOutlinePlace, MdDateRange, MdOutlineVisibility } from "react-icons/md";
 import BtnFav from '../components/utils/BtnFav';
@@ -45,13 +46,13 @@ export default function AdvPage() {
                         <div className='blue-box h-100 d-flex flex-column justify-content-between'>
                             <div>
                                 <div className='d-flex justify-content-between align-items-center mb-2 mb-sm-4'>
-                                    <div className='user d-flex align-items-center'>
+                                    <NavLink to="/account/profile/view" className='user d-flex align-items-center'>
                                         <img src='/bml/images/photo.png' alt='Александр Васильев' />
                                         <div className='ms-2'>
                                             <div className='f_11'>Александр Васильев</div>
                                             <div className='f_09'>Представитель франшизы</div>
                                         </div>
-                                    </div>
+                                    </NavLink>
                                     <div className='d-flex align-items-center'>
                                         <BtnFav check={false} className={'color-2 f_20'} />
                                         <button type='button' className='color-1 f_20 ms-3 ms-sm-4 ms-lg-2 ms-xxl-3'><MdOutlineShoppingCart /></button>

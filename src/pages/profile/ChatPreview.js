@@ -5,10 +5,10 @@ import { MdDeleteForever } from "react-icons/md";
 export default function ChatPreview(props) {
     return (
         <div class="chat-preview">
-            <div class="user">
+            <Link to="/account/profile/view" class="user">
                 <img src={props.imgURL} alt={props.userName}/>
                 <div>{props.userName}</div>
-            </div>
+            </Link>
             <div class="info">
                 <div class="color-1 mb-2">{props.title}</div>
                 <div class="gray"><Link to={props.adURL}>ссылка на объявление</Link></div>

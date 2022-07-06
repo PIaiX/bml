@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MdAddCircle, MdOutlineArrowBack } from "react-icons/md";
+import { MdOutlineArrowBack, MdOutlineQuestionAnswer, MdReply, MdMoreHoriz } from "react-icons/md";
 
-export default function UserProfile() {
+export default function ViewProfile() {
     return (
         <>
             <Link to="/account" className='color-1 f_11 fw_5 d-flex align-items-center d-lg-none mb-3 mb-sm-4'><MdOutlineArrowBack /> <span className='ms-2'>Назад</span></Link>
@@ -11,49 +11,26 @@ export default function UserProfile() {
                     <div class="col-md-4 mb-3 mb-sm-4 mb-md-0">
                         <h4 class="fw_7 text-center">Анна Петрова</h4>
                         <img src="/bml/images/photo-replacer.jpg" alt="Анна Петрова" class="user-photo"/>
-                        <div class="acc-box acc-friends mt-3 mt-xl-4">
-                            <div className='d-flex d-md-block d-xl-flex align-items-center justify-content-between'>
-                                <Link to="/account/profile/partners">
-                                    <span>Бизнес-партнёры</span> 
-                                    <span class="l-gray ms-2">0</span>
-                                </Link>
-                                <button type='button' className='blue mx-md-auto mx-xl-0 mt-md-2 mt-xl-0'>
-                                    <MdAddCircle className='f_12'/>
-                                    <span className='ms-1'>Добавить</span>
-                                </button>
-                            </div>
-                            
-                            <div class="row row-cols-3 g-3 mt-1">
-                                <div>
-                                    <img src="/bml/images/photo-replacer.jpg" alt="Саша Петров"/>
-                                    <div>Саша Петров</div>
-                                </div>
-                                <div>
-                                    <img src="/bml/images/photo-replacer.jpg" alt="Саша Петров"/>
-                                    <div>Саша Петров</div>
-                                </div>
-                                <div>
-                                    <img src="/bml/images/photo-replacer.jpg" alt="Саша Петров"/>
-                                    <div>Саша Петров</div>
-                                </div>
-                                <div>
-                                    <img src="/bml/images/photo-replacer.jpg" alt="Саша Петров"/>
-                                    <div>Саша Петров</div>
-                                </div>
-                                <div>
-                                    <img src="/bml/images/photo-replacer.jpg" alt="Саша Петров"/>
-                                    <div>Саша Петров</div>
-                                </div>
-                                <div>
-                                    <img src="/bml/images/photo-replacer.jpg" alt="Саша Петров"/>
-                                    <div>Саша Петров</div>
-                                </div>
-                            </div>
+                        <div class="acc-box mt-3 mt-xl-4">
+                            <button type='button' className='d-flex align-items-center blue fw_6'>
+                                <MdOutlineQuestionAnswer className='f_17' />
+                                <span className='ms-1 ms-sm-3 text-start'>Написать сообщение</span>
+                            </button>
+                            <hr className='my-3'/>
+                            <button type='button' className='text-start color-1 f_09'>Добавить в бизнес-партнёры</button>
+                            <hr className='my-3'/>
+                            <button type='button' className='l-gray d-flex align-items-center'>
+                                <MdReply className='f_17' />
+                                <span className='f_09 text-start ms-3'>Поделиться</span>
+                            </button>
+                            <button type='button' className='l-gray mt-3'>
+                                <MdMoreHoriz className='f_17' />
+                                <span className='f_09 text-start ms-3'>Еще</span>
+                            </button>
                         </div>
                     </div>
                     <div class="col-md-8">
                         <div className='acc-box'>
-                            <Link to='/account/settings' className='d-block blue f_09 mb-2 mb-sm-4'>Редактировать информацию</Link>
                             <div class="table-responsive">
                                 <table class="table table-borderless acc-table mb-0">
                                     <tbody>

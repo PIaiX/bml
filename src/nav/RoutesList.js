@@ -8,6 +8,7 @@ import Entrance from "../pages/profile/Entrance";
 import Registration from "../pages/profile/Registration";
 import ResetPassword from "../pages/profile/ResetPassword";
 import PersonalAccount from "../pages/profile/PersonalAccount";
+import ViewProfile from "../pages/profile/ViewProfile";
 
 export const RoutesList = [
     { path: '/', Component: <Home/>, breadcrumb: 'Главная' },
