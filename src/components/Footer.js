@@ -18,13 +18,13 @@ export default function Footer() {
                         <div className='d-md-none'>КАРТА САЙТА</div>
                         <nav className="footer-nav d-md-none">
                             <ul>
-                                <li><a href="/">Поиск инвесторов</a></li>
-                                <li><a href="/">предложения инвесторов</a></li>
-                                <li><a href="/">поиск бизнес партнёров</a></li>
-                                <li><a href="/">продажа бизнеса</a></li>
-                                <li><a href="/">франшиза</a></li>
-                                <li><a href="/">Контакты</a></li>
-                                <li><a href="/">Новости</a></li>
+                                <li><Link to="/category">Поиск инвесторов</Link></li>
+                                <li><Link to="/category">предложения инвесторов</Link></li>
+                                <li><Link to="/category">поиск бизнес партнёров</Link></li>
+                                <li><Link to="/category">продажа бизнеса</Link></li>
+                                <li><Link to="/category">франшиза</Link></li>
+                                <li><Link to="/contacts">Контакты</Link></li>
+                                <li><Link to="/news">Новости</Link></li>
                                 <li><a href="/">Политика конфиденциальности</a></li>
                             </ul>
                         </nav>
@@ -34,13 +34,13 @@ export default function Footer() {
                             <div className="col-md-6 d-none d-md-block">
                                 <nav className="footer-nav">
                                     <ul>
-                                        <li><a href="/">Поиск инвесторов</a></li>
-                                        <li><a href="/">предложения инвесторов</a></li>
-                                        <li><a href="/">поиск бизнес партнёров</a></li>
-                                        <li><a href="/">продажа бизнеса</a></li>
-                                        <li><a href="/">франшиза</a></li>
-                                        <li><a href="/">Контакты</a></li>
-                                        <li><a href="/">Новости</a></li>
+                                        <li><Link to="/category">Поиск инвесторов</Link></li>
+                                        <li><Link to="/category">предложения инвесторов</Link></li>
+                                        <li><Link to="/category">поиск бизнес партнёров</Link></li>
+                                        <li><Link to="/category">продажа бизнеса</Link></li>
+                                        <li><Link to="/category">франшиза</Link></li>
+                                        <li><Link to="/contacts">Контакты</Link></li>
+                                        <li><Link to="/news">Новости</Link></li>
                                         <li><a href="/">Политика конфиденциальности</a></li>
                                     </ul>
                                 </nav>
@@ -72,27 +72,27 @@ export default function Footer() {
                             </Link>
                         </li>
                         <li>
-                            <Link to='/'>
+                            <Link to='/account/favorites'>
                                 <img src="/bml/images/icons/favorites.png" alt="Избранное" />
                                 <div>Избранное</div>
                                 <div className='count'>3</div>
                             </Link>
                         </li>
                         <li>
-                            <Link to='/'>
+                            <Link to='/account/my-ads'>
                                 <img src="/bml/images/icons/ads.png" alt="Объявления" />
                                 <div>Объявления</div>
                             </Link>
                         </li>
                         <li>
-                            <Link to='/'>
+                            <Link to='/account/chat'>
                                 <img src="/bml/images/icons/messages.png" alt="Сообщения" />
                                 <div>Сообщения</div>
                                 <div className='count'>3</div>
                             </Link>
                         </li>
                         <li>
-                            <Link to='/'>
+                            <Link to='/account'>
                                 <img src="/bml/images/icons/profile.png" alt="Профиль" />
                                 <div>Профиль</div>
                             </Link>

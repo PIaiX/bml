@@ -39,25 +39,25 @@ export default function Header() {
                     <nav id="main-menu" className="d-none d-lg-block">
                         <ul className="mt-3 mt-md-0 ml-auto mr-auto">
                             <li className="nav-item">
-                                <NavLink to="category" className="nav-link">Поиск инвестора</NavLink>
+                                <NavLink to="/category" className="nav-link">Поиск инвестора</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="category" className="nav-link">Предложения инвесторов</NavLink>
+                                <NavLink to="/category" className="nav-link">Предложения инвесторов</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="category" className="nav-link">Поиск бизнес парнёров</NavLink>
+                                <NavLink to="/category" className="nav-link">Поиск бизнес парнёров</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="category" className="nav-link">Продажа бизнеса</NavLink>
+                                <NavLink to="/category" className="nav-link">Продажа бизнеса</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="category" className="nav-link">Франшизы</NavLink>
+                                <NavLink to="/category" className="nav-link">Франшизы</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="news" className="nav-link">Новости</NavLink>
+                                <NavLink to="/news" className="nav-link">Новости</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="contacts" className="nav-link">Контакты</NavLink>
+                                <NavLink to="/contacts" className="nav-link">Контакты</NavLink>
                             </li>
                         </ul>
                     </nav>
@@ -84,25 +84,25 @@ export default function Header() {
                 <nav>
                     <ul className='list-unstyled'>
                         <li>
-                            <NavLink to="service">Поиск инвестора</NavLink>
+                            <NavLink to="/category">Поиск инвестора</NavLink>
                         </li>
                         <li>
-                            <NavLink to="category">Предложения инвесторов</NavLink>
+                            <NavLink to="/category">Предложения инвесторов</NavLink>
                         </li>
                         <li>
-                            <NavLink to="category">Поиск бизнес парнёров</NavLink>
+                            <NavLink to="/category">Поиск бизнес парнёров</NavLink>
                         </li>
                         <li>
-                            <NavLink to="category">Продажа бизнеса</NavLink>
+                            <NavLink to="/category">Продажа бизнеса</NavLink>
                         </li>
                         <li>
-                            <NavLink to="category">Франшизы</NavLink>
+                            <NavLink to="/category">Франшизы</NavLink>
                         </li>
                         <li>
-                            <NavLink to="news">Новости</NavLink>
+                            <NavLink to="/news">Новости</NavLink>
                         </li>
                         <li>
-                            <NavLink to="contacts">Контакты</NavLink>
+                            <NavLink to="/contacts">Контакты</NavLink>
                         </li>
                     </ul>
                 </nav>

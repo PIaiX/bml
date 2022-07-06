@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function AdCard(props) {
     return (
@@ -30,7 +31,9 @@ export default function AdCard(props) {
                 </div>
                 {
                     (props.type === '4') &&
-                    <div className='col-12 mt-2'><button className="btn_main btn_5 w-100 px-2 px-sm-3">Premium-размещение</button></div>
+                    <div className='col-12 mt-2'>
+                        <Link to="/account/my-ads/premium" className="btn_main btn_5 w-100 px-2 px-sm-3">Premium-размещение</Link>
+                    </div>
                 }
             </div>
         </div>
