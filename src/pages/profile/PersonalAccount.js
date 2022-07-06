@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import AccountMenu from './AccountMenu';
+import AdvertisingSection from './AdvertisingSection';
 import Chat from './Chat';
 import ChatWindow from './ChatWindow';
 import Favorites from './Favorites';
@@ -56,6 +57,7 @@ export default function PersonalAccount() {
                             <Route path="chat/window" element={<ChatWindow />} />
                             <Route path="wallet" element={<MyWallet />} />
                             <Route path="cart" element={<ShoppingCart />} />
+                            <Route path="advertising-section" element={<AdvertisingSection />} />
                         </Routes>
                     </div>
                 </div>
@@ -74,6 +76,7 @@ export default function PersonalAccount() {
                     <Route path="chat/window" element={<ChatWindow />} />
                     <Route path="wallet" element={<MyWallet />} />
                     <Route path="cart" element={<ShoppingCart />} />
+                    <Route path="advertising-section" element={<AdvertisingSection />} />
                 </Routes>
             }
             </div>

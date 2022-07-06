@@ -15,6 +15,7 @@ export default function AccountMenu() {
                     <li><NavLink to="chat">Онлайн чат</NavLink></li>
                     <li><NavLink to="favorites">Избранные объявления</NavLink></li>
                     <li><NavLink to="wallet">Мой кошелек</NavLink></li>
+                    <li><NavLink to="advertising-section">Рекламный раздел</NavLink></li>
                     <li><NavLink to="cart">Мои покупки</NavLink></li>
                     <li><NavLink to="settings">Настройки профиля</NavLink></li>
                     <li><button type='button'>Выйти из профиля</button></li>
