@@ -1,23 +1,21 @@
 import React from 'react';
-import { BrowserRouter, HashRouter } from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import './styles/common.css';
-import './styles/style.css';
+import './assets/styles/common.css';
+import './assets/styles/style.css';
 
-import AppRouter from './nav/AppRouter';
+import AppRouter from './routes/AppRouter';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
-  return (
-    <HashRouter>
-      <Header />
-      <AppRouter />
-      <Footer />
-    </HashRouter>
-  );
+    return (
+        <BrowserRouter>
+            <AppRouter/>
+        </BrowserRouter>
+    );
 }
 
 export default App;

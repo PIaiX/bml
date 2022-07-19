@@ -40,11 +40,11 @@ export default function Partners() {
                         <div className='l-gray mt-3'>Здесь будут отображаться люди,<br/> которых Вы добавите в бизнес-партнёры</div>
                     </div>
                     : <div class="mt-4 mt-xl-5">
-                        <PartnerCard type={tab} imgURL={'/bml/images/photo.png'} name={'Саша Петров'} agency={'Компания/деятельность'} />
-                        <PartnerCard type={tab} imgURL={'/bml/images/photo.png'} name={'Саша Петров'} agency={'Компания/деятельность'} />
-                        <PartnerCard type={tab} imgURL={'/bml/images/photo.png'} name={'Саша Петров'} agency={'Компания/деятельность'} />
-                        <PartnerCard type={tab} imgURL={'/bml/images/photo.png'} name={'Саша Петров'} agency={'Компания/деятельность'} />
-                        <PartnerCard type={tab} imgURL={'/bml/images/photo.png'} name={'Саша Петров'} agency={'Компания/деятельность'} />
+                        <PartnerCard type={tab} imgURL={'/images/photo.png'} name={'Саша Петров'} agency={'Компания/деятельность'} />
+                        <PartnerCard type={tab} imgURL={'/images/photo.png'} name={'Саша Петров'} agency={'Компания/деятельность'} />
+                        <PartnerCard type={tab} imgURL={'/images/photo.png'} name={'Саша Петров'} agency={'Компания/деятельность'} />
+                        <PartnerCard type={tab} imgURL={'/images/photo.png'} name={'Саша Петров'} agency={'Компания/деятельность'} />
+                        <PartnerCard type={tab} imgURL={'/images/photo.png'} name={'Саша Петров'} agency={'Компания/деятельность'} />
                     </div>
                 }
             </div>

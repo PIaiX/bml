@@ -1,10 +1,10 @@
 import React from 'react';
 import useBreadcrumbs from 'use-react-router-breadcrumbs';
-import { RoutesList } from './RoutesList';
+import { routeList } from '../../routes/AppRouter';
 import { NavLink } from 'react-router-dom';
 
 export default function Breadcrumbs() {
-    const breadcrumbs = useBreadcrumbs(RoutesList);
+    const breadcrumbs = useBreadcrumbs(routeList);
     return (
         <nav className="breadcrumbs">
             <ul className='list-unstyled'>

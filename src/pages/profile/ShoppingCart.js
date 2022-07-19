@@ -9,9 +9,9 @@ export default function ShoppingCart() {
             <Link to="/account" className='color-1 f_11 fw_5 d-flex align-items-center d-lg-none mb-3 mb-sm-4'><MdOutlineArrowBack /> <span className='ms-2'>Назад</span></Link>
             <h4>Объявления:</h4>
             <div>
-                <CartItem imgURL={"/bml/images/photo-replacer.jpg"} variant={'1'} price={'12314125'} />
-                <CartItem imgURL={"/bml/images/photo-replacer.jpg"} variant={'0'} price={'100000'} />
-                <CartItem imgURL={"/bml/images/photo-replacer.jpg"} variant={'2'} price={'9836500000'} />
+                <CartItem imgURL={"/images/photo-replacer.jpg"} variant={'1'} price={'12314125'} />
+                <CartItem imgURL={"/images/photo-replacer.jpg"} variant={'0'} price={'100000'} />
+                <CartItem imgURL={"/images/photo-replacer.jpg"} variant={'2'} price={'9836500000'} />
             </div>
             <div className='row row-cols-sm-2 gy-2 gx-sm-4 gx-xl-5 gy-sm-4 mt-1'>
                 <div>

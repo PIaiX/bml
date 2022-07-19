@@ -9,22 +9,22 @@ export default function Favorites() {
             <Link to="/account" className='color-1 f_11 fw_5 d-flex align-items-center d-lg-none mb-3 mb-sm-4'><MdOutlineArrowBack /> <span className='ms-2'>Назад</span></Link>
             <div className="row row-cols-2 row-cols-md-3 g-2 g-sm-3 g-xl-4">
                 <div>
-                    <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'} fav={true}/>
+                    <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'} fav={true}/>
                 </div>
                 <div>
-                    <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'} fav={true}/>
+                    <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'} fav={true}/>
                 </div>
                 <div>
-                    <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'} fav={true}/>
+                    <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'} fav={true}/>
                 </div>
                 <div>
-                    <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'} fav={true}/>
+                    <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'} fav={true}/>
                 </div>
                 <div>
-                    <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'} fav={true}/>
+                    <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'} fav={true}/>
                 </div>
                 <div>
-                    <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'} fav={true}/>
+                    <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'} fav={true}/>
                 </div>
             </div>
         </>

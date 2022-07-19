@@ -20,7 +20,7 @@ export default function Home() {
                 pagination={{ clickable: true }}
             >
                 <SwiperSlide>
-                    <img src="/bml/images/main_slider/slider.jpg" alt="Быстрый сервис поиска и подбора инвестиций"/>
+                    <img src="/images/main_slider/slider.jpg" alt="Быстрый сервис поиска и подбора инвестиций"/>
                     <div className="container white">
                         <div className="row">
                             <div className="col-md-9 col-lg-7">
@@ -31,7 +31,7 @@ export default function Home() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/bml/images/main_slider/slider.jpg" alt="Быстрый сервис поиска и подбора инвестиций"/>
+                    <img src="/images/main_slider/slider.jpg" alt="Быстрый сервис поиска и подбора инвестиций"/>
                     <div className="container white">
                         <div className="row">
                             <div className="col-md-9 col-lg-7">
@@ -51,7 +51,7 @@ export default function Home() {
                                 <div className="fw_5 mb-4">Поиск инвесторов</div>
                                 <div className="f_09 pt"><span className="color-2 fw_7">2650</span> зарегестрированных инвесторов</div>
                             </div>
-                            <div><img src="/bml/images/icons/icon-1.svg" alt="Поиск инвесторов" /></div>
+                            <div><img src="/images/icons/icon-1.svg" alt="Поиск инвесторов" /></div>
                         </div>
                     </div>
                     <div>
@@ -60,7 +60,7 @@ export default function Home() {
                                 <div className="fw_5 mb-4">Поиск бизнес парнёров</div>
                                 <div className="f_09 pt"><span className="color-2 fw_7">1650</span> будущих<br />партнёров по бизнесу</div>
                             </div>
-                            <div><img src="/bml/images/icons/icon-2.svg" alt="Поиск бизнес парнёров" /></div>
+                            <div><img src="/images/icons/icon-2.svg" alt="Поиск бизнес парнёров" /></div>
                         </div>
                     </div>
                     <div>
@@ -69,7 +69,7 @@ export default function Home() {
                                 <div className="fw_5 mb-4">Поиск инвесторов</div>
                                 <div className="f_09 pt"><span className="color-2 fw_7">180</span> готовых бизнес проектов</div>
                             </div>
-                            <div><img src="/bml/images/icons/icon-3.svg" alt="Поиск инвесторов" /></div>
+                            <div><img src="/images/icons/icon-3.svg" alt="Поиск инвесторов" /></div>
                         </div>
                     </div>
                     <div>
@@ -78,7 +78,7 @@ export default function Home() {
                                 <div className="fw_5 mb-4">Поиск инвесторов</div>
                                 <div className="f_09 pt"><span className="color-2 fw_7">265</span> размещенных франшиз</div>
                             </div>
-                            <div><img src="/bml/images/icons/icon-4.svg" alt="Поиск инвесторов" /></div>
+                            <div><img src="/images/icons/icon-4.svg" alt="Поиск инвесторов" /></div>
                         </div>
                     </div>
                 </div>
@@ -104,28 +104,28 @@ export default function Home() {
                 <h2 className="mt-4">Поиск инвесторов</h2>
                 <div className="row g-2 g-sm-3 g-xl-4">
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'} fav={true}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'} fav={true}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                 </div>
                 <button className="btn_main btn_1 mx-auto mt-4">Показать еще</button>
@@ -135,28 +135,28 @@ export default function Home() {
                 <h2>предложения инвесторов</h2>
                 <div className="row g-2 g-sm-3 g-xl-4">
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                 </div>
                 <button className="btn_main btn_1 mx-auto mt-4">Показать еще</button>
@@ -166,28 +166,28 @@ export default function Home() {
                 <h2>Поиск бизнес партнёров</h2>
                 <div className="row g-2 g-sm-3 g-xl-4">
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                 </div>
                 <button className="btn_main btn_1 mx-auto mt-4">Показать еще</button>
@@ -197,28 +197,28 @@ export default function Home() {
                 <h2>Продажа бизнеса</h2>
                 <div className="row g-2 g-sm-3 g-xl-4">
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                 </div>
                 <button className="btn_main btn_1 mx-auto mt-4">Показать еще</button>
@@ -228,28 +228,28 @@ export default function Home() {
                 <h2>Франшизы</h2>
                 <div className="row g-2 g-sm-3 g-xl-4">
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                     <div className="col-6 col-md-4 col-lg-3">
-                        <AdvPreview url={"adv-page"} imgURL={"/bml/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
+                        <AdvPreview url={"adv-page"} imgURL={"/images/offers/3.jpg"} title={"English 1st - франшиза школы иностранных языков"} summ={'400000'}/>
                     </div>
                 </div>
                 <button className="btn_main btn_1 mx-auto mt-4">Показать еще</button>
@@ -286,22 +286,22 @@ export default function Home() {
                             }}
                         >
                             <SwiperSlide>
-                                <NewsPreview url={'news/news-0'} imgUrl={"/bml/images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview url={'news/news-0'} imgUrl={"/images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NewsPreview url={'news/news-0'} imgUrl={"/bml/images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview url={'news/news-0'} imgUrl={"/images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NewsPreview url={'news/news-0'} imgUrl={"/bml/images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview url={'news/news-0'} imgUrl={"/images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NewsPreview url={'news/news-0'} imgUrl={"/bml/images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview url={'news/news-0'} imgUrl={"/images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NewsPreview url={'news/news-0'} imgUrl={"/bml/images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview url={'news/news-0'} imgUrl={"/images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NewsPreview url={'news/news-0'} imgUrl={"/bml/images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
+                                <NewsPreview url={'news/news-0'} imgUrl={"/images/news/n1.jpg"} title={"Как малому бизнесу выживать в условиях коронавируса"} text={"Сейчас бесконтактные бизнес-процедуры — оптимальный вариант ведения бизнеса."}/>
                             </SwiperSlide>
                         </Swiper>
                     </div>

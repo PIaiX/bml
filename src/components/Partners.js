@@ -38,25 +38,25 @@ export default function Partners() {
                     }}
                 >
                     <SwiperSlide>
-                        <img src="/bml/images/partners/image 10.jpg" alt="partners" />
+                        <img src="/images/partners/image 10.jpg" alt="partners" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="/bml/images/partners/image 11.jpg" alt="partners" />
+                        <img src="/images/partners/image 11.jpg" alt="partners" />
                     </SwiperSlide>
-                    <SwiperSlide><img src="/bml/images/partners/image 12.jpg" alt="partners" /></SwiperSlide>
-                    <SwiperSlide><img src="/bml/images/partners/image 13.jpg" alt="partners" /></SwiperSlide>
-                    <SwiperSlide><img src="/bml/images/partners/image 14.jpg" alt="partners" /></SwiperSlide>
-                    <SwiperSlide><img src="/bml/images/partners/image 15.jpg" alt="partners" /></SwiperSlide>
+                    <SwiperSlide><img src="/images/partners/image 12.jpg" alt="partners" /></SwiperSlide>
+                    <SwiperSlide><img src="/images/partners/image 13.jpg" alt="partners" /></SwiperSlide>
+                    <SwiperSlide><img src="/images/partners/image 14.jpg" alt="partners" /></SwiperSlide>
+                    <SwiperSlide><img src="/images/partners/image 15.jpg" alt="partners" /></SwiperSlide>
                     <SwiperSlide>
-                        <img src="/bml/images/partners/image 10.jpg" alt="partners" />
+                        <img src="/images/partners/image 10.jpg" alt="partners" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="/bml/images/partners/image 11.jpg" alt="partners" />
+                        <img src="/images/partners/image 11.jpg" alt="partners" />
                     </SwiperSlide>
-                    <SwiperSlide><img src="/bml/images/partners/image 12.jpg" alt="partners" /></SwiperSlide>
-                    <SwiperSlide><img src="/bml/images/partners/image 13.jpg" alt="partners" /></SwiperSlide>
-                    <SwiperSlide><img src="/bml/images/partners/image 14.jpg" alt="partners" /></SwiperSlide>
-                    <SwiperSlide><img src="/bml/images/partners/image 15.jpg" alt="partners" /></SwiperSlide>
+                    <SwiperSlide><img src="/images/partners/image 12.jpg" alt="partners" /></SwiperSlide>
+                    <SwiperSlide><img src="/images/partners/image 13.jpg" alt="partners" /></SwiperSlide>
+                    <SwiperSlide><img src="/images/partners/image 14.jpg" alt="partners" /></SwiperSlide>
+                    <SwiperSlide><img src="/images/partners/image 15.jpg" alt="partners" /></SwiperSlide>
                 </Swiper>
             </div>
         </section>

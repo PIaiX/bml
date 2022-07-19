@@ -5,7 +5,7 @@ export default function AdvPrice(props) {
 
     return (
         <div className={(picked===true)?'ad-price picked':'ad-price'} onClick={()=>setPicked(true)}>
-            <img src="/bml/images/photo-replacer.jpg" alt="Заставка"/>
+            <img src="/images/photo-replacer.jpg" alt="Заставка"/>
             <div className='text'>
                 <h6 className='mt-1 mb-2'>{props.title}</h6>
                 {

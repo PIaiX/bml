@@ -10,7 +10,7 @@ export default function ViewProfile() {
                 <div class="row">
                     <div class="col-md-4 mb-3 mb-sm-4 mb-md-0">
                         <h4 class="fw_7 text-center">Анна Петрова</h4>
-                        <img src="/bml/images/photo-replacer.jpg" alt="Анна Петрова" class="user-photo"/>
+                        <img src="/images/photo-replacer.jpg" alt="Анна Петрова" class="user-photo"/>
                         <div class="acc-box mt-3 mt-xl-4">
                             <button type='button' className='d-flex align-items-center blue fw_6'>
                                 <MdOutlineQuestionAnswer className='f_17' />
@@ -71,28 +71,28 @@ export default function ViewProfile() {
                             <div className='row row-cols-3 g-1 g-sm-2 g-xl-4 text-center mt-1'>
                                 <div>
                                     <div class="acc-box ads">
-                                        <img src="/bml/images/photo-replacer.jpg" alt="Франшиза" className='ads-img'/>
+                                        <img src="/images/photo-replacer.jpg" alt="Франшиза" className='ads-img'/>
                                         <div class="fw_5 f_09 mt-2">Франшиза</div>
                                         <div class="gray f_09 mt-1">Образование</div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="acc-box ads">
-                                        <img src="/bml/images/photo-replacer.jpg" alt="Франшиза" className='ads-img'/>
+                                        <img src="/images/photo-replacer.jpg" alt="Франшиза" className='ads-img'/>
                                         <div class="fw_5 f_09 mt-2">Франшиза</div>
                                         <div class="gray f_09 mt-1">Образование</div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="acc-box ads">
-                                        <img src="/bml/images/photo-replacer.jpg" alt="Франшиза" className='ads-img'/>
+                                        <img src="/images/photo-replacer.jpg" alt="Франшиза" className='ads-img'/>
                                         <div class="fw_5 f_09 mt-2">Франшиза</div>
                                         <div class="gray f_09 mt-1">Образование</div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="acc-box ads">
-                                        <img src="/bml/images/photo-replacer.jpg" alt="Франшиза" className='ads-img'/>
+                                        <img src="/images/photo-replacer.jpg" alt="Франшиза" className='ads-img'/>
                                         <div class="fw_5 f_09 mt-2">Франшиза</div>
                                         <div class="gray f_09 mt-1">Образование</div>
                                     </div>

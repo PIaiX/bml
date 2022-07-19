@@ -8,15 +8,15 @@ export default function Chat() {
         <>
             <Link to="/account" className='color-1 f_11 fw_5 d-flex align-items-center d-lg-none mb-3 mb-sm-4'><MdOutlineArrowBack /> <span className='ms-2'>Назад</span></Link>
             <div class="acc-box p-0">
-                <ChatPreview imgURL={"/bml/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Последнее сообщение'}/>
-                <ChatPreview imgURL={"/bml/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}/>
-                <ChatPreview imgURL={"/bml/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Последнее сообщение'}/>
-                <ChatPreview imgURL={"/bml/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Последнее сообщение'}/>
-                <ChatPreview imgURL={"/bml/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Последнее сообщение'}/>
-                <ChatPreview imgURL={"/bml/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Последнее сообщение'}/>
-                <ChatPreview imgURL={"/bml/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Последнее сообщение'}/>
-                <ChatPreview imgURL={"/bml/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Последнее сообщение'}/>
-                <ChatPreview imgURL={"/bml/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Последнее сообщение'}/>
+                <ChatPreview imgURL={"/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Последнее сообщение'}/>
+                <ChatPreview imgURL={"/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}/>
+                <ChatPreview imgURL={"/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Последнее сообщение'}/>
+                <ChatPreview imgURL={"/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Последнее сообщение'}/>
+                <ChatPreview imgURL={"/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Последнее сообщение'}/>
+                <ChatPreview imgURL={"/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Последнее сообщение'}/>
+                <ChatPreview imgURL={"/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Последнее сообщение'}/>
+                <ChatPreview imgURL={"/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Последнее сообщение'}/>
+                <ChatPreview imgURL={"/images/photo.png"} userName={'Саша'} title={'English 1st - франшиза школы иностранных языков'} adURL={'/adv-page'} message={'Последнее сообщение'}/>
 
                 <div className='p-4'>
                     <div className='acc-box p-0'>

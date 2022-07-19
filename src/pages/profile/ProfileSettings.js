@@ -12,7 +12,7 @@ export default function ProfileSettings() {
             <div className='acc-box'>
                 <div className="row align-items-center">
                     <div className="col-md-4 mb-4 mb-md-0">
-                        <img src="/bml/images/photo-replacer.jpg" alt="Анна Петрова" className="user-photo"/>
+                        <img src="/images/photo-replacer.jpg" alt="Анна Петрова" className="user-photo"/>
                     </div>
                     <div className="col-md-8">
                         <div className="file-upload mb-3">

@@ -18,7 +18,7 @@ export default function ChatWindow(props) {
                     </div>
                 </div>
                 <Link to="/account/profile/view" class="user">
-                    <img src="/bml/images/photo.png" alt="Данил Сокуров"/>
+                    <img src="/images/photo.png" alt="Данил Сокуров"/>
                 </Link>
             </div>
             <div class="middle p-2 p-sm-4">
@@ -26,7 +26,7 @@ export default function ChatWindow(props) {
                 <div class="message">
                     <div class="d-flex align-items-center mb-1 mb-sm-3">
                         <Link to="/account/profile/view" class="user">
-                            <img src="/bml/images/photo.png" alt="Данил Сокуров"/>
+                            <img src="/images/photo.png" alt="Данил Сокуров"/>
                         </Link>
                         <span class="f_09 l-gray ms-3">16:00</span>
                     </div>
@@ -37,7 +37,7 @@ export default function ChatWindow(props) {
                 <div class="message">
                     <div class="d-flex align-items-center mb-1 mb-sm-3">
                         <Link to="/account/profile/view" class="user">
-                            <img src="/bml/images/photo.png" alt="Данил Сокуров"/>
+                            <img src="/images/photo.png" alt="Данил Сокуров"/>
                         </Link>
                         <span class="f_09 l-gray ms-3">16:00</span>
                     </div>
@@ -48,7 +48,7 @@ export default function ChatWindow(props) {
                 <div class="reply">
                     <div class="d-flex align-items-center mb-1 mb-sm-3">
                         <div class="user">
-                            <img src="/bml/images/photo-replacer.jpg" alt="Саша Белокуров"/>
+                            <img src="/images/photo-replacer.jpg" alt="Саша Белокуров"/>
                         </div>
                         <span class="f_09 l-gray ms-3">16:54</span>
                     </div>
@@ -60,7 +60,7 @@ export default function ChatWindow(props) {
                 <div class="reply">
                     <div class="d-flex align-items-center mb-1 mb-sm-3">
                         <div class="user">
-                            <img src="/bml/images/photo-replacer.jpg" alt="Саша Белокуров"/>
+                            <img src="/images/photo-replacer.jpg" alt="Саша Белокуров"/>
                         </div>
                         <span class="f_09 l-gray ms-3">16:54</span>
                     </div>
@@ -71,7 +71,7 @@ export default function ChatWindow(props) {
                 <div class="message">
                     <div class="d-flex align-items-center mb-1 mb-sm-3">
                         <Link to="/account/profile/view" class="user">
-                            <img src="/bml/images/photo.png" alt="Данил Сокуров"/>
+                            <img src="/images/photo.png" alt="Данил Сокуров"/>
                         </Link>
                         <span class="f_09 l-gray ms-3">16:00</span>
                     </div>
@@ -84,7 +84,7 @@ export default function ChatWindow(props) {
                 <div class="reply">
                     <div class="d-flex align-items-center mb-1 mb-sm-3">
                         <div class="user">
-                            <img src="/bml/images/photo-replacer.jpg" alt="Саша Белокуров"/>
+                            <img src="/images/photo-replacer.jpg" alt="Саша Белокуров"/>
                         </div>
                         <span class="f_09 l-gray ms-3">16:54</span>
                     </div>
@@ -95,7 +95,7 @@ export default function ChatWindow(props) {
                 <div class="message">
                     <div class="d-flex align-items-center mb-1 mb-sm-3">
                         <Link to="/account/profile/view" class="user">
-                            <img src="/bml/images/photo.png" alt="Данил Сокуров"/>
+                            <img src="/images/photo.png" alt="Данил Сокуров"/>
                         </Link>
                         <span class="f_09 l-gray ms-3">16:00</span>
                     </div>
@@ -106,7 +106,7 @@ export default function ChatWindow(props) {
                 <div class="reply">
                     <div class="d-flex align-items-center mb-1 mb-sm-3">
                         <div class="user">
-                            <img src="/bml/images/photo-replacer.jpg" alt="Саша Белокуров"/>
+                            <img src="/images/photo-replacer.jpg" alt="Саша Белокуров"/>
                         </div>
                         <span class="f_09 l-gray ms-3">16:54</span>
                     </div>

@@ -10,7 +10,7 @@ export default function UserProfile() {
                 <div class="row">
                     <div class="col-md-4 mb-3 mb-sm-4 mb-md-0">
                         <h4 class="fw_7 text-center">Анна Петрова</h4>
-                        <img src="/bml/images/photo-replacer.jpg" alt="Анна Петрова" class="user-photo"/>
+                        <img src="/images/photo-replacer.jpg" alt="Анна Петрова" class="user-photo"/>
                         <div class="acc-box acc-friends mt-3 mt-xl-4">
                             <div className='d-flex d-md-block d-xl-flex align-items-center justify-content-between'>
                                 <Link to="/account/profile/partners">
@@ -25,27 +25,27 @@ export default function UserProfile() {
                             
                             <div class="row row-cols-3 g-3 mt-1">
                                 <div>
-                                    <img src="/bml/images/photo-replacer.jpg" alt="Саша Петров"/>
+                                    <img src="/images/photo-replacer.jpg" alt="Саша Петров"/>
                                     <div>Саша Петров</div>
                                 </div>
                                 <div>
-                                    <img src="/bml/images/photo-replacer.jpg" alt="Саша Петров"/>
+                                    <img src="/images/photo-replacer.jpg" alt="Саша Петров"/>
                                     <div>Саша Петров</div>
                                 </div>
                                 <div>
-                                    <img src="/bml/images/photo-replacer.jpg" alt="Саша Петров"/>
+                                    <img src="/images/photo-replacer.jpg" alt="Саша Петров"/>
                                     <div>Саша Петров</div>
                                 </div>
                                 <div>
-                                    <img src="/bml/images/photo-replacer.jpg" alt="Саша Петров"/>
+                                    <img src="/images/photo-replacer.jpg" alt="Саша Петров"/>
                                     <div>Саша Петров</div>
                                 </div>
                                 <div>
-                                    <img src="/bml/images/photo-replacer.jpg" alt="Саша Петров"/>
+                                    <img src="/images/photo-replacer.jpg" alt="Саша Петров"/>
                                     <div>Саша Петров</div>
                                 </div>
                                 <div>
-                                    <img src="/bml/images/photo-replacer.jpg" alt="Саша Петров"/>
+                                    <img src="/images/photo-replacer.jpg" alt="Саша Петров"/>
                                     <div>Саша Петров</div>
                                 </div>
                             </div>
@@ -94,28 +94,28 @@ export default function UserProfile() {
                             <div className='row row-cols-3 g-1 g-sm-2 g-xl-4 text-center mt-1'>
                                 <div>
                                     <div class="acc-box ads">
-                                        <img src="/bml/images/photo-replacer.jpg" alt="Франшиза" className='ads-img'/>
+                                        <img src="/images/photo-replacer.jpg" alt="Франшиза" className='ads-img'/>
                                         <div class="fw_5 f_09 mt-2">Франшиза</div>
                                         <div class="gray f_09 mt-1">Образование</div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="acc-box ads">
-                                        <img src="/bml/images/photo-replacer.jpg" alt="Франшиза" className='ads-img'/>
+                                        <img src="/images/photo-replacer.jpg" alt="Франшиза" className='ads-img'/>
                                         <div class="fw_5 f_09 mt-2">Франшиза</div>
                                         <div class="gray f_09 mt-1">Образование</div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="acc-box ads">
-                                        <img src="/bml/images/photo-replacer.jpg" alt="Франшиза" className='ads-img'/>
+                                        <img src="/images/photo-replacer.jpg" alt="Франшиза" className='ads-img'/>
                                         <div class="fw_5 f_09 mt-2">Франшиза</div>
                                         <div class="gray f_09 mt-1">Образование</div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="acc-box ads">
-                                        <img src="/bml/images/photo-replacer.jpg" alt="Франшиза" className='ads-img'/>
+                                        <img src="/images/photo-replacer.jpg" alt="Франшиза" className='ads-img'/>
                                         <div class="fw_5 f_09 mt-2">Франшиза</div>
                                         <div class="gray f_09 mt-1">Образование</div>
                                     </div>

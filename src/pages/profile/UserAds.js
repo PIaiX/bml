@@ -32,11 +32,11 @@ export default function UserAds() {
                     <button type='button' className={(tab === '4') ? 'active' : ''} onClick={() => setTab('4')}>Франшизы</button>
                 </div>
                 <div className='acc-box'>
-                    <AdCard type={tab} section={section} imgURL={"/bml/images/photo-replacer.jpg"} title={'Название объявления'} scope={'Образование'} investments={'20000'} validity={'29.08.22'}/>
-                    <AdCard type={tab} section={section} imgURL={"/bml/images/photo-replacer.jpg"} title={'Название объявления'} scope={'Образование'} investments={'20000'} validity={'29.08.22'}/>
-                    <AdCard type={tab} section={section} imgURL={"/bml/images/photo-replacer.jpg"} title={'Название объявления'} scope={'Образование'} investments={'20000'} validity={'29.08.22'}/>
-                    <AdCard type={tab} section={section} imgURL={"/bml/images/photo-replacer.jpg"} title={'Название объявления'} scope={'Образование'} investments={'20000'} validity={'29.08.22'}/>
-                    <AdCard type={tab} section={section} imgURL={"/bml/images/photo-replacer.jpg"} title={'Название объявления'} scope={'Образование'} investments={'20000'} validity={'29.08.22'}/>
+                    <AdCard type={tab} section={section} imgURL={"/images/photo-replacer.jpg"} title={'Название объявления'} scope={'Образование'} investments={'20000'} validity={'29.08.22'}/>
+                    <AdCard type={tab} section={section} imgURL={"/images/photo-replacer.jpg"} title={'Название объявления'} scope={'Образование'} investments={'20000'} validity={'29.08.22'}/>
+                    <AdCard type={tab} section={section} imgURL={"/images/photo-replacer.jpg"} title={'Название объявления'} scope={'Образование'} investments={'20000'} validity={'29.08.22'}/>
+                    <AdCard type={tab} section={section} imgURL={"/images/photo-replacer.jpg"} title={'Название объявления'} scope={'Образование'} investments={'20000'} validity={'29.08.22'}/>
+                    <AdCard type={tab} section={section} imgURL={"/images/photo-replacer.jpg"} title={'Название объявления'} scope={'Образование'} investments={'20000'} validity={'29.08.22'}/>
                 </div>
                 <div className='acc-box p-0 mt-3'>
                     <nav aria-label="page-pagination" className='w-100'>

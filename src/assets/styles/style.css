@@ -1812,3 +1812,23 @@ footer {
         border-radius: 50%;
     }
 }
+
+.not-found {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 3rem;
+}
+
+.not-found__title {
+    text-align: center;
+    margin: 0;
+ }
+
+.not-found__link {
+    text-align: center;
+    padding: 0;
+}

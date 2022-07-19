@@ -17,7 +17,7 @@ export default function AdvertisingSection() {
                         <p>По вопросам размещения обращаться на почту</p>
                     </div>
                     <div className='col-sm-6 col-md-8'>
-                        <img src="/bml/images/banner-1.jpg" alt="Приоритетное размещение" className='img-fluid d-block mx-auto'/>
+                        <img src="/images/banner-1.jpg" alt="Приоритетное размещение" className='img-fluid d-block mx-auto'/>
                     </div>
                 </div>
                 <hr/>
@@ -39,7 +39,7 @@ export default function AdvertisingSection() {
                         </div>
                     </div>
                     <div className='col-sm-6 col-md-8'>
-                        <img src="/bml/images/banner-2.jpg" alt="Рекламный баннер  (1200х800)" className='img-fluid d-block mx-auto'/>
+                        <img src="/images/banner-2.jpg" alt="Рекламный баннер  (1200х800)" className='img-fluid d-block mx-auto'/>
                     </div>
                 </div>
                 <hr/>
@@ -61,7 +61,7 @@ export default function AdvertisingSection() {
                         </div>
                     </div>
                     <div className='col-sm-6 col-md-8'>
-                        <img src="/bml/images/banner-3.jpg" alt="Рекламный баннер  (250х160)" className='img-fluid d-block mx-auto'/>
+                        <img src="/images/banner-3.jpg" alt="Рекламный баннер  (250х160)" className='img-fluid d-block mx-auto'/>
                     </div>
                 </div>
                 <div className='row align-items-center mt-4 mt-md-5 g-sm-4'>
