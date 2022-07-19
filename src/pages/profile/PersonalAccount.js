@@ -19,7 +19,7 @@ export default function PersonalAccount() {
 
     return (
         <main>
-            <div class="container py-4 py-sm-5">
+            <div className="container py-4 py-sm-5">
                 <PersonalAccountRouter isMobile={mob}/>
             </div>
         </main>
