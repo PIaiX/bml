@@ -25,6 +25,7 @@ const PersonalAccountRouter = ({isMobile}) => {
             element: <PersonalAccountLayout isMobile={isMobile}/>,
             children: [
                 {index: true, element: isMobile ? <AccountMenu /> : <UserProfile/>},
+                {path: 'profile', element: <UserProfile/>},
                 {path: 'profile/view', element: <ViewProfile/>},
                 {path: 'profile/partners', element: <Partners/>},
                 {path: 'instructions', element: <Instructions/>},
