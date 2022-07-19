@@ -4,6 +4,7 @@ import { MdOutlineArrowBack } from "react-icons/md";
 import AdvPrice from './AdvPrice';
 
 export default function Premium(props) {
+
     return (
         <>
             <Link to="/account" className='color-1 f_11 fw_5 d-flex align-items-center d-lg-none mb-3 mb-sm-4'><MdOutlineArrowBack /> <span className='ms-2'>Назад</span></Link>

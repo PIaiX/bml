@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import AdvPreview from '../components/AdvPreview';
 import NewsPreview from '../components/NewsPreview';
 import NewsMini from '../components/NewsMini';
@@ -7,8 +7,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { onInputHandler, onSelectHandler} from "../helpers/forms";
 
 export default function Service() {
+
+    const [data, setData] = useState({})
+
+    console.log(data)
+
     return (
         <main>
             <Swiper
@@ -93,35 +99,55 @@ export default function Service() {
                     <div className="collapse show" id="collapseFilter">
                         <div className="row">
                             <div className="col-sm-6 col-md-4 mb-3 mb-lg-4">
-                                <select defaultValue={0}>
+                                <select
+                                    defaultValue={0}
+                                    name='sferaBiznesa'
+                                    onChange={(e) => onSelectHandler(e, setData, true)}
+                                >
                                     <option value={0} disabled>Сфера бизнеса</option>
                                     <option value={1}>Сфера 1</option>
                                     <option value={2}>Сфера 2</option>
                                 </select>
                             </div>
                             <div className="col-sm-6 col-md-4 mb-3 mb-lg-4">
-                                <select defaultValue={0}>
+                                <select
+                                    defaultValue={0}
+                                    name='category'
+                                    onChange={(e) => onSelectHandler(e, setData, true)}
+                                >
                                     <option value={0} disabled>Категория</option>
                                     <option value={1}>Категория 1</option>
                                     <option value={2}>Категория 2</option>
                                 </select>
                             </div>
                             <div className="col-sm-6 col-md-4 mb-3 mb-lg-4">
-                                <select defaultValue={0}>
+                                <select
+                                    defaultValue={0}
+                                    name='city'
+                                    onChange={(e) => onSelectHandler(e, setData, true)}
+                                >
                                     <option value={0} disabled>Город</option>
                                     <option value={1}>Город 1</option>
                                     <option value={2}>Город 2</option>
                                 </select>
                             </div>
                             <div className="col-sm-6 mb-3 mb-lg-4">
-                                <select defaultValue={0}>
+                                <select
+                                    defaultValue={0}
+                                    name='stadiaProekta'
+                                    onChange={(e) => onSelectHandler(e, setData, true)}
+                                >
                                     <option value={0} disabled>Стадия реализации проекта</option>
                                     <option value={1}>Стадия 1</option>
                                     <option value={2}>Стадия 2</option>
                                 </select>
                             </div>
                             <div className="col-sm-6 mb-3 mb-lg-4">
-                                <select defaultValue={0}>
+                                <select
+                                    defaultValue={0}
+                                    name='srok'
+                                    onChange={(e) => onSelectHandler(e, setData, true)}
+                                >
                                     <option value={0} disabled>Срок окупаемости, мес.</option>
                                     <option value={1}>Срок 1</option>
                                     <option value={2}>Срок 2</option>
@@ -129,24 +155,49 @@ export default function Service() {
                             </div>
                             <div className="col-sm-6 col-md-4 col-lg-6 mb-3 mb-lg-4">
                                 <div className="d-none d-md-block mb-1">Содержит слова:</div>
-                                <input type="text" placeholder="Введите поисковую фразу" />
+                                <input
+                                    type="text"
+                                    name='haveWords'
+                                    placeholder="Введите поисковую фразу"
+                                    onChange={e => onInputHandler(e, setData)}
+                                />
                             </div>
                             <div className="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-4">
                                 <div className="mb-1">Объем инвестиций, руб.:</div>
                                 <div className="d-flex align-items-center">
                                     <span className="me-2">от</span>
-                                    <input type="number" placeholder="100" />
+                                    <input
+                                        type="number"
+                                        placeholder="100"
+                                        onChange={e => onInputHandler(e, setData, true)}
+                                        name='obemInvestOT'
+                                    />
                                     <span className="mx-2">до</span>
-                                    <input type="number" placeholder="100000" />
+                                    <input
+                                        type="number"
+                                        placeholder="100000"
+                                        onChange={e => onInputHandler(e, setData, true)}
+                                        name='obemInvestDO'
+                                    />
                                 </div>
                             </div>
                             <div className="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-4">
                                 <div className="mb-1">Оборот в месяц, руб.:</div>
                                 <div className="d-flex align-items-center">
                                     <span className="me-2">от</span>
-                                    <input type="number" placeholder="100"/>
+                                    <input
+                                        type="number"
+                                        placeholder="100"
+                                        name='oborotOT'
+                                        onChange={(e) => onInputHandler(e, setData, true)}
+                                    />
                                     <span className="mx-2">до</span>
-                                    <input type="number" placeholder="100000"/>
+                                    <input
+                                        type="number"
+                                        placeholder="100000"
+                                        name='oborotDO'
+                                        onChange={(e) => onInputHandler(e, setData, true)}
+                                    />
                                 </div>
                             </div>
                         </div>
