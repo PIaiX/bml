@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 export default function NewsPreview(props) {
     return (
@@ -12,7 +12,7 @@ export default function NewsPreview(props) {
             <div className="px-2 py-3">
                 <p className="title">{props.title}</p>
                 <p className="text">{props.text}</p>
-                <Link to={props.url} className="more">Подробнее</Link>
+                <NavLink to={`${props.url}`} className="more">Подробнее</NavLink>
             </div>
         </article>
     );

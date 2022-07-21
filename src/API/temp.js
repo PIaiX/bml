@@ -9,4 +9,13 @@ const getImages = async (start = 0, limit = 100) => {
     }
 }
 
-export { getImages }
+const getImage = async (photoId) => {
+    try {
+        const response = await axios.get(`https://jsonplaceholder.typicode.com/photos/${photoId ? photoId : ''}`)
+        return response.data
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export { getImage, getImages }

@@ -17,8 +17,6 @@ import {onSelectHandler} from '../helpers/forms';
 export default function Service() {
     const categoryId = +useParams()?.categoryId;
     const [filters, setFilters] = useState({
-        // desc - sorts from high to low
-        // asc - sorts from low to high
         orderBy: 'desc',
         byPublicationDate: 0
     })
