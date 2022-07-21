@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 
 const usePagination = (items, limit) => {
-    const [paginationItems, setPaginationItems] = useState(null)
+    const [paginationItems, setPaginationItems] = useState([])
     const [pageCount, setPageCount] = useState(0)
     const [itemOffset, setItemOffset] = useState(0)
     const [selectedPage, setSelectedPage] = useState(0)

@@ -6,8 +6,8 @@ import Home from '../pages/Home';
 import Contacts from '../pages/Contacts';
 import Service from '../pages/Service';
 import AdvPage from '../pages/AdvPage';
-import AllNews from '../pages/AllNews';
 import News from '../pages/News';
+import NewsItem from '../components/NewsItem';
 import Entrance from '../pages/profile/Entrance';
 import Registration from '../pages/profile/Registration';
 import ResetPassword from '../pages/profile/ResetPassword';
@@ -27,12 +27,12 @@ export const routeList = [
         element: <Service/>,
         breadcrumb: 'Услуга',
         children: [
-          {path: ':categoryId', element: <Service/>, breadcrumb: 'Услуга'}
+          {path: ':categoryId', element: <Service/>}
         ]
       },
       {path: 'adv-page', element: <AdvPage/>, breadcrumb: 'Объявление'},
-      {path: 'news', element: <AllNews/>, breadcrumb: 'Новости и статьи'},
-      {path: 'news/news-0', element: <News/>, breadcrumb: 'Новость'},
+      {path: 'news', element: <News/>, breadcrumb: 'Новости и статьи'},
+      {path: 'news/:newsId', element: <NewsItem/>, breadcrumb: 'Новость'},
       {path: 'enter', element: <Entrance/>, breadcrumb: 'Вход'},
       {path: 'registration', element: <Registration/>, breadcrumb: 'Регистрация'},
       {path: 'password-reset', element: <ResetPassword/>, breadcrumb: 'Сброс пароля'},
