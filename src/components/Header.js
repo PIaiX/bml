@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 import { MdStarOutline, MdOutlineShoppingCart, MdLogin, MdSearch, MdMenu, MdClose } from "react-icons/md";
 import { IconContext } from "react-icons";
 
@@ -39,19 +39,19 @@ export default function Header() {
                     <nav id="main-menu" className="d-none d-lg-block">
                         <ul className="mt-3 mt-md-0 ml-auto mr-auto">
                             <li className="nav-item">
-                                <NavLink to="/category" className="nav-link">Поиск инвестора</NavLink>
+                                <NavLink to="category/1" className="nav-link">Поиск инвестора</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/category" className="nav-link">Предложения инвесторов</NavLink>
+                                <NavLink to="category/2" className="nav-link">Предложения инвесторов</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/category" className="nav-link">Поиск бизнес парнёров</NavLink>
+                                <NavLink to="category/3" className="nav-link">Поиск бизнес парнёров</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/category" className="nav-link">Продажа бизнеса</NavLink>
+                                <NavLink to="category/4" className="nav-link">Продажа бизнеса</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/category" className="nav-link">Франшизы</NavLink>
+                                <NavLink to="category/5" className="nav-link">Франшизы</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink to="/news" className="nav-link">Новости</NavLink>
@@ -76,7 +76,7 @@ export default function Header() {
             </section>
         </header>
 
-        <div className="offcanvas offcanvas-start" tabIndex="-1" id="menu">
+        <div className="offcanvas offcanvas-start" tabIndex="-1" id="menu" data-scroll>
             <div className="offcanvas-body p-5">
                 <button type="button" className="btn-close" data-bs-dismiss="offcanvas">
                     <MdClose />
@@ -84,25 +84,25 @@ export default function Header() {
                 <nav>
                     <ul className='list-unstyled'>
                         <li>
-                            <NavLink to="/category">Поиск инвестора</NavLink>
+                            <NavLink to="category/1">Поиск инвестора</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/category">Предложения инвесторов</NavLink>
+                            <NavLink to="category/2">Предложения инвесторов</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/category">Поиск бизнес парнёров</NavLink>
+                            <NavLink to="category/3">Поиск бизнес парнёров</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/category">Продажа бизнеса</NavLink>
+                            <NavLink to="category/4">Продажа бизнеса</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/category">Франшизы</NavLink>
+                            <NavLink to="category/5">Франшизы</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/news">Новости</NavLink>
+                            <NavLink to="news">Новости</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contacts">Контакты</NavLink>
+                            <NavLink to="contacts">Контакты</NavLink>
                         </li>
                     </ul>
                 </nav>
