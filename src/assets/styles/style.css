@@ -391,33 +391,26 @@ block 3
     justify-content: space-between;
     align-items: center;
 }
-#collapseFilter {
+.collapse-filter {
     border: 1px solid #DDDDDD;
     padding: 2em;
     background-color: #EFEFEF;
     margin-top: -1px;
 }
-#btn-collapseFilter {
+.filter__btn {
     width: 120px;
     text-align: left;
-}
-#btn-collapseFilter[aria-expanded="true"]::after {
-    content: "скрыть поиск";
-    text-decoration: underline;
-}
-#btn-collapseFilter[aria-expanded="false"]::after {
-    content: "показать поиск";
     text-decoration: underline;
 }
 @media (max-width: 1199px) {
     .filter_line_1,
-    #collapseFilter {
+    .collapseFilter {
         padding: 1.5em;
     }
 }
 @media (max-width: 991px) {
     .filter_line_1,
-    #collapseFilter {
+    .collapseFilter {
         padding: 1em;
     }
 }
@@ -431,7 +424,6 @@ block 3
         margin-bottom: .5em;
     }
 }
-
 
 /***** сортировка *****/
 .sort {
@@ -457,6 +449,16 @@ nav>ul.pagination {
 nav>ul.pagination .page-item {
     margin-right: .5em;
 }
+
+/* Active pagintion element styles */
+nav>ul.pagination .page-item.selected {
+    background-color: #777777;
+}
+nav>ul.pagination .page-item.selected .page-link {
+    color: #FFF;
+}
+/* ------------------------------- */
+
 nav>ul.pagination .page-item:last-child {
     margin-right: 0;
 }
@@ -1813,6 +1815,7 @@ footer {
     }
 }
 
+/* NotFound page*/
 .not-found {
     height: 100%;
     display: flex;
@@ -1831,4 +1834,68 @@ footer {
 .not-found__link {
     text-align: center;
     padding: 0;
+}
+
+/* Loader component */
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
 }
