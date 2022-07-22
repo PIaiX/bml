@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 
 export const useImageViewer = (file) => {
 
-    const [fileDataURL, setFileDataURL] = useState(null)
+    const [info, setInfo] = useState({})
 
     useEffect(() => {
         let fileReader
@@ -11,12 +11,31 @@ export const useImageViewer = (file) => {
             fileReader.onload = (e) => {
                 const { result } = e?.target;
                 if (result) {
-                    setFileDataURL(result)
+                    setInfo(prevState => {
+                        return {
+                            ...prevState,
+                            data_url: result
+                        }
+                    })
                 }
             }
             fileReader.readAsDataURL(file);
         }
     }, [file])
 
-    return fileDataURL
+    useEffect(() => {
+        const img = new Image()
+        img.onload = () => {
+            setInfo(prevState => {
+                return {
+                    ...prevState,
+                    width: img.width,
+                    height:img.height
+                }
+            })
+        }
+        img.src = info?.data_url
+    }, [info?.data_url])
+
+    return info
 }
