@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import {onInputHandler} from "../../helpers/forms";
-import {onSelectHandler} from "../../helpers/forms";
-import {onCheckboxHandler} from "../../helpers/forms";
+import {onInputHandler} from "../../helpers/formHandlers";
+import {onSelectHandler} from "../../helpers/formHandlers";
+import {onCheckboxHandler} from "../../helpers/formHandlers";
 
 export default function Registration() {
 

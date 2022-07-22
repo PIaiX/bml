@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { MdOutlineArrowBack } from "react-icons/md";
-import {onImageHandler, onImagesHandler, onInputHandler, onSelectHandler} from "../../helpers/forms";
+import {onImageHandler, onImagesHandler, onInputHandler, onSelectHandler} from "../../helpers/formHandlers";
 import {useImageViewer} from "../../hooks/imageViewer";
 import {useImagesViewer} from "../../hooks/imagesViewer";
 

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Collapse from 'react-bootstrap/Collapse';
-import {onInputHandler, onSelectHandler} from '../helpers/forms';
+import {onInputHandler, onSelectHandler} from '../helpers/formHandlers';
 import {MdCached} from 'react-icons/md';
 
 const SearchForm = ({foundCount, filters, setFilters, onApplyFilters, modules = []}) => {

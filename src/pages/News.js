@@ -7,7 +7,7 @@ import usePagination from '../hooks/pagination';
 import {getImages} from '../API/temp';
 import Pagination from '../components/utils/Pagination'
 import Loader from '../components/utils/Loader';
-import {onSelectHandler} from '../helpers/forms';
+import {onSelectHandler} from '../helpers/formHandlers';
 
 export default function News() {
     const [sorting, setSorting] = useState({byPublicationDate: 0})

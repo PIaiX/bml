@@ -22,14 +22,8 @@ export const routeList = [
     children: [
       {index: true, element: <Home/>, breadcrumb: 'Главная'},
       {path: 'contacts', element: <Contacts/>, breadcrumb: 'Контакты'},
-      {
-        path: 'category',
-        element: <Service/>,
-        breadcrumb: 'Услуга',
-        children: [
-          {path: ':categoryId', element: <Service/>}
-        ]
-      },
+      {path: 'category', element: <Service/>, breadcrumb: 'Услуга'},
+      {path: 'category/:categoryId', element: <Service/>, breadcrumb: 'Услуга'},
       {path: 'adv-page', element: <AdvPage/>, breadcrumb: 'Объявление'},
       {path: 'news', element: <News/>, breadcrumb: 'Новости и статьи'},
       {path: 'news/:newsId', element: <NewsItem/>, breadcrumb: 'Новость'},
