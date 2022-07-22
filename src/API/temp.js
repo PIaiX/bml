@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const getImages = async (start = 0, limit = 100) => {
+const getImages = async (limit = 100, start = 0) => {
     try {
         const response = await axios.get(`https://jsonplaceholder.typicode.com/photos?_start=${start}&_limit=${limit}`)
         return response.data
@@ -18,4 +18,13 @@ const getImage = async (photoId) => {
     }
 }
 
-export { getImage, getImages }
+const getUnsplashImages = async (page = 1, limit = 15) => {
+    try {
+        const response = await axios.get(`https://api.unsplash.com/photos/?client_id=r6HfdKhLLVDzkSV06O1laCrAzPxEoLVHvB61Fa21Npw&page=${page}&per_page=${limit}`)
+        return response.data
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export { getImage, getImages, getUnsplashImages }

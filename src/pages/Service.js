@@ -12,7 +12,7 @@ import ServicePagination from '../components/utils/Pagination'
 import usePagination from '../hooks/pagination'
 import {useParams} from 'react-router-dom';
 import SearchForm from '../components/SearchForm';
-import {onSelectHandler} from '../helpers/forms';
+import {onSelectHandler} from '../helpers/formHandlers';
 
 export default function Service() {
     const categoryId = +useParams()?.categoryId;
@@ -37,8 +37,6 @@ export default function Service() {
             .then(items => setData({isLoading: true, foundCount: items.length, items}))
             .catch(error => setData({isLoading: true, error}))
     }, [appliedFilters])
-
-    useEffect(() => console.log(filters), [filters])
 
     return (
         <main>
@@ -193,7 +191,7 @@ export default function Service() {
                         <span className="f_09 d-none d-lg-block">Сортировать:</span>
                         <select
                             name='byPublicationDate'
-                            defaultValue={filters.byPublicationDate}
+                            value={filters.byPublicationDate}
                             className="f_08 ms-2 pe-4"
                             onChange={e => onSelectHandler(e, setFilters)}
                         >
@@ -203,7 +201,7 @@ export default function Service() {
                         </select>
                         <select
                             name='orderBy'
-                            defaultValue={filters.orderBy}
+                            value={filters.orderBy}
                             className="f_08 ms-2 pe-4"
                             onChange={e => onSelectHandler(e, setFilters)}
                         >
@@ -281,7 +279,7 @@ export default function Service() {
                         <span className="f_09 d-none d-lg-block">Сортировать:</span>
                         <select
                             name='byPublicationDate'
-                            defaultValue={filters.byPublicationDate}
+                            value={filters.byPublicationDate}
                             className="f_08 ms-2 pe-4"
                             onChange={e => onSelectHandler(e, setFilters)}
                         >
@@ -291,7 +289,7 @@ export default function Service() {
                         </select>
                         <select
                             name='orderBy'
-                            defaultValue={filters.orderBy}
+                            value={filters.orderBy}
                             className="f_08 ms-2 pe-4"
                             onChange={e => onSelectHandler(e, setFilters)}
                         >
