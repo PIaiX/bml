@@ -1836,6 +1836,7 @@ footer {
     padding: 0;
 }
 
+<<<<<<< Updated upstream
 /* Loader component */
 .lds-ellipsis {
     display: inline-block;
@@ -1898,4 +1899,157 @@ footer {
     100% {
         transform: translate(24px, 0);
     }
+}
+.modal__photosAdd {
+
+}
+
+.mainModalPhotos {
+    padding: 2em;
+}
+
+.modal__photosAdd .modal-body {
+    padding: 0;
+}
+
+.modal__photosAdd .modal-content {
+    border: none;
+}
+
+.modal__photosAdd .modal-header{
+    padding: 1em 1em 0 1em;
+    background: #E2E8F3;
+    border: none;
+}
+
+.modal__photosAdd .modal-header button {
+    color: black;
+}
+
+.itemsModalPhotos {
+    width: auto;
+    height: 20em;
+    border-radius: 4px;
+    margin-bottom: 1.5em;
+}
+
+.view-items {
+    overflow: auto;
+    padding: 1.5em;
+    border: 1px solid #E7E8EC;
+}
+
+.photos-items span{
+    padding-left: 1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.buttonsModalPhotos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.buttonsModalPhotos .miniGroup {
+    display: flex;
+    align-items: center;
+}
+
+.buttonsModalPhotos .miniGroup span {
+    margin-left: 1em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    color: #8D8D8D;
+}
+
+#form-file-upload {
+    height: 16rem;
+    width: 28rem;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#input-file-upload {
+    display: none;
+}
+
+#label-file-upload {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8fafc;
+    text-align: center;
+}
+
+#label-file-upload p {
+    color: #8D8D8D;
+    font-size: 1.2em;
+}
+
+#label-file-upload.drag-active {
+    background-color: #ffffff;
+}
+
+.upload-button {
+    cursor: pointer;
+    padding: 0.25rem;
+    font-size: 1rem;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.upload-button:hover {
+    text-decoration-line: underline;
+}
+
+#drag-file-element {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.dragAndDropInItems {
+    border: 1px solid #E7E8EC;
+    height: inherit;
+    border-radius: 4px;
+}
+
+.photos-window {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.photos-window:not(:first-child){
+    padding-top: 1em;
+}
+
+.photos-items {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.photos-items img {
+    width: 3em;
+    height: 3em;
+}
+
+.photos-window button {
+    color: #3670B3;
 }

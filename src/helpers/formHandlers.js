@@ -27,7 +27,7 @@ export const onImageHandler = (e, nameProp, setFunction) => {
     const file = e.target.files[0]
 
     if(!file.type.match(imageMimeType)){
-        alert('error type')
+        return
     } else {
         setFunction(prevValues => ({...prevValues, [nameProp]: file}))
     }
@@ -38,13 +38,13 @@ export const onImagesHandler = (e, nameProp, setFunction) => {
     const imageTypeRegex = /image\/(png|jpg|jpeg)/gm;
     const { files } = e.target;
     const validImageFiles = [];
-    for (let i = 0; i < files.length; i++) {
+    for (let i = 0; i < files?.length; i++) {
         const file = files[i];
         if (file.type.match(imageTypeRegex)) {
             validImageFiles.push(file);
         }
     }
-    if (validImageFiles.length) {
+    if (validImageFiles?.length) {
         setFunction(prevValues => ({...prevValues, [nameProp]: validImageFiles}));
     }
 }

@@ -1,27 +1,26 @@
 import {useEffect, useState} from "react";
 
-export const useImagesViewer = (files) => {
+export const useImagesViewer = (files= []) => {
 
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-        const images = [], fileReaders = []
-        if (files?.length) {
-            files.forEach((file) => {
-                const fileReader = new FileReader();
-                fileReaders.push(fileReader);
-                fileReader.onload = (e) => {
-                    const { result } = e.target;
-                    if (result) {
-                        images.push(result)
+        files.length && files.forEach(file => {
+            const fileReader = new FileReader();
+            fileReader.readAsDataURL(file)
+            fileReader.onload = (e) => {
+                const {result} = e.target
+                result && setImages(prevState => [...prevState,
+                    {
+                        initialFile: file,
+                        info: {name: file.name, data_url: result}
                     }
-                    if (images.length === files.length) {
-                        setImages(images);
-                    }
-                }
-                fileReader.readAsDataURL(file);
-            })
-        }
+                ])
+            }
+        })
+        setImages([])
     }, [files]);
+
     return images
+
 }
