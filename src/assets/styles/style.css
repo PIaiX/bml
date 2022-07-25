@@ -1784,7 +1784,7 @@ footer {
         background-color: #E2E8F4;
         height: 40px;
         color: #000;
-        position: fixed;
+        position: sticky;
         bottom: 0px;
         left: 0px;
         width: 100%;
@@ -2052,4 +2052,8 @@ footer {
 
 .photos-window button {
     color: #3670B3;
+}
+
+.for-ad-blocks {
+    object-fit: contain;
 }

@@ -16,7 +16,7 @@ export default function AdvPrice(props) {
         <div
             className={(props.selected) ? 'ad-price picked' : 'ad-price'}
         >
-            <img src={pp()} alt="Заставка"/>
+            <img src={pp()} alt="Заставка" className='for-ad-blocks'/>
             <div className='text'>
                 <h6 className='mt-1 mb-2'>{props.title}</h6>
                 {
