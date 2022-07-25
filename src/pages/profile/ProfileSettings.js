@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { MdOutlineArrowBack } from "react-icons/md";
+import {useImageViewer} from "../../hooks/imageViewer";
+import {onImageHandler} from "../../helpers/formHandlers";
 
 export default function ProfileSettings() {
+
+    const [data, setData] = useState({})
+
+    const photo = useImageViewer(data?.avatar)
+
     return (
         <div>
             <Link to="/account" className='color-1 f_11 fw_5 d-flex align-items-center d-lg-none mb-3 mb-sm-4'><MdOutlineArrowBack /> <span className='ms-2'>Назад</span></Link>
@@ -12,12 +19,15 @@ export default function ProfileSettings() {
             <div className='acc-box'>
                 <div className="row align-items-center">
                     <div className="col-md-4 mb-4 mb-md-0">
-                        <img src="/images/photo-replacer.jpg" alt="Анна Петрова" className="user-photo"/>
+                        <img src={data?.avatar ? photo.data_url : "/images/photo-replacer.jpg"} alt="Анна Петрова" className="user-photo"/>
                     </div>
                     <div className="col-md-8">
                         <div className="file-upload mb-3">
                             <button className="btn_main btn_2 fw_4">Загрузить</button>
-                            <input type="file" />
+                            <input
+                                type="file"
+                                onChange={(e) => onImageHandler(e, 'avatar', setData)}
+                            />
                         </div>
                         <div className="f_08 gray">(К загрузке разрешены файлы формата PNG, JPG, JPEG и весом не более 1 МБ.<br />Рекомендуем загружать фото не менее 300px в ширину и высоту.)</div>
                     </div>
