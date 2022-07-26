@@ -8,26 +8,26 @@ import {useImageViewer} from "../../hooks/imageViewer";
 const banners = [
     {
         id: 1,
-
-        littleBanner: true, status: 'free',
+        littleBanner: true,
+        status: 'free',
         name: 'block',
     },
     {
         id: 2,
-
-        littleBanner: true, status: 'zanato',
+        littleBanner: true,
+        status: 'zanato',
         name: 'nabor lohov',
     },
     {
         id: 3,
-
-        littleBanner: true, status: 'blocked',
+        littleBanner: true,
+        status: 'blocked',
         name: 'lalki',
     },
     {
         id: 4,
-
-        littleBanner: true, status: 'free',
+        littleBanner: true,
+        status: 'free',
         name: 'block',
     },
     {
@@ -239,10 +239,10 @@ const banners = [
     }
 ]
 
-export default function Premium(props) {
+export default function Premium() {
 
     const loc = useLocation()
-    const [data, setData] = useState({})
+    const [data, setData] = useState({littleBanner: null})
     const lookBigPicture = useImageViewer(data?.bigBanner)
     const lookLittleBanner = useImageViewer(data?.littleBanner)
     const [idPost, setIdPost] = useState()
@@ -251,9 +251,25 @@ export default function Premium(props) {
         setData(loc?.state?.data)
     }, [loc])
 
-    const validLittlePhoto = (little) => (little?.width === 250 && little?.height === 160)
+    const validLittlePhoto = (little) => {
+        if (little?.width === undefined && little?.height === undefined) {
+            return <span>Фото не загружено</span>
+        } else if (little?.width === 250 && little?.height === 160) {
+            return [<span>Фото загружено</span>, lookLittleBanner.data_url]
+        } else if (little?.width !== 250 && little?.height !== 160) {
+            return <span>Размеры не подходят</span>
+        } else return false
+    }
 
-    const validBigPhoto = (big) => (big?.width === 1200 && big?.height === 280)
+    const validBigPhoto = (big) => {
+        if (big?.width === undefined && big?.height === undefined) {
+            return <span>Фото не загружено</span>
+        } else if (big?.width === 1200 && big?.height === 280) {
+            return [<span>Фото загружено</span>, lookBigPicture.data_url]
+        } else if (big?.width !== 1200 && big?.height !== 280) {
+            return <span>Размеры не подходят</span>
+        } else return false
+    }
 
     const currentId = (id) => {
         setIdPost(prevState => prevState !== id ? id : '')
@@ -297,8 +313,8 @@ export default function Premium(props) {
                                 status={i.status}
                                 bigBanner={i.bigBanner}
                                 littleBanner={i.littleBanner}
-                                bigPicture={lookBigPicture.data_url}
-                                littlePicture={lookLittleBanner.data_url}
+                                bigPicture={validBigPhoto(lookBigPicture)[1]}
+                                littlePicture={validLittlePhoto(lookLittleBanner)[1]}
                                 selected={filterType(i.status, i.id)}
                             />
                         </div>
@@ -433,8 +449,10 @@ export default function Premium(props) {
                                 type="file"
                                 onChange={(e) => onImageHandler(e, 'bigBanner', setData)}
                             />
-                            {validBigPhoto(lookBigPicture) ? <span>Фото загружено</span> :
-                                <span>Размеры не подходят</span>}
+                            {validBigPhoto(lookBigPicture)[0] === undefined
+                                ? validBigPhoto(lookBigPicture)
+                                : validBigPhoto(lookBigPicture)[0]
+                            }
                         </div>
                     </div>
 
@@ -454,8 +472,11 @@ export default function Premium(props) {
                                 type="file"
                                 onChange={e => onImageHandler(e, 'littleBanner', setData)}
                             />
-                            {validLittlePhoto(lookLittleBanner) ? <span>Фото загружено</span> :
-                                <span>Размеры не подходят</span>}
+                            {
+                                validLittlePhoto(lookLittleBanner)[0] === undefined
+                                ? validLittlePhoto(lookLittleBanner)
+                                : validLittlePhoto(lookLittleBanner)[0]
+                            }
                         </div>
                     </div>
                     <div className='col-sm-4 col-xxl-3 mb-2 mb-sm-0'>

@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {onImageHandler, onImagesHandler, onInputHandler, onSelectHandler} from "../../helpers/formHandlers";
+import {onImageHandler, onInputHandler, onSelectHandler} from "../../helpers/formHandlers";
 import {Link, NavLink} from 'react-router-dom';
 import {MdOutlineArrowBack} from "react-icons/md";
 import {useImageViewer} from "../../hooks/imageViewer";
@@ -41,8 +41,11 @@ export default function NewAd() {
         e.preventDefault();
         e.stopPropagation();
         setDragActive(false);
-        if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+        if (e.dataTransfer.files && e.dataTransfer.files[0] && e.dataTransfer?.files?.length < 10) {
+            console.log(e.dataTransfer?.files?.length)
             setFiles([...e.dataTransfer.files])
+        } else {
+            alert('Меньше 10 фото пж')
         }
     }
 
@@ -50,15 +53,15 @@ export default function NewAd() {
         setData(prevData => ({...prevData, files: prevData?.files.filter((i) => (i?.info?.name !== name))}))
     }
 
-    const validPhoto = () => {
-        if (photoInfo?.width > 600 || photoInfo?.height > 400) {
-            return true
-        }
+    const validPhoto = (photo) => {
+        if (photo?.height === undefined && photo?.width === undefined) {
+            return <span>Фото не загружено</span>
+        } else if (photo?.width === 600 && photo?.height === 400) {
+            return <span>Фото загружено</span>
+        } else if (photo?.width !== 600 && photo?.height !== 400) {
+            return <span>Размеры не подходят</span>
+        } else return false
     }
-
-    useEffect(() => {
-        validPhoto()
-    }, [photoInfo, data])
 
     return (
         <>
@@ -243,9 +246,7 @@ export default function NewAd() {
                                     }}
                                 />
                             </div>
-                            {validPhoto() && <div><span>Размеры не подходят</span></div>}
-                            {(photoInfo?.height < 600 && photoInfo.width < 400) &&
-                                <div><span>Фото загружено</span></div>}
+                            {validPhoto(photoInfo)}
                         </div>
                     </div>
                     <div className="row mb-3 mb-sm-4">
@@ -284,8 +285,11 @@ export default function NewAd() {
                                                         type="file"
                                                         id="input-file-upload"
                                                         multiple
-                                                        onChange={(e) => setFiles(prevState => (
-                                                            [...prevState, ...e.target.files]))
+                                                        onChange={(e) => {
+                                                            (e.target?.files?.length < 10)
+                                                                ? setFiles(prevState => ([...prevState, ...e.target.files]))
+                                                                : alert('Меньше 10 пж')
+                                                        }
                                                         }
                                                     />
                                                     <label id="label-file-upload" htmlFor="input-file-upload"
@@ -326,8 +330,11 @@ export default function NewAd() {
                                                     <input
                                                         type="file"
                                                         multiple
-                                                        onChange={(e) => setFiles(prevState => (
-                                                            [...prevState, ...e.target.files]))
+                                                        onChange={(e) => {
+                                                            (e.target?.files?.length < 10)
+                                                                ? setFiles(prevState => ([...prevState, ...e.target.files]))
+                                                                : alert('Меньше 10 пж')
+                                                        }
                                                         }
                                                     />
                                                     </label>

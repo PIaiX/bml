@@ -12,14 +12,23 @@ export default function Instructions() {
                 <div>
                     <div className='acc-video'>
                         <video controls>
-                            <source src="/bml/video/video.mp4" type="video/mp4" />
+                            <source
+                                src="/bml/video/video.mp4"
+                                type="video/mp4"
+                            />
                         </video>
                     </div>
                     <div className='mt-2'>Название видео</div>
                 </div>
                 <div>
                     <div className='acc-video'>
-                        <iframe src="https://www.youtube.com/embed/BMNwrrFTO7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe
+                            src="https://www.youtube.com/embed/BMNwrrFTO7A"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        />
                     </div>
                     <div className='mt-2'>Название видео</div>
                 </div>
@@ -37,7 +46,13 @@ export default function Instructions() {
             <div className='row row-cols-sm-2 row-cols-md-3 g-4'>
                 <div>
                     <div className='acc-video'>
-                        <iframe src="https://www.youtube.com/embed/BMNwrrFTO7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe
+                            src="https://www.youtube.com/embed/BMNwrrFTO7A"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        />
                     </div>
                     <div className='mt-2'>Название видео</div>
                 </div>

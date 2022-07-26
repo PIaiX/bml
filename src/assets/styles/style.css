@@ -1784,7 +1784,7 @@ footer {
         background-color: #E2E8F4;
         height: 40px;
         color: #000;
-        position: fixed;
+        position: sticky;
         bottom: 0px;
         left: 0px;
         width: 100%;
@@ -2074,4 +2074,8 @@ footer {
 
 .photo-upload__desc > span {
     color: red;
+}
+
+.for-ad-blocks {
+    object-fit: contain;
 }
