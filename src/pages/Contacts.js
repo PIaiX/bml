@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Breadcrumbs from '../components/utils/Breadcrumbs';
 import Partners from '../components/Partners';
+import {useLocation} from "react-router-dom";
 
 export default function Contacts() {
+
+    const loc = useLocation()
+
+    useEffect(() => {
+        loc?.state?.fromHeader && window.scroll(0, 550)
+    }, [])
+
     return (
         <main>
         <div className="container pt-4">

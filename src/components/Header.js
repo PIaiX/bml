@@ -19,7 +19,7 @@ export default function Header() {
                             <MdSearch />
                         </button>
                     </form>
-                    <button type="button" className="d-none d-md-block color-2 bb_1 lh_1">Обратная связь</button>
+                    <NavLink to='/contacts' state={{fromHeader: true}} className="d-none d-md-block color-2 bb_1 lh_1">Обратная связь</NavLink>
                     <a href="/" className="btn-icon">
                         <MdStarOutline />
                         <span className='count'>3</span>
