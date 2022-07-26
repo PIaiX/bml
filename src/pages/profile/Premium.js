@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import {Link, NavLink, useLocation} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 import {MdOutlineArrowBack} from "react-icons/md";
 import AdvPrice from './AdvPrice';
-import {onImageHandler, onInputHandler, onSelectHandler} from "../../helpers/formHandlers";
+import {onImageHandler, onInputHandler} from "../../helpers/formHandlers";
 import {useImageViewer} from "../../hooks/imageViewer";
 
 const banners = [
@@ -16,13 +16,13 @@ const banners = [
         id: 2,
         littleBanner: true,
         status: 'zanato',
-        name: 'nabor lohov',
+        name: 'nabor ',
     },
     {
         id: 3,
         littleBanner: true,
         status: 'blocked',
-        name: 'lalki',
+        name: 'biznesmemi',
     },
     {
         id: 4,
@@ -34,13 +34,13 @@ const banners = [
         id: 5,
 
         littleBanner: true, status: 'zanato',
-        name: 'nabor lohov',
+        name: 'nabor ',
     },
     {
         id: 6,
 
         littleBanner: true, status: 'blocked',
-        name: 'lalki',
+        name: 'biznesmemi',
     },
     {
         id: 7,
@@ -52,13 +52,13 @@ const banners = [
         id: 8,
 
         littleBanner: true, status: 'zanato',
-        name: 'nabor lohov',
+        name: 'nabor ',
     },
     {
         id: 9,
 
         littleBanner: true, status: 'blocked',
-        name: 'lalki',
+        name: 'biznesmemi',
     },
     {
         id: 10,
@@ -71,13 +71,13 @@ const banners = [
         id: 11,
         littleBanner: true,
         status: 'zanato',
-        name: 'nabor lohov',
+        name: 'nabor ',
     },
     {
         id: 12,
         littleBanner: true,
         status: 'blocked',
-        name: 'lalki',
+        name: 'biznesmemi',
 
     },
     {
@@ -90,13 +90,13 @@ const banners = [
         id: 14,
         littleBanner: true,
         status: 'zanato',
-        name: 'nabor lohov',
+        name: 'nabor ',
     },
     {
         id: 15,
         littleBanner: true,
         status: 'blocked',
-        name: 'lalki',
+        name: 'biznesmemi',
     },
     {
         id: 16,
@@ -108,13 +108,13 @@ const banners = [
         id: 17,
         littleBanner: true,
         status: 'zanato',
-        name: 'nabor lohov',
+        name: 'nabor ',
     },
     {
         id: 18,
         littleBanner: true,
         status: 'blocked',
-        name: 'lalki',
+        name: 'biznesmemi',
     },
     {
         id: 19,
@@ -126,13 +126,13 @@ const banners = [
         id: 20,
         littleBanner: true,
         status: 'zanato',
-        name: 'nabor lohov',
+        name: 'nabor ',
     },
     {
         id: 21,
         littleBanner: true,
         status: 'blocked',
-        name: 'lalki',
+        name: 'biznesmemi',
     },
     {
         id: 22,
@@ -144,13 +144,13 @@ const banners = [
         id: 23,
         littleBanner: true,
         status: 'zanato',
-        name: 'nabor lohov',
+        name: 'nabor ',
     },
     {
         id: 24,
         littleBanner: true,
         status: 'blocked',
-        name: 'lalki',
+        name: 'biznesmemi',
     },
     {
         id: 25,
@@ -162,14 +162,14 @@ const banners = [
     {
         id: 26,
         status: 'zanato',
-        name: 'nabor lohov',
+        name: 'nabor ',
         bigBanner: true,
     },
     {
         id: 27,
         littleBanner: true,
         status: 'blocked',
-        name: 'lalki',
+        name: 'biznesmemi',
     },
     {
         id: 28,
@@ -181,13 +181,13 @@ const banners = [
         id: 29,
         littleBanner: true,
         status: 'zanato',
-        name: 'nabor lohov',
+        name: 'nabor ',
     },
     {
         id: 30,
         littleBanner: true,
         status: 'blocked',
-        name: 'lalki',
+        name: 'biznesmemi',
     },
     {
         id: 31,
@@ -199,13 +199,13 @@ const banners = [
         id: 32,
         littleBanner: true,
         status: 'zanato',
-        name: 'nabor lohov',
+        name: 'nabor ',
     },
     {
         id: 33,
         littleBanner: true,
         status: 'blocked',
-        name: 'lalki',
+        name: 'biznesmemi',
     },
     {
         id: 34,
@@ -217,13 +217,13 @@ const banners = [
         id: 35,
         littleBanner: true,
         status: 'zanato',
-        name: 'nabor lohov',
+        name: 'nabor ',
     },
     {
         id: 36,
         littleBanner: true,
         status: 'blocked',
-        name: 'lalki',
+        name: 'biznesmemi',
     },
     {
         id: 37,
@@ -242,13 +242,13 @@ const banners = [
 export default function Premium() {
 
     const loc = useLocation()
-    const [data, setData] = useState({littleBanner: null})
+    const [data, setData] = useState({littleBanner: null, dateLifeAd: '1', sum: 5000})
     const lookBigPicture = useImageViewer(data?.bigBanner)
     const lookLittleBanner = useImageViewer(data?.littleBanner)
     const [idPost, setIdPost] = useState()
 
     useEffect(() => {
-        setData(loc?.state?.data)
+        setData(prevState => ({...prevState, ...loc?.state?.data}))
     }, [loc])
 
     const validLittlePhoto = (little) => {
@@ -272,12 +272,14 @@ export default function Premium() {
     }
 
     const currentId = (id) => {
-        setIdPost(prevState => prevState !== id ? id : '')
+        setIdPost(prevState => prevState !== id && id)
     }
 
     const filterType = (statusPost, id) => {
         return !(statusPost === 'blocked' || statusPost === 'zanato') && idPost === id
     }
+
+    console.log(data)
 
     return (
         <>
@@ -302,7 +304,7 @@ export default function Premium() {
                             key={i.id}
                             onClick={() => {
                                 currentId(i.id)
-                                setData(prevState => ({...prevState, 'placeInSite': i.id}))
+                                setData(prevState => ({...prevState, 'placeInSite': prevState === i.id ? '' : i.id}))
                             }}
                         >
                             <AdvPrice
@@ -484,9 +486,16 @@ export default function Premium() {
                     </div>
                     <div className='col-sm-8 col-xxl-9 mb-3 mb-sm-0'>
                         <select
-                            defaultValue={0}
+                            defaultValue={1}
                             name='dateLifeAd'
-                            onChange={e => onSelectHandler(e, setData, true)}
+                            onChange={e =>
+                                setData(prevState => (
+                                    {...prevState,
+                                        dateLifeAd: e.target.value,
+                                        sum: (e.target.value === '1') && 5000 || (e.target.value === '2') && 7000,
+                                    }
+                                ))
+                            }
                         >
                             <option value={0} hidden disabled>Срок размещения</option>
                             <option value={1}>3 месяца – 5 000 ₽</option>
@@ -507,12 +516,7 @@ export default function Premium() {
                         <div className='f_12 fw_6'>Сумма к оплате</div>
                     </div>
                     <div className='col-sm-8 col-md-4 col-xxl-3 mb-3 mb-sm-0'>
-                        <input
-                            type='text'
-                            name='endSum'
-                            className="input-price f_12 fw_6"
-                            onChange={e => onInputHandler(e, setData)}
-                        />
+                        <span className='f_12 fw_6'>{data?.sum} ₽</span>
                     </div>
                 </div>
                 <button type='button' className="btn_main btn_4 fw_4 mt-sm-5">Создать и перейти к оплате</button>

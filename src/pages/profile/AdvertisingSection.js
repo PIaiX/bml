@@ -13,12 +13,17 @@ import {logDOM} from "@testing-library/react";
 
 export default function AdvertisingSection() {
 
-    const [data, setData] = useState({})
+    const [data, setData] = useState(
+        {
+            lifeAd: 1,
+            sum: 6000,
+        }
+    )
 
     const viewPhoto = useImageViewer(data?.photo)
 
     const validLittlePhoto = (photo) => {
-        if (photo.width === undefined && photo.height === undefined){
+        if (photo.width === undefined && photo.height === undefined) {
             return <span>Фото не загружено</span>
         } else if (photo.width === 250 && photo.height === 160 && data?.adv === 1) {
             return <span>Фото загружено</span>
@@ -141,7 +146,20 @@ export default function AdvertisingSection() {
                         <div>Срок размещения</div>
                     </div>
                     <div className='col-sm-8 col-xxl-9 mb-3 mb-sm-0'>
-                        <select name='lifeAd' defaultValue={0} onChange={e => onSelectHandler(e, setData, true)}>
+                        <select
+                            name='lifeAd'
+                            defaultValue={1}
+                            onChange={e => {
+                                setData(prevState => (
+                                    {
+                                        ...prevState,
+                                        lifeAd: e.target.value,
+                                        sum: (e.target.value === '1') && 6000 || (e.target.value === '2') && 8000
+                                    }
+                                ))
+                            }
+                            }
+                        >
                             <option value={0} disabled hidden>Срок размещения</option>
                             <option value={1}>3 месяца</option>
                             <option value={2}>6 месяцев</option>
@@ -151,13 +169,7 @@ export default function AdvertisingSection() {
                         <div className='f_12 fw_6'>Сумма к оплате</div>
                     </div>
                     <div className='col-sm-8 col-md-4 col-xxl-3 mb-3 mb-sm-0'>
-                        <input
-                            type='text'
-                            name='sum'
-                            defaultValue={'16 000'}
-                            className="input-price f_12 fw_6"
-                            onChange={e => onInputHandler(e, setData)}
-                        />
+                        <span className='f_12 fw_6'>{data?.sum} ₽</span>
                     </div>
                 </div>
                 <button type='button' className="btn_main btn_4 fw_4 mt-sm-5">Создать и перейти к оплате</button>

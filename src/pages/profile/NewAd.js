@@ -303,7 +303,7 @@ export default function NewAd() {
                                                 data?.files?.map((photos, index) => (
                                                     <div className='photos-window' key={index}>
                                                         <div className='photos-items'>
-                                                            <img src={photos?.info?.data_url}/>
+                                                            <img src={photos?.info?.data_url} className='for-photos-dragAndDrop'/>
                                                                 <span>{photos?.info?.name}</span>
                                                         </div>
                                                         <button
@@ -341,8 +341,7 @@ export default function NewAd() {
                                                 </div>
                                                 <span>Не более 10 фотографий</span>
                                             </div>
-                                            <button className='btn_main btn_1'>Сохранить</button>
-
+                                            <button className='btn_main btn_1' onClick={() => setLoadPhotoModal(false)}>Сохранить</button>
                                         </div>
                                     </div>
                                 </CustomModal>
