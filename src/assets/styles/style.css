@@ -436,7 +436,7 @@ block 3
 }
 nav[aria-label="page-pagination"] {
     width: fit-content;
-    width: moz-fit-content;
+    width: -moz-fit-content;
     padding: 0 !important;
 }
 nav>ul.pagination {
@@ -492,7 +492,7 @@ nav>ul.pagination .page-item:last-child .page-link {
 
 .sort select {
     width: fit-content;
-    width: moz-fit-content;
+    width: -moz-fit-content;
 }
 @media (max-width: 767px) {
     .sort {
@@ -1836,7 +1836,6 @@ footer {
     padding: 0;
 }
 
-<<<<<<< Updated upstream
 /* Loader component */
 .lds-ellipsis {
     display: inline-block;
@@ -2052,6 +2051,29 @@ footer {
 
 .photos-window button {
     color: #3670B3;
+}
+
+/* Form-validate */
+.validate-wrapper {
+    position: relative;
+}
+
+.validate-wrapper_error > input {
+    border-color: red;
+}
+
+.validate-error {
+    position: absolute;
+    left: 20px;
+    bottom: -7px;
+    background-color: #FFF;
+    font-size: 14px;
+    color: red;
+    padding: 0 5px;
+}
+
+.photo-upload__desc > span {
+    color: red;
 }
 
 .for-ad-blocks {

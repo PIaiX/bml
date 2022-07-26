@@ -30,15 +30,19 @@ export const onSelectHandler = (e, setFunction, isDigit = false) => {
     setFunction(prevValues => ({...prevValues, [name]: isDigit ? +select : select}))
 }
 
-export const onImageHandler = (e, nameProp, setFunction) => {
+export const onImageHandler = (e, setFunction, nameProp) => {
 
     const imageMimeType = /image\/(png|jpg|jpeg)/i;
     const file = e.target.files[0]
 
-    if(!file.type.match(imageMimeType)){
-        return
-    } else {
-        setFunction(prevValues => ({...prevValues, [nameProp]: file}))
+    if (file) {
+        if(!file.type.match(imageMimeType)){
+            return
+        } else {
+            nameProp
+                ? setFunction(prevValues => ({...prevValues, [nameProp]: file}))
+                : setFunction(file)
+        }
     }
 }
 
